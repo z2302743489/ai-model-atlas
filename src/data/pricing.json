@@ -1,0 +1,2895 @@
+{
+  "checkedAt": "2026-11-06",
+  "scope": "官方公开套餐和计费规则的代表方案快照，非全量SKU；不进行汇率换算。",
+  "brands": [
+    {
+      "id": "doubao",
+      "checkedAt": "2026-11-06",
+      "regionNote": "中国区人民币；豆包应用专业版与火山方舟 Coding Plan 为不同产品。",
+      "plans": [
+        {
+          "name": "豆包专业版·标准",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 68,
+          "annualMonthlyPrice": 57.33,
+          "annualTotal": 688,
+          "currency": "CNY",
+          "priceText": "自动续费 ¥68/月或¥688/年；单次月卡¥80。",
+          "quotaText": "高级功能共享月度额度池；固定 token／次数未公开。",
+          "quotaDetails": [
+            "按开通日每月重置，未用完不结转。",
+            "标准档视频仅使用每日免费次数。"
+          ],
+          "limits": [
+            "最终价格与账户额度以豆包订阅页为准；专业版不附送 API。"
+          ],
+          "sourceUrls": [
+            "https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/grace_legal/doubao_member_copywrite_for_ai.html"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "豆包专业版·加强",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 200,
+          "annualMonthlyPrice": 170.67,
+          "annualTotal": 2048,
+          "currency": "CNY",
+          "priceText": "自动续费 ¥200/月或¥2,048/年；单次月卡¥240。",
+          "quotaText": "共享月池为标准档4倍；非固定请求数。",
+          "quotaDetails": [
+            "视频与其他高级功能共用付费额度。"
+          ],
+          "limits": [
+            "按实际功能用量扣减；月余额到期清零。"
+          ],
+          "sourceUrls": [
+            "https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/grace_legal/doubao_member_copywrite_for_ai.html"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "豆包专业版·高级",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 500,
+          "annualMonthlyPrice": 424,
+          "annualTotal": 5088,
+          "currency": "CNY",
+          "priceText": "自动续费¥500/月或¥5,088/年；单次月卡¥599、单次年卡¥6,088。",
+          "quotaText": "高级功能共用月池，官方标为标准档10倍。",
+          "quotaDetails": [
+            "包括视频在内的高级功能按实际消耗扣减。",
+            "从开通日起按订阅月刷新，剩余额度不结转。"
+          ],
+          "limits": [
+            "官方未公布可承诺的固定月token数或生成次数。",
+            "应用专业版不附带火山方舟API额度。"
+          ],
+          "sourceUrls": [
+            "https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/grace_legal/doubao_member_copywrite_for_ai.html"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "方舟 Coding Plan Lite",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 40,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "刊例 ¥40/月；季付¥120。旧首购9.9元活动已公告暂停，不作为当前常规价。",
+          "quotaText": "约1,200次/5小时、9,000次/周、18,000次/订阅月。",
+          "quotaDetails": [
+            "次数为官方特定模型和工具配置下的估算。",
+            "5小时按首次请求定时刷新；周一及订阅月首日分别重置。"
+          ],
+          "limits": [
+            "三种窗口同时约束，非固定token包。",
+            "额度耗尽等待恢复，不继续扣其他资源包或余额。"
+          ],
+          "sourceUrls": [
+            "https://docs.volcengine.com/docs/ark/coding-plan-personal-new-user-promotion?lang=zh",
+            "https://docs.volcengine.com/docs/ark/coding-plan-personal-faq?lang=zh"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "方舟 Coding Plan Pro",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 200,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "刊例 ¥200/月；季付¥600。",
+          "quotaText": "约6,000次/5小时、45,000次/周、90,000次/订阅月。",
+          "quotaDetails": [
+            "官方估算为Lite的5倍。"
+          ],
+          "limits": [
+            "实际用量随模型、上下文、任务复杂度和工具变化。",
+            "Coding专用入口与按量API分开计费。"
+          ],
+          "sourceUrls": [
+            "https://docs.volcengine.com/docs/ark/coding-plan-personal-new-user-promotion?lang=zh",
+            "https://docs.volcengine.com/docs/ark/coding-plan-personal-faq?lang=zh"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "豆包官方帮助中心手册（beta）",
+          "url": "https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/grace_legal/doubao_member_copywrite_for_ai.html"
+        },
+        {
+          "title": "方舟官方价格及旧优惠暂停公告",
+          "url": "https://docs.volcengine.com/docs/ark/coding-plan-personal-new-user-promotion?lang=zh"
+        },
+        {
+          "title": "Coding Plan 官方额度FAQ",
+          "url": "https://docs.volcengine.com/docs/ark/coding-plan-personal-faq?lang=zh"
+        }
+      ],
+      "notes": [
+        "豆包帮助文档自称beta，购买时仍需核对应用内最终价。",
+        "年付折合月费由年费÷12计算，仅比较用，不代表每月扣款。",
+        "豆包API当前模型单价需在火山方舟模型价格表按型号、长度阶梯确认；本轮未取得可核对的完整Seed2.1价格表，未猜数。"
+      ]
+    },
+    {
+      "id": "qwen",
+      "checkedAt": "2026-11-06",
+      "regionNote": "应用价格为中国大陆 iOS 官方内购清单；百炼个人 Token Plan 限北京地域；API示例亦选北京区。",
+      "plans": [
+        {
+          "name": "千问工作助理·高级套餐（iOS）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 19,
+          "annualMonthlyPrice": 16.67,
+          "annualTotal": 200,
+          "currency": "CNY",
+          "priceText": "中国区内购清单：连续包月¥19；连续包年¥200。",
+          "quotaText": "官方公开内购清单未列固定积分或token额度。",
+          "quotaDetails": [
+            "同清单还列精英¥49/月、旗舰¥128/月。"
+          ],
+          "limits": [
+            "这是工作助理应用订阅，不能当作百炼API或Coding额度。",
+            "苹果渠道价格与网页／安卓可能不同，权益需账户订阅页确认。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/id6466733523"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "千问办公助理·精英套餐（Mac）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 49,
+          "annualMonthlyPrice": 47.33,
+          "annualTotal": 568,
+          "currency": "CNY",
+          "priceText": "Mac中国区内购SKU：连续包月¥49，连续包年¥568。",
+          "quotaText": "公开内购清单未列固定积分、token或月任务数。",
+          "quotaDetails": [
+            "iOS同厂商工作助理精英SKU亦列¥49/月。"
+          ],
+          "limits": [
+            "Mac办公助理与iOS工作助理命名不同，跨端权益和可购买资格以收银台确认。",
+            "不是百炼Token Plan或API充值。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/%E5%8D%83%E9%97%AE-%E9%98%BF%E9%87%8C%E6%97%97%E4%B8%8Bai%E5%8A%A9%E6%89%8B/id6752689384?mt=12",
+            "https://apps.apple.com/cn/app/id6466733523"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "千问办公／工作助理·旗舰套餐（Apple渠道）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 128,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "中国区Mac办公助理与iOS工作助理内购均列连续包月¥128；当前打开清单未列可核实年费。",
+          "quotaText": "固定月积分或token数未在公开内购清单中披露。",
+          "quotaDetails": [],
+          "limits": [
+            "渠道、账号与版本可能影响权益；不据名称推断不限量。",
+            "不附带百炼开发者API额度。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/%E5%8D%83%E9%97%AE-%E9%98%BF%E9%87%8C%E6%97%97%E4%B8%8Bai%E5%8A%A9%E6%89%8B/id6752689384?mt=12",
+            "https://apps.apple.com/cn/app/id6466733523"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "千问工作助理·智尊套餐（Mac）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 399,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "Mac中国区内购清单列连续包月¥399；年费未公开核实。",
+          "quotaText": "本次公开SKU未披露固定月积分或任务数。",
+          "quotaDetails": [],
+          "limits": [
+            "仅核实官方Mac内购商品与价格，不推断其他客户端同价或同权益。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/%E5%8D%83%E9%97%AE-%E9%98%BF%E9%87%8C%E6%97%97%E4%B8%8Bai%E5%8A%A9%E6%89%8B/id6752689384?mt=12"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "百炼 Token Plan 个人 Lite",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 39,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "常规¥39/月；符合资格的新客限时¥19.5/月，活动截至2026-11-30 23:59:59 UTC+8。",
+          "quotaText": "11,500 Credits/订阅月。",
+          "quotaDetails": [
+            "官网给出1–2个并发Agent参考。",
+            "2026-09-22起个人版已取消周限额。"
+          ],
+          "limits": [
+            "按token、模型和工具实际消耗Credits；不等于11,500次请求。",
+            "月额度不结转；不足可另购20,000 Credits用量包¥100/月。"
+          ],
+          "sourceUrls": [
+            "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "百炼 Token Plan 个人 Essential",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 79,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "常规¥79/月；符合资格的新客限时¥39.5/月，活动截至2026-11-30 23:59:59 UTC+8。",
+          "quotaText": "25,500 Credits/订阅月。",
+          "quotaDetails": [
+            "官网列2–3个并发Agent参考。",
+            "支持文本、视觉和模型内置工具；无周限额。"
+          ],
+          "limits": [
+            "Credits按模型、token和工具抵扣，不是固定请求次数。",
+            "当月剩余额度不结转；不足可另购用量包。"
+          ],
+          "sourceUrls": [
+            "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "百炼 Token Plan 个人 Standard",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 139,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "¥139/月；本轮公开页未列可核实年付总额。",
+          "quotaText": "45,000 Credits/订阅月。",
+          "quotaDetails": [
+            "官网列3–4个并发Agent参考。",
+            "附独立Harness权益，其AgentStudio免费额度与折扣不占Credits。"
+          ],
+          "limits": [
+            "仅北京地域；实际消耗以控制台账单为准。",
+            "月额度用完且无用量包时暂停服务。"
+          ],
+          "sourceUrls": [
+            "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "百炼 Token Plan 个人 Pro",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": 499,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "¥499/月；公开页面未给本轮可核实的年付总额。",
+          "quotaText": "180,000 Credits/订阅月。",
+          "quotaDetails": [
+            "官网给出6–8个并发Agent参考，并附独立Harness权益。"
+          ],
+          "limits": [
+            "额度耗尽且无用量包时暂停；最多同时持有5个用量包。",
+            "积分和API余额／应用会员不是一套账。"
+          ],
+          "sourceUrls": [
+            "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "qwen3.8-max 按量API（北京）",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "CNY/百万tokens：输入¥12，输出¥36；思考链与回答计入输出。",
+          "quotaText": "按实际输入和输出计费，不含月度无限调用。",
+          "quotaDetails": [
+            "适用0<输入tokens≤1M；上下文缓存另有折扣。",
+            "官方表列100万token体验额度，通常90天有效，具体资格以表注为准。"
+          ],
+          "limits": [
+            "其他地域／部署范围价格不同。",
+            "Batch与缓存优惠不能叠加；活动价以控制台为准。"
+          ],
+          "sourceUrls": [
+            "https://help.aliyun.com/zh/model-studio/model-pricing"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "千问官方开发者中国区App Store内购清单",
+          "url": "https://apps.apple.com/cn/app/id6466733523"
+        },
+        {
+          "title": "百炼Token Plan个人版官方说明",
+          "url": "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+        },
+        {
+          "title": "百炼模型调用官方价格表",
+          "url": "https://help.aliyun.com/zh/model-studio/model-pricing"
+        },
+        {
+          "title": "千问官方开发者Mac中国区App Store内购清单",
+          "url": "https://apps.apple.com/cn/app/%E5%8D%83%E9%97%AE-%E9%98%BF%E9%87%8C%E6%97%97%E4%B8%8Bai%E5%8A%A9%E6%89%8B/id6752689384?mt=12"
+        }
+      ],
+      "notes": [
+        "不可把旧Coding Plan按请求额度直接套入当前Credits套餐。",
+        "应用内购只核实价格，未据此猜测每月任务数；年费折合按年费÷12计算。",
+        "已列出四档百炼个人套餐及Apple渠道主要应用SKU；未知应用额度不凭档位名称补数。",
+        "iOS创作标准会员清单同时出现¥48与¥58两个同名月付SKU，资格不明，未合并成单一通用价。"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "checkedAt": "2026-11-06",
+      "regionNote": "应用免费体验据官方开发者Google Play条目；API使用官方USD报价，未换算成人民币。",
+      "plans": [
+        {
+          "name": "DeepSeek 官方应用·免费体验",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "官方应用说明为免费体验；本次未核到官方付费会员价。",
+          "quotaText": "公开条目未给固定每日消息数或token数。",
+          "quotaDetails": [
+            "应用免费与开发者API付费独立。"
+          ],
+          "limits": [
+            "免费不等于不限请求；账号、功能和服务负载限制以应用内显示为准。"
+          ],
+          "sourceUrls": [
+            "https://play.google.com/store/apps/details/?hl=zh&id=com.deepseek.chat",
+            "https://www.deepseek.com/"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "独立 Coding 月费套餐",
+          "kind": "coding_subscription",
+          "status": "not_public",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "本次未在官方入口核到可公开验证的独立Coding订阅价；不采第三方套壳套餐。",
+          "quotaText": "可用编程工具接官方按量API；没有据此承诺的月token包。",
+          "quotaDetails": [],
+          "limits": [
+            "此记录表示价格空缺，不把第三方订阅当DeepSeek官方计划。"
+          ],
+          "sourceUrls": [
+            "https://www.deepseek.com/",
+            "https://api-docs.deepseek.com/quick_start/pricing/"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "DeepSeek-V4.1-Flash-1017 API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "USD/百万tokens：输入未命中$0.15非高峰/$0.30高峰；缓存命中$0.003/$0.006；输出$0.60/$1.20。",
+          "quotaText": "按量付费；账号并发上限2,500。",
+          "quotaDetails": [
+            "调用ID deepseek-flash。",
+            "高峰为非中国法定节假日的周一至五UTC01–04时及06–10时。"
+          ],
+          "limits": [
+            "并发是账号总量；超过上限返回HTTP429。",
+            "Search与Fetch各另收$0.75/1,000次成功请求。"
+          ],
+          "sourceUrls": [
+            "https://api-docs.deepseek.com/quick_start/pricing/",
+            "https://api-docs.deepseek.com/quick_start/rate_limit/"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "DeepSeek-V4-Pro-0813 API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "USD/百万tokens：输入未命中$0.66非高峰/$1.32高峰；缓存命中$0.022/$0.044；输出$1.98/$3.96。",
+          "quotaText": "按量付费；账号并发上限500。",
+          "quotaDetails": [
+            "调用ID deepseek-v4-pro；高峰窗口与Flash相同。"
+          ],
+          "limits": [
+            "无包月token额度；充值余额随实际用量扣减。"
+          ],
+          "sourceUrls": [
+            "https://api-docs.deepseek.com/quick_start/pricing/",
+            "https://api-docs.deepseek.com/quick_start/rate_limit/"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DeepSeek官方应用开发者条目",
+          "url": "https://play.google.com/store/apps/details/?hl=zh&id=com.deepseek.chat"
+        },
+        {
+          "title": "DeepSeek官方产品入口",
+          "url": "https://www.deepseek.com/"
+        },
+        {
+          "title": "DeepSeek模型与价格",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+        },
+        {
+          "title": "DeepSeek限流与并发",
+          "url": "https://api-docs.deepseek.com/quick_start/rate_limit/"
+        }
+      ],
+      "notes": [
+        "未把历史deepseek-chat／reasoner或旧V4-Flash报价当当前价格。",
+        "两种API报价均区分缓存及高峰，不能仅取最低价作为所有请求单价。"
+      ]
+    },
+    {
+      "id": "kimi",
+      "checkedAt": "2026-11-06",
+      "regionNote": "会员为国内人民币新套餐；Kimi Code包含于符合资格的会员；API示例为国际官方平台USD报价。",
+      "plans": [
+        {
+          "name": "Kimi Go",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 49,
+          "annualMonthlyPrice": 39,
+          "annualTotal": 468,
+          "currency": "CNY",
+          "priceText": "¥49/月；年付¥468，折合¥39/月。",
+          "quotaText": "会员功能共用月度额度池，未公布固定token数。",
+          "quotaDetails": [
+            "1个Agent任务并行；20个项目／20GB。"
+          ],
+          "limits": [
+            "新Go不含Kimi Code。",
+            "月度余额不结转；某功能用尽月池影响其他功能。"
+          ],
+          "sourceUrls": [
+            "https://www.kimi.com/help/membership/membership-pricing",
+            "https://www.kimi.com/help/membership/membership-overview"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Kimi Plus（含 Code 权益）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 99,
+          "annualMonthlyPrice": 79,
+          "annualTotal": 948,
+          "currency": "CNY",
+          "priceText": "¥99/月；年付¥948，折合¥79/月。",
+          "quotaText": "官方标2倍Agent额度；2个任务并行；Kimi Code另有滚动5小时限制。",
+          "quotaDetails": [
+            "新套餐Code无周限额，但与应用共用月池。",
+            "CLI、VS Code、桌面端和第三方工具共用额度。"
+          ],
+          "limits": [
+            "没有公开固定Code token／请求数；不可把2倍换算成次数。",
+            "额外用量需另开启加油包；不是自动无限请求。"
+          ],
+          "sourceUrls": [
+            "https://www.kimi.com/help/membership/membership-pricing",
+            "https://www.kimi.com/help/membership/membership-overview",
+            "https://www.kimi.com/code/docs/kimi-code/membership.html"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Kimi Pro（含 Code 权益）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 199,
+          "annualMonthlyPrice": 159,
+          "annualTotal": 1908,
+          "currency": "CNY",
+          "priceText": "¥199/月；年付¥1,908，折合¥159/月。",
+          "quotaText": "官方标4倍Agent额度；2个任务并行，定时／小组件任务各15个。",
+          "quotaDetails": [
+            "含Kimi Code、目标模式与专属Kimi Claw。",
+            "Code的1M上下文及高速版资格从Pro起。"
+          ],
+          "limits": [
+            "新会员仍受滚动5小时和月池约束；旧会员另有周限制。",
+            "具体剩余额度百分比与刷新时间需登录查看。"
+          ],
+          "sourceUrls": [
+            "https://www.kimi.com/help/membership/membership-pricing",
+            "https://www.kimi.com/help/membership/membership-overview",
+            "https://www.kimi.com/code/docs/kimi-code/membership.html"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Kimi Max（含 Code 权益）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 699,
+          "annualMonthlyPrice": 559,
+          "annualTotal": 6708,
+          "currency": "CNY",
+          "priceText": "¥699/月；年付¥6,708，折合¥559/月。",
+          "quotaText": "官方标14倍Agent额度，4个Agent任务并行。",
+          "quotaDetails": [
+            "定时任务／小组件任务各20个；100个项目／50GB。",
+            "新会员Code保留滚动5小时限制，无周限额，并共享月池。"
+          ],
+          "limits": [
+            "任务并行数不等于每月任务次数；固定月token数未公开。",
+            "用完月池需等待刷新、升级或另启加油包。"
+          ],
+          "sourceUrls": [
+            "https://www.kimi.com/help/membership/membership-pricing",
+            "https://www.kimi.com/help/membership/membership-overview",
+            "https://www.kimi.com/code/docs/kimi-code/membership.html"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Kimi Ultra（含 Code 权益）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 1399,
+          "annualMonthlyPrice": 1119,
+          "annualTotal": 13428,
+          "currency": "CNY",
+          "priceText": "¥1,399/月；年付¥13,428，折合¥1,119/月。",
+          "quotaText": "官方标28倍Agent额度，4个Agent任务并行。",
+          "quotaDetails": [
+            "定时任务／小组件任务各25个；100个项目／50GB。",
+            "包年仍按月发放共享额度，余额不结转。"
+          ],
+          "limits": [
+            "不保证固定token量或无限请求；Code另受滚动5小时约束。",
+            "应用和Code共享额度，不能相加成两份月池。"
+          ],
+          "sourceUrls": [
+            "https://www.kimi.com/help/membership/membership-pricing",
+            "https://www.kimi.com/help/membership/membership-overview",
+            "https://www.kimi.com/code/docs/kimi-code/membership.html"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Kimi K3.1 Pro 按量API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "USD/百万tokens：输入$2，输出$10，缓存命中$0.20；缓存写入另计（官网默认5m写入$2）。",
+          "quotaText": "按量计费，无API月订阅；限流按累计充值等级。",
+          "quotaDetails": [
+            "1h缓存写入费率须按官方缓存表另核。",
+            "K3.1 Pro批处理按标准推理价60%计。"
+          ],
+          "limits": [
+            "国际API价格不含适用税费；不能套用人民币会员额度。",
+            "Kimi Code加油包与独立开放平台是不同产品；余额不能混视。"
+          ],
+          "sourceUrls": [
+            "https://platform.kimi.ai/",
+            "https://platform.kimi.ai/docs/pricing/chat",
+            "https://platform.kimi.ai/docs/pricing/limits"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kimi国内新套餐价格",
+          "url": "https://www.kimi.com/help/membership/membership-pricing"
+        },
+        {
+          "title": "Kimi会员主要额度权益",
+          "url": "https://www.kimi.com/help/membership/membership-overview"
+        },
+        {
+          "title": "Kimi Code官方会员规则",
+          "url": "https://www.kimi.com/code/docs/kimi-code/membership.html"
+        },
+        {
+          "title": "Kimi开放平台当前价卡",
+          "url": "https://platform.kimi.ai/"
+        },
+        {
+          "title": "KimiAPI计费说明",
+          "url": "https://platform.kimi.ai/docs/pricing/chat"
+        },
+        {
+          "title": "KimiAPI充值与限流",
+          "url": "https://platform.kimi.ai/docs/pricing/limits"
+        }
+      ],
+      "notes": [
+        "Kimi Code随会员提供，不另虚构第二笔独立月费；本表用includedKinds标注其Coding权益。",
+        "Andante等旧档位继续按旧规则，不作为新用户套餐报价。"
+      ]
+    },
+    {
+      "id": "ernie",
+      "checkedAt": "2026-11-06",
+      "regionNote": "中国大陆；文心消费应用、千帆个人Token Plan及ERNIE按量API分别计费。",
+      "plans": [
+        {
+          "name": "文心应用·会员月费未公开核实",
+          "kind": "app_subscription",
+          "status": "not_public",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方App Store显示免费下载安装并有能量充值；未核到公开固定包月会员价。",
+          "quotaText": "内购列¥1/5/10/50/100/500能量包，公开清单未给任务兑换量。",
+          "quotaDetails": [],
+          "limits": [
+            "这是充值商品，不可写成每月订阅或无限使用。",
+            "能量换算、消耗及有效期需在应用内确认。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/id6446882473"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "千帆 Token Plan Lite·双11首月活动",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方当前页展示新客首月¥19.9；续费金额及常规价请结算确认，未把首月价当长期月费。",
+          "quotaText": "活动页列11,500积分/月（加赠后）。",
+          "quotaDetails": [
+            "当前活动称暂取消7天限额。",
+            "指定模型每日22:00–次日08:00限时按2折消耗。"
+          ],
+          "limits": [
+            "活动加赠、首购和续费优惠条件不同；最终以订单为准。",
+            "不同模型与计费模式消耗不同，积分不等于请求或token。"
+          ],
+          "sourceUrls": [
+            "https://cloud.baidu.com/product/codingplan"
+          ],
+          "offerPrice": 19.9,
+          "offerPeriod": "eligible_new_customer_first_month",
+          "priceUnit": "月"
+        },
+        {
+          "name": "千帆 Token Plan Pro·双11首月活动",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方当前页展示新客首月¥99.9；续费价需结算确认。",
+          "quotaText": "活动页列49,500积分/月（加赠后）。",
+          "quotaDetails": [
+            "活动同时列Mini、Standard、Max，额度及优惠各异。"
+          ],
+          "limits": [
+            "活动说明不是不限额度调用。",
+            "订阅专用Key与后付费／企业账单隔离。"
+          ],
+          "sourceUrls": [
+            "https://cloud.baidu.com/product/codingplan"
+          ],
+          "offerPrice": 99.9,
+          "offerPeriod": "eligible_new_customer_first_month",
+          "priceUnit": "月"
+        },
+        {
+          "name": "ERNIE 5.1 按量API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "CNY/百万tokens（由官方千token单价×1,000换算）：输入≤32K为输入¥4／输出¥18；32K<输入≤128K为输入¥6／输出¥22。",
+          "quotaText": "在线推理按实际输入与输出分别付费。",
+          "quotaDetails": [
+            "原始官方单位为元/千tokens：0.004/0.018与0.006/0.022。"
+          ],
+          "limits": [
+            "不同长度阶梯不能只引用最低价；无包月调用额度。",
+            "该单价不代表文心应用或第三方模型报价。"
+          ],
+          "sourceUrls": [
+            "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "文心官方开发者App Store能量商品清单",
+          "url": "https://apps.apple.com/cn/app/id6446882473"
+        },
+        {
+          "title": "百度千帆当前Token Plan活动页",
+          "url": "https://cloud.baidu.com/product/codingplan"
+        },
+        {
+          "title": "百度千帆官方模型服务价格（2026-10-29）",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya"
+        }
+      ],
+      "notes": [
+        "官网活动页当前与旧搜索缓存所列档位／加赠量不同，以实际打开页面为准。",
+        "Lite/Pro为首月特惠，monthlyPrice留空；offerPrice单列，避免误标常规续费价。",
+        "官方文档解释页本轮超时，未凭第三方引用补长期价格。"
+      ]
+    },
+    {
+      "id": "glm",
+      "checkedAt": "2026-11-06",
+      "regionNote": "应用价格为中国大陆iOS内购清单；Coding为BigModel国内公开展示；API示例为Z.ai国际USD，不能直接当人民币原厂价。",
+      "plans": [
+        {
+          "name": "智谱清言普通会员（iOS）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 79,
+          "annualMonthlyPrice": 71.58,
+          "annualTotal": 859,
+          "currency": "CNY",
+          "priceText": "当前内购SKU列连续包月¥79、连续包年¥859；非续费月卡¥119。",
+          "quotaText": "公开内购清单未列可核实的月积分或固定请求数。",
+          "quotaDetails": [
+            "同清单列SVIP连续包月¥229，积分包另外购买。"
+          ],
+          "limits": [
+            "应用介绍仍残留¥19旧价格文字，与当前SKU不同；购买页最终确认。",
+            "消费应用会员不附带BigModel API或Coding配额。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/%E6%99%BA%E8%B0%B1%E6%B8%85%E8%A8%80-%E4%B8%80%E7%AB%99%E5%BC%8F%E8%A7%A3%E6%94%BEai%E7%94%9F%E4%BA%A7%E5%8A%9B/id6450893458"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "智谱清言 SVIP（iOS）",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 229,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "中国区当前内购SKU列SVIP连续包月¥229，SVIP非续费月卡也为¥229；年费未公开核实。",
+          "quotaText": "公开内购清单未列可核实的月积分／固定请求数。",
+          "quotaDetails": [],
+          "limits": [
+            "仅确认SKU公开价格，实际额度、首购优惠与权益需会员页核对。",
+            "消费应用会员与GLM Coding／开放API分开计费。"
+          ],
+          "sourceUrls": [
+            "https://apps.apple.com/cn/app/%E6%99%BA%E8%B0%B1%E6%B8%85%E8%A8%80-%E4%B8%80%E7%AB%99%E5%BC%8F%E8%A7%A3%E6%94%BEai%E7%94%9F%E4%BA%A7%E5%8A%9B/id6450893458"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "GLM Coding Lite（国内）",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方ZCode页显示¥94.4/月对比价¥118；折扣对应的扣款周期未公开标明，勿当作确定单月扣费。",
+          "quotaText": "2,000积分/滚动5小时；10,000积分/7天。",
+          "quotaDetails": [
+            "官方另显示支持月／季／年付，具体整期总额请购买页确认。",
+            "积分按token类型、模型与MCP工具抵扣；非高峰模型消耗减半。"
+          ],
+          "limits": [
+            "扣款周期未确认，展示折算价不能视作确定的常规月付报价。",
+            "额度耗尽等待刷新，不自动扣其他余额。"
+          ],
+          "sourceUrls": [
+            "https://zcode.z.ai/cn",
+            "https://zcode.z.ai/cn/docs/configuration",
+            "https://docs.bigmodel.cn/cn/coding-plan/overview"
+          ],
+          "displayedMonthlyEquivalent": 94.4,
+          "displayedReferencePrice": 118,
+          "priceUnit": "月"
+        },
+        {
+          "name": "GLM Coding Pro（国内）",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方ZCode页显示¥430.4/月对比价¥538；扣款周期与年付总额需订阅页确认。",
+          "quotaText": "12,000积分/滚动5小时；60,000积分/7天。",
+          "quotaDetails": [
+            "支持月／季／年付；整期扣款总额以购买页确认。"
+          ],
+          "limits": [
+            "不能将官方特定缓存假设下token估算当固定赠送量。",
+            "高峰：周一至周五14:00–18:00 UTC+8；其他时段模型积分按50%。"
+          ],
+          "sourceUrls": [
+            "https://zcode.z.ai/cn",
+            "https://zcode.z.ai/cn/docs/configuration",
+            "https://docs.bigmodel.cn/cn/coding-plan/overview"
+          ],
+          "displayedMonthlyEquivalent": 430.4,
+          "displayedReferencePrice": 538,
+          "priceUnit": "月"
+        },
+        {
+          "name": "GLM Coding Max（国内）",
+          "kind": "coding_subscription",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "CNY",
+          "priceText": "官方ZCode页显示¥862.4/月对比价¥1,078；对应扣款周期与年付总额需订阅页确认。",
+          "quotaText": "28,000积分/滚动5小时；140,000积分/7天。",
+          "quotaDetails": [
+            "5小时积分在消耗后动态恢复；周额度自下单起按7天刷新。",
+            "GLM-5.3与5.3-Flash均支持；模型和MCP按不同系数扣积分。"
+          ],
+          "limits": [
+            "monthlyPrice仍为空，避免把折合展示价当确定单月扣费。",
+            "高峰为周一至五14:00–18:00 UTC+8，其他时段模型积分按50%。"
+          ],
+          "sourceUrls": [
+            "https://zcode.z.ai/cn",
+            "https://zcode.z.ai/cn/docs/configuration",
+            "https://docs.bigmodel.cn/cn/coding-plan/overview"
+          ],
+          "displayedMonthlyEquivalent": 862.4,
+          "displayedReferencePrice": 1078,
+          "priceUnit": "月"
+        },
+        {
+          "name": "GLM-5.3 国际按量API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "USD/百万tokens：输入$1.40、缓存命中$0.26、输出$4.40；缓存存储暂免。",
+          "quotaText": "按量付费，非Coding订阅月池。",
+          "quotaDetails": [
+            "GLM-5.3-Flash同页列输入$0.15、缓存$0.03、输出$0.50。"
+          ],
+          "limits": [
+            "以上为Z.ai国际平台USD报价，不是BigModel人民币价格。",
+            "工具调用可能独立计费；Web Search为$0.01/次。"
+          ],
+          "sourceUrls": [
+            "https://docs.z.ai/guides/overview/pricing"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "清言官方开发者中国区App Store当前内购清单",
+          "url": "https://apps.apple.com/cn/app/%E6%99%BA%E8%B0%B1%E6%B8%85%E8%A8%80-%E4%B8%80%E7%AB%99%E5%BC%8F%E8%A7%A3%E6%94%BEai%E7%94%9F%E4%BA%A7%E5%8A%9B/id6450893458"
+        },
+        {
+          "title": "BigModel Coding官方积分额度",
+          "url": "https://docs.bigmodel.cn/cn/coding-plan/overview"
+        },
+        {
+          "title": "ZCode官方国内套餐展示",
+          "url": "https://zcode.z.ai/cn"
+        },
+        {
+          "title": "ZCode官方连接与套餐文档",
+          "url": "https://zcode.z.ai/cn/docs/configuration"
+        },
+        {
+          "title": "Z.ai官方国际API价格",
+          "url": "https://docs.z.ai/guides/overview/pricing"
+        }
+      ],
+      "notes": [
+        "国内购买页为JS应用且本轮无可用浏览器；官方ZCode能核实展示价，但未强行推断季付／年付扣款周期。",
+        "GLM新版积分制与历史V1/V2提示词限额不同，不混算。",
+        "清言当前SKU与开发者介绍旧价格存在冲突，保留说明并提示最终收银台确认。"
+      ]
+    },
+    {
+      "id": "kling",
+      "checkedAt": "2026-11-06",
+      "regionNote": "国际版美元报价；与国内版、应用内购买及API资源包分开。",
+      "plans": [
+        {
+          "name": "Basic",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "$0；免费档。",
+          "quotaText": "当前公开页未列固定月Credits",
+          "quotaDetails": [],
+          "limits": [
+            "不填每日66等未在当前公开页确认的固定额度。",
+            "免费活动奖励、可用模型及限制以账号界面为准。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/app/membership/membership-plan"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "Standard",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 8.8,
+          "annualMonthlyPrice": 6.6,
+          "annualTotal": 79.2,
+          "currency": "USD",
+          "priceText": "页面标价$10/月；当前首月$6.99，随后$8.80/月。年付当前$79.20一次支付，折$6.60/月；均为当期页面优惠。",
+          "quotaText": "660 Credits / 月",
+          "quotaDetails": [
+            "年付仍每月发放660 Credits。"
+          ],
+          "limits": [
+            "首月优惠、后续优惠月价与标价不同；活动和续费方案可变。",
+            "会员Credits不等于API Units；出片数随型号、时长、分辨率变化。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/app/membership/membership-plan"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 32.56,
+          "annualMonthlyPrice": 24.42,
+          "annualTotal": 293.04,
+          "currency": "USD",
+          "priceText": "页面标价$37/月；当前首月$25.99，随后$32.56/月。年付当前$293.04一次支付，折$24.42/月。",
+          "quotaText": "3,000 Credits / 月",
+          "quotaDetails": [],
+          "limits": [
+            "当前优惠价，不应视为永久常规价。",
+            "积分按生成设置消耗，不保证固定影片数量。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/app/membership/membership-plan"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Premier · 默认18K档",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 181.99,
+          "annualMonthlyPrice": 136.67,
+          "annualTotal": 1639.99,
+          "currency": "USD",
+          "priceText": "默认18K档标价$207/月；当前首月$144.99，随后$181.99/月。年付$1,639.99，折约$136.67/月。",
+          "quotaText": "18,000 Credits / 月（默认滑块档）",
+          "quotaDetails": [
+            "滑块另有8K、28K、38K档，额度与价格随档位变化。"
+          ],
+          "limits": [
+            "本条仅对应默认18K档，不代表所有Premier档。",
+            "年付一次收全年费用，按月发放积分。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/app/membership/membership-plan"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Ultra+",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 544.99,
+          "annualMonthlyPrice": 408.58,
+          "annualTotal": 4902.99,
+          "currency": "USD",
+          "priceText": "页面标价$619/月；当前首月$432.99，随后$544.99/月。年付$4,902.99，折约$408.58/月。",
+          "quotaText": "57,000 Credits / 月",
+          "quotaDetails": [],
+          "limits": [
+            "当前优惠价及账号界面方案可变。",
+            "自动续费可取消；不标为全模型无限生成。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/app/membership/membership-plan"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "官方API资源包",
+          "kind": "api_usage",
+          "status": "not_public",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "有独立官方API定价入口；本次抓取未取得可读的实时价目，不填会员价或第三方报价。",
+          "quotaText": "API Units / 资源包额度以开发者平台为准",
+          "quotaDetails": [],
+          "limits": [
+            "创作会员Credits与API资源包分开，不能互换推算。"
+          ],
+          "sourceUrls": [
+            "https://kling.ai/dev/pricing"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "可灵实时会员页（月付/年付，浏览器读取）",
+          "url": "https://kling.ai/app/membership/membership-plan"
+        },
+        {
+          "title": "可灵付费服务条款（2026-10-10）",
+          "url": "https://kling.ai/docs/payment-policy"
+        },
+        {
+          "title": "可灵官方API定价入口",
+          "url": "https://kling.ai/dev/pricing"
+        }
+      ],
+      "notes": [
+        "会员实时价由主代理浏览器实际读取，2026-11-06核验；网页文本抓取为空，未采用7月博客历史促销报价。",
+        "公开Basic为$0，当前页未承诺固定每月Credits；不填每日66等旧说法。",
+        "月付页面显示12% Off，年付显示34% Off；本表保存当前显示总额与后续月价，不承诺活动长期有效。",
+        "会员积分依条款按月发放，有效期与所购方案以账户界面为准。"
+      ]
+    },
+    {
+      "id": "claude",
+      "checkedAt": "2026-11-06",
+      "regionNote": "美国官网网页订阅、USD、税前；移动商店及其他地区报价可能不同。团队单价按人，不能作为整个团队月费。",
+      "plans": [
+        {
+          "name": "Claude Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$0；不适用年付。",
+          "quotaText": "5小时与每周动态限额；未公开固定消息数或月token包。",
+          "quotaDetails": [
+            "额度消耗随模型、文件及对话长度变化。",
+            "不含Claude Code订阅权限。",
+            "不含每月Claude Platform API credits。"
+          ],
+          "limits": [
+            "可用模型和容量按账户及供给变化。"
+          ],
+          "sourceUrls": [
+            "https://claude.com/pricing",
+            "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
+          ]
+        },
+        {
+          "name": "Claude Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 20,
+          "annualMonthlyPrice": 16.67,
+          "annualTotal": 200,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "月付$20；年付$200一次收取，折合约$16.67/月（官网展示约$17）。",
+          "quotaText": "比Free更高的5小时与每周额度；不是固定token包。",
+          "quotaDetails": [
+            "包含Claude Code。",
+            "周额度在账户指定的固定星期与时刻重置。",
+            "消息数量由模型、附件及上下文决定；固定月token配额未公开。",
+            "不含Claude Console API用量；API另开通计费。"
+          ],
+          "limits": [
+            "可另购usage credits；这不等同于API赠额。"
+          ],
+          "sourceUrls": [
+            "https://claude.com/pricing",
+            "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "annualUnit": "年"
+        },
+        {
+          "name": "Claude Max",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 100,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$100/月；当前仅月付。",
+          "quotaText": "每5小时和每周均为Pro的5倍用量。",
+          "quotaDetails": [
+            "含Claude Code；Fable另有周限额。",
+            "可领取$100/月Claude Platform API credits。",
+            "API赠额需订阅满7天并关联Console组织；每账期更新、不结转。",
+            "API赠额不能抵扣交互式Claude Code或应用内usage credits。",
+            "不公开固定月token配额。"
+          ],
+          "limits": [
+            "仍有5小时、每周与公平使用限制。",
+            "API额度用尽后按Console充值余额继续或停止，不从会员费自动扣除。"
+          ],
+          "sourceUrls": [
+            "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+            "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans",
+            "https://claude.com/pricing"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ]
+        },
+        {
+          "name": "Claude Ultra",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 200,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$200/月；当前仅月付。",
+          "quotaText": "每周为Pro的10倍；已验证账户取消5小时限制。",
+          "quotaDetails": [
+            "包含Claude Code；Fable有独立周上限。",
+            "可领取$200/月Claude Platform API credits，领取与到期规则同Max。",
+            "未验证账户暂时仍受会话窗口限制。",
+            "没有公开固定月token包。"
+          ],
+          "limits": [
+            "取消5小时限制不等于无限用量；仍有周限额。",
+            "旧Max 20x现更名Ultra，不能把旧20x表述套成当前周额度。"
+          ],
+          "sourceUrls": [
+            "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+            "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans",
+            "https://claude.com/pricing"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ]
+        },
+        {
+          "name": "Claude Team · Standard seat",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 25,
+          "annualMonthlyPrice": 20,
+          "annualTotal": 240,
+          "currency": "USD",
+          "priceUnit": "人/月",
+          "priceText": "月付$25/人；年付$20/人/月。",
+          "quotaText": "每席位会话额度为Pro的1.25倍，另有每周限额。",
+          "quotaDetails": [
+            "每人独立额度，成员间不可转移；周重置时刻按账户固定。",
+            "含Claude Code，团队支持2–150席位。",
+            "每Standard席位贡献$20/月API credits，组织合计上限$500/月。",
+            "API赠额满7天可领取；按月更新、不结转。",
+            "固定消息数或月token包未公开。"
+          ],
+          "limits": [
+            "至少2人；此处价格是单席位价。",
+            "API赠额可汇总，应用会话额度不可汇总。"
+          ],
+          "sourceUrls": [
+            "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+            "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans",
+            "https://claude.com/pricing"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "annualUnit": "人/年"
+        },
+        {
+          "name": "Claude Team · Premium seat",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 125,
+          "annualMonthlyPrice": 100,
+          "annualTotal": 1200,
+          "currency": "USD",
+          "priceUnit": "人/月",
+          "priceText": "月付$125/人；年付$100/人/月。",
+          "quotaText": "每席位会话额度为Pro的6.25倍（Standard的5倍），另有每周限额。",
+          "quotaDetails": [
+            "每人独立额度；包含Claude Code。",
+            "每Premium席位贡献$100/月API credits；全组织仍以$500/月封顶。",
+            "API赠额满7天可领取，按月更新、不结转。",
+            "固定消息数与月token包未公开。"
+          ],
+          "limits": [
+            "团队至少2人，可混搭Standard/Premium席位。",
+            "Fable及额外用量仍受具体规则约束。"
+          ],
+          "sourceUrls": [
+            "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+            "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans",
+            "https://claude.com/pricing"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "annualUnit": "人/年"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Claude 美国官方定价",
+          "url": "https://claude.com/pricing"
+        },
+        {
+          "title": "使用量与长度限制",
+          "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
+        },
+        {
+          "title": "Pro定价与重置规则",
+          "url": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+        },
+        {
+          "title": "Max定价与额度",
+          "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+        },
+        {
+          "title": "会员API赠额规则",
+          "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans"
+        },
+        {
+          "title": "Ultra定价与账户验证",
+          "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+        },
+        {
+          "title": "Team席位价格与额度",
+          "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+        },
+        {
+          "title": "Opus 5.5 官方API定价",
+          "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+        },
+        {
+          "title": "Sonnet 5.5 官方API定价",
+          "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+        }
+      ],
+      "notes": [
+        "年付折合与总额分开保留；Team年总额为官方年付月单价×12，不含税。",
+        "API为独立按量产品：当前Opus5.5标准输入$4/输出$20、Sonnet5.5输入$2/输出$10，单位均为每百万tokens；缓存、工具、加速模式另计。",
+        "API赠额并不改变Claude、Claude Code或Cowork的订阅内限额。"
+      ]
+    },
+    {
+      "id": "gpt",
+      "checkedAt": "2026-11-06",
+      "regionNote": "美元公开参考价；地区、税费、账号和结算渠道可能影响实际支付。",
+      "plans": [
+        {
+          "name": "ChatGPT Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "免费档，使用量受限；无统一固定月 token 公布",
+          "quotaDetails": [
+            "Work/Codex 桌面 Luna 能力按账号逐步开放。"
+          ],
+          "limits": [],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Go",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 8,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "轻量使用档；实际额度见账号用量面板",
+          "quotaDetails": [
+            "Work/Codex 桌面 Luna 能力按账号逐步开放。"
+          ],
+          "limits": [],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Plus",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 20,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "Work / Codex 共用动态额度，非固定月 token 包",
+          "quotaDetails": [
+            "Sol 本地消息约15–160条/5小时是官方估算，不是固定上限。",
+            "支持购买额外 credits；云任务、模型与上下文都会影响消耗。"
+          ],
+          "limits": [
+            "此估算针对 Work/Codex，不是所有 Chat 聊天功能的统一消息上限。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Pro · $100 档",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 100,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "Pro 当前不设5小时窗口上限；仍按用量与公平使用规则",
+          "quotaDetails": [
+            "具体用量与重置时间见账号面板。",
+            "符合条件并激活后，每计费周期含 $100 API credits；未用余额不结转。"
+          ],
+          "limits": [
+            "API 赠额需符合资格并主动关联组织；不等同增加 Work/Codex 用量。",
+            "API赠额不支持Codex经API key的用量；首次激活按当期剩余时间比例发放。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing",
+            "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Pro · $200 档",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 200,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "Pro 当前不设5小时窗口上限；仍按用量与公平使用规则",
+          "quotaDetails": [
+            "具体用量与重置时间见账号面板。",
+            "符合条件并激活后，每计费周期含 $200 API credits；未用余额不结转。"
+          ],
+          "limits": [
+            "API 赠额需符合资格并主动关联组织；不等同增加 Work/Codex 用量。",
+            "API赠额不支持Codex经API key的用量；首次激活按当期剩余时间比例发放。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing",
+            "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Pro · $500 档",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 500,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "美元公开月价；税费与地区结算另核对。",
+          "quotaText": "Pro 当前不设5小时窗口上限；仍按用量与公平使用规则",
+          "quotaDetails": [
+            "具体用量与重置时间见账号面板。",
+            "符合条件并激活后，每计费周期含 $500 API credits；未用余额不结转。"
+          ],
+          "limits": [
+            "API 赠额需符合资格并主动关联组织；不等同增加 Work/Codex 用量。",
+            "API赠额不支持Codex经API key的用量；首次激活按当期剩余时间比例发放。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing",
+            "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+          ],
+          "includedKinds": [
+            "coding_subscription"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "ChatGPT Business · Standard",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 25,
+          "annualMonthlyPrice": 20,
+          "annualTotal": 240,
+          "currency": "USD",
+          "priceText": "月付 $25/人/月；年付 $240/人/年，折合 $20/人/月；至少2人。",
+          "quotaText": "按人订阅；Work/Codex 用量由任务与模型决定",
+          "quotaDetails": [
+            "符合条件激活后，每付费 Standard 席位含 $20 API credits/月。",
+            "API 赠额按工作区汇总，上限 $500/月；年付按年度一次发放相应赠额。"
+          ],
+          "limits": [
+            "至少2席位；企业实际合同与席位类型须确认。",
+            "API赠额不支持Codex经API key的用量；首次激活按当期剩余时间比例发放。",
+            "工作区年度API赠额上限$6,000；年付发放与到期按官方年度规则。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing",
+            "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+          ],
+          "priceUnit": "人/月",
+          "annualUnit": "人/年",
+          "includedKinds": [
+            "coding_subscription"
+          ]
+        },
+        {
+          "name": "Enterprise / Edu",
+          "kind": "app_subscription",
+          "status": "contact_sales",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "联系销售，按合同计费。",
+          "quotaText": "可按灵活 credits 或合同安排配置额度。",
+          "quotaDetails": [
+            "组织配置、席位和功能权限需单独确认。"
+          ],
+          "limits": [
+            "本页未提供统一公开月价。"
+          ],
+          "sourceUrls": [
+            "https://learn.chatgpt.com/docs/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "API 按量 · Sol / Luna 示例",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "标准短上下文，每百万tokens：Sol 输入$2 / 输出$10；Luna 输入$0.10 / 输出$0.50。",
+          "quotaText": "按实际用量扣费，不是固定月消息包。",
+          "quotaDetails": [
+            "缓存、长输入、速度档和工具调用可改变费用。",
+            "仅符合条件的 Pro / Business 订阅可申领 API 赠额；超出后使用购入余额。"
+          ],
+          "limits": [
+            "API key 用量与订阅内 Work/Codex 用量采用不同计费口径。",
+            "API赠额不支持Codex经API key的用量；首次激活按当期剩余时间比例发放。"
+          ],
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+            "https://developers.openai.com/api/docs/models/gpt-6-luna",
+            "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenAI 官方订阅价格与Work/Codex额度",
+          "url": "https://learn.chatgpt.com/docs/pricing"
+        },
+        {
+          "title": "Pro / Business API credits资格与金额",
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+        },
+        {
+          "title": "Sol API官方价格",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+        },
+        {
+          "title": "Luna API官方价格",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-luna"
+        }
+      ],
+      "notes": [
+        "API赠额需订阅付费满7天、同邮箱且拥有相应订阅/工作区和API组织，再主动关联激活；免费试用不适用。",
+        "API赠额是API余额，不能转成Work/Codex用量；Pro未用赠额当期失效，Business年付规则见官方。",
+        "Work/Codex额度随模型、任务、速度和上下文变化；本页未把估算换成固定月tokens。",
+        "API输入/输出单价只适用于注明的标准短上下文档，不用来换算订阅含多少任务。"
+      ]
+    },
+    {
+      "id": "gemini",
+      "checkedAt": "2026-11-06",
+      "regionNote": "美国个人Google账号的USD官网报价；不将家庭可分享权益折算成企业每席位报价。试用、促销、税费与其他地区以实际结算为准。",
+      "plans": [
+        {
+          "name": "Gemini Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$0/月；不适用年付。",
+          "quotaText": "标准计算额度：每5小时刷新，另有周上限。",
+          "quotaDetails": [
+            "主要为Flash-Lite访问；固定消息数/月tokens未公开。",
+            "应用上下文32K tokens是单次窗口，不是月额度。",
+            "个人Google账号含15GB云存储。"
+          ],
+          "limits": [
+            "免费容量可能随供给变化。",
+            "应用免费额度与Gemini API免费层分开，不能直接移作API配额。"
+          ],
+          "sourceUrls": [
+            "https://gemini.google/us/subscriptions/?hl=en",
+            "https://support.google.com/gemini/answer/16275805?hl=en"
+          ]
+        },
+        {
+          "name": "Google AI Plus",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 4.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "美国官网当前$4.99/月；本次未核实统一年付报价。",
+          "quotaText": "Gemini额度为免费标准的2倍；5小时+每周限制。",
+          "quotaDetails": [
+            "应用上下文128K tokens，不是月token包。",
+            "每月200 Google Flow credits；400GB存储。",
+            "固定月token配额未公开。",
+            "本次方案表未列Pro/Ultra开发者Cloud credits权益。"
+          ],
+          "limits": [
+            "Google Flow credits是创作工具点数，不是Gemini API tokens。",
+            "主要访问Flash；模型权限按计划及地区区分。"
+          ],
+          "sourceUrls": [
+            "https://gemini.google/us/subscriptions/?hl=en",
+            "https://one.google.com/about/google-ai-plans/",
+            "https://support.google.com/gemini/answer/16275805?hl=en"
+          ]
+        },
+        {
+          "name": "Google AI Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 19.99,
+          "annualMonthlyPrice": 16.67,
+          "annualTotal": 199.99,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "月付$19.99；年付$199.99，折合约$16.67/月。",
+          "quotaText": "Gemini额度为免费标准的4倍；5小时+每周限制。",
+          "quotaDetails": [
+            "应用上下文1M tokens，不是月配额。",
+            "每月1,000 Google Flow credits；5TB存储。",
+            "可激活$10/月GenAI与Google Cloud credits，用于符合条件的API/Cloud用量。",
+            "固定消息数或月tokens未公开。"
+          ],
+          "limits": [
+            "开发者赠额需激活并关联Cloud Billing；部分账户需预充值才能使用。",
+            "Flow点数、应用额度与API/Cloud账单是不同口径。"
+          ],
+          "sourceUrls": [
+            "https://gemini.google/us/subscriptions/?hl=en",
+            "https://one.google.com/about/google-ai-plans/",
+            "https://support.google.com/gemini/answer/16275805?hl=en",
+            "https://developers.google.com/program/plans-and-pricing?hl=en",
+            "https://developers.google.com/profile/help/faq"
+          ],
+          "annualUnit": "年"
+        },
+        {
+          "name": "Google AI Ultra · 5x / 20TB",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 99.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$99.99/月；Ultra当前仅月付。",
+          "quotaText": "Gemini为AI Pro的5倍用量；仍有5小时与周限制。",
+          "quotaDetails": [
+            "每月10,000 Google Flow credits；20TB存储。",
+            "应用上下文1M tokens。",
+            "可激活$40/月GenAI与Google Cloud credits，受开发者计费规则限制。",
+            "固定月token包未公开。"
+          ],
+          "limits": [
+            "5倍是相对Pro，不是相对Free。",
+            "Cloud赠额不代表无条件或无限API调用；部分账户需预充值。"
+          ],
+          "sourceUrls": [
+            "https://gemini.google/us/subscriptions/?hl=en",
+            "https://one.google.com/about/google-ai-plans/",
+            "https://support.google.com/gemini/answer/16275805?hl=en",
+            "https://developers.google.com/program/plans-and-pricing?hl=en",
+            "https://developers.google.com/profile/help/faq"
+          ]
+        },
+        {
+          "name": "Google AI Ultra · 20x / 30TB",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 199.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$199.99/月；Ultra当前仅月付。",
+          "quotaText": "Gemini为AI Pro的20倍用量；仍有5小时与周限制。",
+          "quotaDetails": [
+            "每月25,000 Google Flow credits；30TB存储。",
+            "应用上下文1M tokens。",
+            "可激活$100/月GenAI与Google Cloud credits，受开发者计费规则限制。",
+            "固定月token包未公开。"
+          ],
+          "limits": [
+            "20倍是相对Pro；不是无限量或固定token承诺。",
+            "地区、年龄和功能开放范围仍适用。"
+          ],
+          "sourceUrls": [
+            "https://gemini.google/us/subscriptions/?hl=en",
+            "https://one.google.com/about/google-ai-plans/",
+            "https://support.google.com/gemini/answer/16275805?hl=en",
+            "https://developers.google.com/program/plans-and-pricing?hl=en",
+            "https://developers.google.com/profile/help/faq"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gemini 美国个人订阅定价",
+          "url": "https://gemini.google/us/subscriptions/?hl=en"
+        },
+        {
+          "title": "Gemini应用额度与上下文规则",
+          "url": "https://support.google.com/gemini/answer/16275805?hl=en"
+        },
+        {
+          "title": "Google One方案及年付与点数表",
+          "url": "https://one.google.com/about/google-ai-plans/"
+        },
+        {
+          "title": "Pro与Ultra开发者Cloud赠额",
+          "url": "https://developers.google.com/program/plans-and-pricing?hl=en"
+        },
+        {
+          "title": "API赠额激活、预付与旧开发者订阅说明",
+          "url": "https://developers.google.com/profile/help/faq"
+        }
+      ],
+      "notes": [
+        "Gemini应用已采用计算量额度，不能继续写旧的固定每日100/500条消息口径。",
+        "Google AI Pro/Ultra包含可激活的开发者Cloud credits；因此“会员完全不含API赠额”也不准确，但赠额须按Cloud Billing资格和预付规则使用。",
+        "独立Google Developer Program Premium订阅已停止新购及续订；本页展示随AI Pro/Ultra附带的权益，不推荐已退役独立方案。",
+        "Google AI订阅面向个人账号；Workspace/企业Gemini方案另行采购，不在此处冒充同价团队席位。"
+      ]
+    },
+    {
+      "id": "llama",
+      "checkedAt": "2026-11-06",
+      "regionNote": "此品牌条目收录Meta开放权重模型。没有可直接对应的统一“Llama应用会员”或厂商统一月token套餐；托管服务由具体提供商计费。",
+      "plans": [
+        {
+          "name": "Llama 应用会员（不适用）",
+          "kind": "app_subscription",
+          "status": "not_applicable",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceUnit": "账户/月",
+          "priceText": "不适用：Llama是模型系列，此处不虚构月付/年付会员。",
+          "quotaText": "没有统一消息数、月tokens或会员API赠额。",
+          "quotaDetails": [
+            "不能把第三方聊天应用会员当作Meta统一Llama方案。"
+          ],
+          "limits": [
+            "如用托管提供商，另核对该提供商型号、价格和限额。"
+          ],
+          "sourceUrls": [
+            "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "https://dev.meta.ai/docs/muse-spark-open"
+          ]
+        },
+        {
+          "name": "Llama 4 Scout · 自托管",
+          "kind": "self_hosted",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceUnit": "自托管成本",
+          "priceText": "无统一月费；按Llama 4 Community License取得权重，另计硬件、存储和运维。",
+          "quotaText": "无厂商消息/月tokens赠额；吞吐与并发由部署资源决定。",
+          "quotaDetails": [
+            "109B总参数、17B激活；开放权重不等于零部署成本。",
+            "模型卡10M上下文是规格窗口，不是月额度。"
+          ],
+          "limits": [
+            "需接受社区许可证与使用政策；商用条件不能按完全无限制开源解释。"
+          ],
+          "sourceUrls": [
+            "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+          ]
+        },
+        {
+          "name": "Muse Spark Open · 自托管",
+          "kind": "self_hosted",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceUnit": "自托管成本",
+          "priceText": "无统一月费；权重按Muse Model License使用，基础设施自行承担。",
+          "quotaText": "无厂商固定月tokens额度；也可另付费调用合作托管API。",
+          "quotaDetails": [
+            "BF16权重约1.65TB；官方示例需要多GPU部署。",
+            "上下文1,048,576 tokens是单次窗口。"
+          ],
+          "limits": [
+            "权重之外还需缓存、激活与运行时内存。",
+            "许可证和部署区域应按具体用途核对。"
+          ],
+          "sourceUrls": [
+            "https://dev.meta.ai/docs/muse-spark-open"
+          ]
+        },
+        {
+          "name": "Meta开放模型 · 第三方托管API",
+          "kind": "api_usage",
+          "status": "not_public",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceUnit": "按提供商用量",
+          "priceText": "没有统一报价；按提供商、精度、型号与输入/输出计费。",
+          "quotaText": "月token包、速率与免费层由提供商分别定义。",
+          "quotaDetails": [
+            "Muse官方列出多家托管伙伴，不能合并成一个Meta赠额。"
+          ],
+          "limits": [
+            "必须到实际服务提供商核价；本项不提供推算价格。"
+          ],
+          "sourceUrls": [
+            "https://dev.meta.ai/docs/muse-spark-open"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Meta Llama4官方模型卡与社区许可",
+          "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+        },
+        {
+          "title": "Muse Spark Open自托管与合作托管方式",
+          "url": "https://dev.meta.ai/docs/muse-spark-open"
+        }
+      ],
+      "notes": [
+        "“开放权重”描述获取方式；不能将下载价格、应用会员价和自托管总成本混为一谈。"
+      ]
+    },
+    {
+      "id": "mistral",
+      "checkedAt": "2026-11-06",
+      "regionNote": "官方公开USD标价、税前；应用已以Vibe为主，含聊天和编码功能。公共页存在本地化和教育切换视图，未确认的赠额以Admin Panel为准。",
+      "plans": [
+        {
+          "name": "Mistral Free mode",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "免费；不适用年付。",
+          "quotaText": "聊天、搜索与编码试用有限；固定消息数和月tokens未统一公开。",
+          "quotaDetails": [
+            "可访问Vibe及Studio；API试用有最低档速率限制。",
+            "计划内月用量在Studio、API与Vibe Code之间共享，具体预算登录查看。"
+          ],
+          "limits": [
+            "不能沿用旧页面曾显示的$10免费API赠额作为当前保证。",
+            "免费层用于评估原型，生产速率需单独核对。"
+          ],
+          "sourceUrls": [
+            "https://mistral.ai/pricing/",
+            "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+            "https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them"
+          ]
+        },
+        {
+          "name": "Mistral Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 14.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "$14.99/月；官方帮助称年付优惠20%，具体年付总额本次未公开核实。",
+          "quotaText": "公开FAQ示例为150次Flash回答/日；其余功能有动态公平使用限制。",
+          "quotaDetails": [
+            "包含Vibe CLI、IDE与网页编码访问。",
+            "消息最高约Free的6倍、搜索5倍、图像40倍为相对上限。",
+            "含月度API/Studio/Vibe用量；公开赠额不同计价视图不一致，未统一确认金额。",
+            "没有统一固定月token包。"
+          ],
+          "limits": [
+            "年付金额保持未公开，不按8折自行当成已核实报价。",
+            "达到计划预算后，启用PAYG才会使用另购预付credits继续。"
+          ],
+          "sourceUrls": [
+            "https://mistral.ai/pricing/",
+            "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+            "https://help.mistral.ai/en/articles/455205-how-can-i-upgrade-or-cancel-my-subscription"
+          ]
+        },
+        {
+          "name": "Mistral Education · 学生优惠",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 5.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "官方FAQ列学生价$5.99/月；年付折扣适用情况及总价未核实。",
+          "quotaText": "优惠版Pro，额度仍受计划与公平使用限制。",
+          "quotaDetails": [
+            "需验证合格教育机构邮箱。",
+            "公开价格卡注明最多12个月及新用户资格条件。",
+            "教育视图API赠额不可直接当作普通Pro赠额。"
+          ],
+          "limits": [
+            "教师资格按教育帮助页核实，不能保证所有教师适用此学生标价。",
+            "实际资格和最终报价以教育订购流程为准。"
+          ],
+          "sourceUrls": [
+            "https://mistral.ai/pricing/",
+            "https://help.mistral.ai/en/articles/698530-i-m-a-student-or-a-teacher-am-i-eligible-for-a-discount"
+          ]
+        },
+        {
+          "name": "Mistral Team",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 24.99,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "人/月",
+          "priceText": "$24.99/人/月；支持年付且官方帮助称优惠20%，年付总额未核实。",
+          "quotaText": "公开FAQ示例为200次Flash回答/日；其他额度受公平使用限制。",
+          "quotaDetails": [
+            "每人最多30GB资料存储。",
+            "月用量与Studio、API和Vibe Code共享，具体组织预算登录查看。",
+            "固定月tokens及统一API赠额金额未公开确认。"
+          ],
+          "limits": [
+            "单价按用户；网页用户数选择器总额不是API赠额。",
+            "年付数值不按8折反推成官方报价。"
+          ],
+          "sourceUrls": [
+            "https://mistral.ai/pricing/",
+            "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+            "https://help.mistral.ai/en/articles/455205-how-can-i-upgrade-or-cancel-my-subscription"
+          ]
+        },
+        {
+          "name": "Mistral Enterprise",
+          "kind": "app_subscription",
+          "status": "contact_sales",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "账户/月",
+          "priceText": "联系销售；无公开统一月价或年付总价。",
+          "quotaText": "自定义额度、SLA、工作流和私有部署；按合同。",
+          "quotaDetails": [
+            "具体token预算、重置和API是否抵扣需合同约定。"
+          ],
+          "limits": [
+            "不将企业定制服务描述成免费或无限量。"
+          ],
+          "sourceUrls": [
+            "https://mistral.ai/pricing/"
+          ]
+        },
+        {
+          "name": "Mistral API · PAYG",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceUnit": "按输入/输出用量",
+          "priceText": "按量：Large4输入$0.70/输出$2.10；Small4输入$0.15/输出$0.60，每百万tokens。",
+          "quotaText": "没有固定会员月token包；按模型及组织速率/预算控制。",
+          "quotaDetails": [
+            "Large4缓存输入$0.07/百万tokens，其他缓存/批处理另查对应规则。",
+            "计划内月预算先消费，超出时按启用的PAYG与预付余额处理。",
+            "速率限制包含RPS、每分钟tokens及每月tokens，登录Limits查看。"
+          ],
+          "limits": [
+            "模型专页优先于FAQ中未写明版本的旧Mistral Large价格例子。",
+            "预充值金额不等于速率额度；升级档位依累计实际账单。"
+          ],
+          "sourceUrls": [
+            "https://docs.mistral.ai/models/mistral-large-4-0",
+            "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+            "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+            "https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mistral公开USD定价与Flash日额度",
+          "url": "https://mistral.ai/pricing/"
+        },
+        {
+          "title": "订阅与API/Studio/Vibe共享月用量",
+          "url": "https://docs.mistral.ai/admin/billing-usage/subscriptions"
+        },
+        {
+          "title": "API速率、月tokens与预算区别",
+          "url": "https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them"
+        },
+        {
+          "title": "月付与年付优惠说明",
+          "url": "https://help.mistral.ai/en/articles/455205-how-can-i-upgrade-or-cancel-my-subscription"
+        },
+        {
+          "title": "教育资格验证",
+          "url": "https://help.mistral.ai/en/articles/698530-i-m-a-student-or-a-teacher-am-i-eligible-for-a-discount"
+        },
+        {
+          "title": "Large4具体API输入/输出定价",
+          "url": "https://docs.mistral.ai/models/mistral-large-4-0"
+        },
+        {
+          "title": "Small4具体API输入/输出定价",
+          "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+        }
+      ],
+      "notes": [
+        "Mistral订阅现可共享Studio/API/Vibe Code月用量，不能笼统写成应用会员不含任何API用量。",
+        "API赠额不统一承诺：本次公开页普通Pro显示25.5/月、教育显示15/月，其他官方缓存视图曾显示30/月；没有把任一数字泛化为所有币种、账户和渠道。",
+        "Pro/Team年付仅核实“优惠20%”条件，annualMonthlyPrice及annualTotal均留null。",
+        "不要把定价FAQ的泛化开源/商用说明覆盖具体模型的Apache2.0或其他许可证。"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "checkedAt": "2026-11-06",
+      "regionNote": "官方美元订阅，年费预付；GPU小时不是固定图片数。",
+      "plans": [
+        {
+          "name": "Basic",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 10,
+          "annualMonthlyPrice": 8,
+          "annualTotal": 96,
+          "currency": "USD",
+          "priceText": "月付$10；年付$96，折$8/月。",
+          "quotaText": "3.3小时 Fast GPU / 月（200分钟）",
+          "quotaDetails": [
+            "图像最多3个Fast并发；视频1个Fast并发。"
+          ],
+          "limits": [
+            "无Relax GPU额度；视频仅SD。"
+          ],
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Standard",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 30,
+          "annualMonthlyPrice": 24,
+          "annualTotal": 288,
+          "currency": "USD",
+          "priceText": "月付$30；年付$288，折$24/月。",
+          "quotaText": "15小时 Fast GPU / 月；Relax图像不限量",
+          "quotaDetails": [
+            "图像3个Fast或Relax并发；视频3个Fast并发。"
+          ],
+          "limits": [
+            "Relax不限量仅限图像，不含视频；无Stealth。"
+          ],
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 60,
+          "annualMonthlyPrice": 48,
+          "annualTotal": 576,
+          "currency": "USD",
+          "priceText": "月付$60；年付$576，折$48/月。",
+          "quotaText": "30小时 Fast GPU / 月；Relax图像与SD视频不限量",
+          "quotaDetails": [
+            "图像12 Fast / 3 Relax；视频6 Fast / 3 Relax并发；Stealth。"
+          ],
+          "limits": [
+            "无限Relax视频仅SD；HD及Fast仍消耗相应GPU额度。"
+          ],
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Mega",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 120,
+          "annualMonthlyPrice": 96,
+          "annualTotal": 1152,
+          "currency": "USD",
+          "priceText": "月付$120；年付$1,152，折$96/月。",
+          "quotaText": "60小时 Fast GPU / 月；Relax图像与SD视频不限量",
+          "quotaDetails": [
+            "图像12 Fast / 3 Relax；视频12 Fast / 3 Relax并发；Stealth。"
+          ],
+          "limits": [
+            "不限量有Relax模式及SD视频限制；额外Fast GPU为$4/小时。"
+          ],
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "公开通用API",
+          "kind": "api_usage",
+          "status": "not_applicable",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "官方不提供面向公众的通用API（极少明确授权例外）。",
+          "quotaText": "无公众API订阅或调用额度",
+          "quotaDetails": [],
+          "limits": [
+            "网页/Discord订阅不能当作API套餐。"
+          ],
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Midjourney官方套餐比较",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+        },
+        {
+          "title": "Midjourney官方API规则",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines"
+        }
+      ],
+      "notes": [
+        "4个付费档全部为自动续订月/年订阅；年付一次付全年。",
+        "额外GPU费用与会员额度分开；生成数量依模型、质量和模式而变。"
+      ]
+    },
+    {
+      "id": "flux",
+      "checkedAt": "2026-11-06",
+      "regionNote": "BFL官方美元按量计费，无订阅和席位费；自部署费用独立。",
+      "plans": [
+        {
+          "name": "FLUX 3 Image · API / Playground",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "每图：768² $0.041；1K $0.048；1.5K $0.070；2K $0.100；4K $0.607。",
+          "quotaText": "按输出图像分辨率与图数计费",
+          "quotaDetails": [],
+          "limits": [
+            "无固定月包含量；非月租会员。"
+          ],
+          "sourceUrls": [
+            "https://bfl.ai/pricing",
+            "https://docs.bfl.ai/quick_start/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "FLUX 3 Image Klein · API / Playground",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "每图：768² $0.008；1K $0.009；1.5K $0.011；2K $0.014；4K $0.036。",
+          "quotaText": "按输出图像分辨率与图数计费",
+          "quotaDetails": [],
+          "limits": [
+            "托管API付费与自行下载权重许可是两件事。"
+          ],
+          "sourceUrls": [
+            "https://bfl.ai/pricing",
+            "https://docs.bfl.ai/quick_start/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "FLUX 3 Video · API / Playground",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "文/图生视频：HD $0.15/秒、FHD $0.24、QHD $0.28、UHD $0.41；Draft仅HD $0.06/秒。",
+          "quotaText": "按视频秒与分辨率计费",
+          "quotaDetails": [
+            "视频转视频：HD $0.21/秒、FHD $0.27、QHD $0.31、UHD $0.45。"
+          ],
+          "limits": [
+            "无固定每月秒数；不同模式价目不可混用。"
+          ],
+          "sourceUrls": [
+            "https://bfl.ai/pricing",
+            "https://docs.bfl.ai/quick_start/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "FLUX 3 Image Klein · 自部署",
+          "kind": "self_hosted",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "权重下载不是托管套餐；硬件、推理和运维自行承担，其他商业使用需另核对许可报价。",
+          "quotaText": "不附API Credits或托管月额度",
+          "quotaDetails": [],
+          "limits": [
+            "Kommunity许可：非商用及符合条件用户的商业输出例外；不是无限制免费商用。"
+          ],
+          "sourceUrls": [
+            "https://huggingface.co/black-forest-labs/flux-3-image-klein"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "BFL官方当前价格",
+          "url": "https://bfl.ai/pricing"
+        },
+        {
+          "title": "BFL积分与计费说明",
+          "url": "https://docs.bfl.ai/quick_start/pricing"
+        },
+        {
+          "title": "Klein权重与许可",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein"
+        }
+      ],
+      "notes": [
+        "API与Playground同价；1 credit=$0.01，但不同模型按图或按秒计费。",
+        "当前FLUX3Video HD文/图生价为$0.15/秒，与较早型号页$0.17/秒不同，优先用当前定价页。"
+      ]
+    },
+    {
+      "id": "ideogram",
+      "checkedAt": "2026-11-06",
+      "regionNote": "国际站美元税前价；Team按人计费，订阅与API分开核对。",
+      "plans": [
+        {
+          "name": "Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "$0",
+          "quotaText": "符合条件的账号每周30 Credits",
+          "quotaDetails": [
+            "Google / Apple / Microsoft登录账号享免费周额度。"
+          ],
+          "limits": [
+            "邮箱密码注册不附免费积分；免费作品公开。"
+          ],
+          "sourceUrls": [
+            "https://docs.ideogram.ai/plans-and-billing/available-plans.md"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "Plus",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 20,
+          "annualMonthlyPrice": 15,
+          "annualTotal": 180,
+          "currency": "USD",
+          "priceText": "月付$20；年付$180，折$15/月。",
+          "quotaText": "2,400 Priority Credits / 月",
+          "quotaDetails": [
+            "私密生成、优质导出；额度耗尽后可在慢队列继续生成符合范围的Ideogram模型。"
+          ],
+          "limits": [
+            "慢队列不限量不覆盖自定义/合作伙伴模型、参考图、图像编辑或放大。",
+            "月度积分不结转；年付仍逐月发放。"
+          ],
+          "sourceUrls": [
+            "https://ideogram.ai/pricing/",
+            "https://docs.ideogram.ai/plans-and-billing/available-plans.md"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 60,
+          "annualMonthlyPrice": 42,
+          "annualTotal": 504,
+          "currency": "USD",
+          "priceText": "月付$60；年付$504，折$42/月。",
+          "quotaText": "7,500 Priority Credits / 月",
+          "quotaDetails": [
+            "批量生成及更大的生成队列。"
+          ],
+          "limits": [
+            "慢队列不限量有同样的模型与任务限制；月度积分不结转。"
+          ],
+          "sourceUrls": [
+            "https://ideogram.ai/pricing/",
+            "https://docs.ideogram.ai/plans-and-billing/available-plans.md"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Team",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 30,
+          "annualMonthlyPrice": 20,
+          "annualTotal": 240,
+          "currency": "USD",
+          "priceText": "每人月付$30；每人年付$240，折$20/人/月。",
+          "quotaText": "3,600 Priority Credits / 人 / 月",
+          "quotaDetails": [
+            "最少2人；统一账单与管理。"
+          ],
+          "limits": [
+            "价格是每席位，不是整队总价；月度积分不结转。"
+          ],
+          "sourceUrls": [
+            "https://ideogram.ai/pricing/",
+            "https://docs.ideogram.ai/plans-and-billing/available-plans.md"
+          ],
+          "priceUnit": "人/月",
+          "annualUnit": "人/年"
+        },
+        {
+          "name": "Ideogram 4.5 API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "Low $0.03/图；Medium $0.06/图；High纯提示$0.10/图、带参考或Precise Edit $0.22/图。",
+          "quotaText": "按图及质量档计费；无需应用订阅",
+          "quotaDetails": [
+            "Very low $0.008/图，仅带参考生成/Precise Edit，不用于纯提示生成。"
+          ],
+          "limits": [
+            "订阅积分不可直接当API调用次数；API定价页默认并发上限10个in-flight请求。"
+          ],
+          "sourceUrls": [
+            "https://ideogram.ai/models/4.5/",
+            "https://ideogram.ai/pricing/"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ideogram官方订阅价目",
+          "url": "https://ideogram.ai/pricing/"
+        },
+        {
+          "title": "Ideogram Plans and Credits（官方最后核对2026-10-15）",
+          "url": "https://docs.ideogram.ai/plans-and-billing/available-plans.md"
+        },
+        {
+          "title": "Ideogram4.5官方API价表",
+          "url": "https://ideogram.ai/models/4.5/"
+        }
+      ],
+      "notes": [
+        "旧Basic已停止销售，旧用户保留960 Credits/月；没有将历史Basic当新订阅选项。",
+        "慢速不限量仅适用于文档明确的Ideogram模型任务；参考图和编辑等仍需积分。"
+      ]
+    },
+    {
+      "id": "runway",
+      "checkedAt": "2026-11-06",
+      "regionNote": "国际站美元个人方案；Creative订阅与Runway Dev API独立报价。",
+      "plans": [
+        {
+          "name": "Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "$0",
+          "quotaText": "125 Credits（一次性）",
+          "quotaDetails": [
+            "5GB素材存储。"
+          ],
+          "limits": [
+            "不是每月125积分；仅部分模型可用。"
+          ],
+          "sourceUrls": [
+            "https://runway.com/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "Standard",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 15,
+          "annualMonthlyPrice": 12,
+          "annualTotal": 144,
+          "currency": "USD",
+          "priceText": "月付$15；年付折$12/月，全年$144一次支付。",
+          "quotaText": "625 Credits / 月",
+          "quotaDetails": [
+            "5个视频/图像并行生成；20GB存储。"
+          ],
+          "limits": [
+            "月积分不结转；同一积分可生成的内容随模型、时长、规格变化。"
+          ],
+          "sourceUrls": [
+            "https://runway.com/pricing"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 35,
+          "annualMonthlyPrice": 28,
+          "annualTotal": 336,
+          "currency": "USD",
+          "priceText": "月付$35；年付折$28/月，全年$336一次支付。",
+          "quotaText": "2,250 Credits / 月",
+          "quotaDetails": [
+            "15个视频/图像并行生成；100GB存储。"
+          ],
+          "limits": [
+            "月积分不结转。",
+            "Unlimited 4K upscaling是特定放大权益，不是视频生成不限量。"
+          ],
+          "sourceUrls": [
+            "https://runway.com/pricing"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Max",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 95,
+          "annualMonthlyPrice": 76,
+          "annualTotal": 912,
+          "currency": "USD",
+          "priceText": "月付$95；年付折$76/月，全年$912一次支付。",
+          "quotaText": "9,500 Credits / 月",
+          "quotaDetails": [
+            "20个视频/图像并行生成；500GB存储。",
+            "最多结转1个月未用积分。"
+          ],
+          "limits": [
+            "当前高档名为Max；勿套用旧Unlimited套餐。",
+            "Unlimited 4K upscaling不等于任意生成不限量。"
+          ],
+          "sourceUrls": [
+            "https://runway.com/pricing"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Runway Dev API",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "1 API credit=$0.01。Gen-4.5 $0.12/视频秒；Gen-4 Turbo $0.05/视频秒；Aleph 2.0 $0.28/秒。",
+          "quotaText": "按型号、时长与输出格式计费",
+          "quotaDetails": [
+            "Gen-4.5最低2秒；Gen-4 Turbo最低10 credits；Aleph最低56 credits。"
+          ],
+          "limits": [
+            "ProRes/PNG序列、10-bit或HDR可能另收附加费。",
+            "应用订阅额度不能当作API余额。"
+          ],
+          "sourceUrls": [
+            "https://dev.runwayml.com/pricing"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Runway Creative官方套餐",
+          "url": "https://runway.com/pricing"
+        },
+        {
+          "title": "Runway Dev API官方价目",
+          "url": "https://dev.runwayml.com/pricing"
+        }
+      ],
+      "notes": [
+        "年付总额为官方年付折合月价×12；按月发放Credits，不表示逐月扣款。",
+        "积分不是固定视频条数；页面换算示例只对应所列模型和时长。"
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "checkedAt": "2026-11-06",
+      "regionNote": "国际网页美元税前价；ElevenCreative、ElevenAPI、ElevenAgents额度口径应分开。",
+      "plans": [
+        {
+          "name": "Free · Creative",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "$0/月",
+          "quotaText": "10,000 Credits / 月",
+          "quotaDetails": [
+            "3个Studio项目。"
+          ],
+          "limits": [
+            "免费积分不结转；不能把Credits统一等同API字符或音频分钟。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "Starter · Creative",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 6,
+          "annualMonthlyPrice": 5,
+          "annualTotal": 60,
+          "currency": "USD",
+          "priceText": "常规$6/月；页面另显示首月$1。年付$60，折$5/月。",
+          "quotaText": "30,000 Credits / 月",
+          "quotaDetails": [
+            "20个Studio项目；含Instant Voice Cloning。"
+          ],
+          "limits": [
+            "当前首月促销资格以结账为准。",
+            "多产品共用积分池，消耗倍率依模型/产品。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing",
+            "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Creator · Creative",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 22,
+          "annualMonthlyPrice": 18.33,
+          "annualTotal": 220,
+          "currency": "USD",
+          "priceText": "常规$22/月，首月$11；年付$220，折约$18.33/月。",
+          "quotaText": "121,000 Credits / 月",
+          "quotaDetails": [
+            "Professional Voice Cloning。"
+          ],
+          "limits": [
+            "积分用于不同产品时不能按固定分钟换算。",
+            "付费未用积分最多结转2个月额度；降级/取消规则另见官网。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing",
+            "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Pro · Creative",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 99,
+          "annualMonthlyPrice": 82.5,
+          "annualTotal": 990,
+          "currency": "USD",
+          "priceText": "月付$99；官方年费=月费×10，年付$990一次支付，折$82.50/月。",
+          "quotaText": "600,000 Credits / 月",
+          "quotaDetails": [
+            "含Professional Voice Cloning；API可用44.1kHz PCM输出。"
+          ],
+          "limits": [
+            "Creative积分与API按模型计算的字符/分钟额度分开。",
+            "年付仍逐月发放积分，不是每月扣$82.50。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing",
+            "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Scale · Creative / 团队",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 299,
+          "annualMonthlyPrice": 249.17,
+          "annualTotal": 2990,
+          "currency": "USD",
+          "priceText": "月付$299；年付$2,990，折约$249.17/月。",
+          "quotaText": "1,800,000 Credits / 月；3席位",
+          "quotaDetails": [
+            "3个Professional Voice Clones；团队协作。"
+          ],
+          "limits": [
+            "本条为Scale团队档，Enterprise另行报价。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing",
+            "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "ElevenAPI · 按量",
+          "kind": "api_usage",
+          "status": "verified",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "v4 $0.08/1,000字符；v4 Turbo $0.04/1,000字符；Scribe v2 $0.22/音频小时。",
+          "quotaText": "按字符 / 音频小时；可选PAYG或订阅",
+          "quotaDetails": [
+            "API表另列Creator的v4字符额度275,000，不能用Creative的121,000积分直接替代。"
+          ],
+          "limits": [
+            "API与UI产品的单价、包含量和模型倍率不同。",
+            "本条仅为指定API模型代表单价，其他模型/功能另计。"
+          ],
+          "sourceUrls": [
+            "https://elevenlabs.io/pricing/api"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ElevenCreative官方套餐与年付FAQ",
+          "url": "https://elevenlabs.io/pricing"
+        },
+        {
+          "title": "ElevenAPI官方计费",
+          "url": "https://elevenlabs.io/pricing/api"
+        },
+        {
+          "title": "ElevenLabs年付与积分发放规则",
+          "url": "https://elevenlabs.io/docs/help-center/account/payment-billing/do-you-offer-annual-or-quarterly-plans"
+        }
+      ],
+      "notes": [
+        "官网FAQ明确年费=标准月费×10；年折合月价显示四舍五入，年费为一次付款。",
+        "官网部分促销横幅保留过去截止日期，未把横幅价格当长期标准价。",
+        "Business与Enterprise等未作为本次代表档展开。"
+      ]
+    },
+    {
+      "id": "suno",
+      "checkedAt": "2026-11-06",
+      "regionNote": "国际站美元价，税在结账计算；产品订阅不是第三方所谓Suno API。",
+      "plans": [
+        {
+          "name": "Free",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 0,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": "USD",
+          "priceText": "$0/月",
+          "quotaText": "50 Credits / 日；无固定每月歌曲下载额度",
+          "quotaDetails": [
+            "4个共享队列并发生成；v6-mini。"
+          ],
+          "limits": [
+            "每日积分重置、不累积；无商业使用权益。",
+            "可能有试用下载，不能当固定每月下载配额。"
+          ],
+          "sourceUrls": [
+            "https://suno.com/pricing",
+            "https://suno.com/account",
+            "https://help.suno.com/en/articles/13876865"
+          ],
+          "priceUnit": "月"
+        },
+        {
+          "name": "Pro",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 10,
+          "annualMonthlyPrice": 8,
+          "annualTotal": 96,
+          "currency": "USD",
+          "priceText": "月付$10；年付$96一次支付，折$8/月。",
+          "quotaText": "2,500 Credits / 月；20次歌曲下载 / 月",
+          "quotaDetails": [
+            "最多10首同时生成，优先队列；v6 / v6-wild。"
+          ],
+          "limits": [
+            "积分与下载数是独立额度。",
+            "订阅积分月末不结转；额外购买积分需有效订阅才能使用。"
+          ],
+          "sourceUrls": [
+            "https://suno.com/account",
+            "https://help.suno.com/en/articles/13876865",
+            "https://help.suno.com/en/articles/2524993"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "Premier",
+          "kind": "app_subscription",
+          "status": "verified",
+          "monthlyPrice": 30,
+          "annualMonthlyPrice": 24,
+          "annualTotal": 288,
+          "currency": "USD",
+          "priceText": "月付$30；年付$288一次支付，折$24/月。",
+          "quotaText": "10,000 Credits / 月；60次歌曲下载 / 月",
+          "quotaDetails": [
+            "最多10首同时生成；含Suno Studio。",
+            "官方帮助说明Studio工作流不受歌曲下载次数限制。"
+          ],
+          "limits": [
+            "不表示所有创作无限量；积分与功能另有消耗。",
+            "订阅积分不结转；下载条件依账户与工作流。"
+          ],
+          "sourceUrls": [
+            "https://suno.com/account",
+            "https://help.suno.com/en/articles/13876865",
+            "https://help.suno.com/en/articles/2524993"
+          ],
+          "priceUnit": "月",
+          "annualUnit": "年"
+        },
+        {
+          "name": "官方公开API报价",
+          "kind": "api_usage",
+          "status": "not_public",
+          "monthlyPrice": null,
+          "annualMonthlyPrice": null,
+          "annualTotal": null,
+          "currency": null,
+          "priceText": "本次在Suno官方公开定价与帮助中心未核实通用生成API的价格或额度。",
+          "quotaText": "未公开可核实的官方API套餐",
+          "quotaDetails": [],
+          "limits": [
+            "不把第三方代理、逆向接口或其他同名域名报价标为官方API。"
+          ],
+          "sourceUrls": [
+            "https://suno.com/pricing"
+          ],
+          "priceUnit": "月"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Suno官方定价",
+          "url": "https://suno.com/pricing"
+        },
+        {
+          "title": "Suno账号入口公开定价（含月付与年总付）",
+          "url": "https://suno.com/account"
+        },
+        {
+          "title": "Suno下载次数规则（2026-09-03）",
+          "url": "https://help.suno.com/en/articles/13876865"
+        },
+        {
+          "title": "Suno积分重置规则",
+          "url": "https://help.suno.com/en/articles/2524993"
+        }
+      ],
+      "notes": [
+        "生成积分不能直接等同最终歌曲数，编辑、参考输入和模式会影响消耗。",
+        "下载额度与生成额度分开；旧版“付费无限下载”等概括不适用于当前公开套餐。"
+      ]
+    }
+  ]
+}

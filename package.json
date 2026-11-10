@@ -1,0 +1,14 @@
+{
+  "name": "ai-model-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 模型、场景、Arena 排名与套餐的可溯源静态指南",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,1817 @@
+{
+  "checkedAt": "2026-11-06",
+  "scope": "官方公开资料核对与Arena分类榜摘录；静态快照",
+  "brands": [
+    {
+      "id": "doubao",
+      "name": "豆包 / Seed",
+      "maker": "字节跳动",
+      "tagline": "通用 Agent、代码工程与图像／视频创作分属不同模型。",
+      "scenes": [
+        "中文助手",
+        "多模态理解",
+        "代码与 Agent",
+        "图像与视频创作"
+      ],
+      "models": [
+        {
+          "name": "Seed2.1 Pro",
+          "kind": "通用多模态",
+          "features": [
+            "多步骤 Agent",
+            "代码工程",
+            "图像／视频理解"
+          ],
+          "useCase": "办公任务、研究辅助、代码交付",
+          "limits": "产品页未统一列出 API 上下文；接入需核对具体端点。",
+          "openness": "官方托管服务；此来源未提供开放权重",
+          "context": "以具体 API 型号为准",
+          "sourceUrls": [
+            "https://seed.bytedance.com/en/seed2_1"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Seed2.1 Turbo",
+          "kind": "通用多模态",
+          "features": [
+            "Seed2.1 家族",
+            "Agent 与代码",
+            "多模态理解"
+          ],
+          "useCase": "需要评估吞吐与成本的通用任务",
+          "limits": "Pro 与 Turbo 是不同规格；实际速度与价格需按端点核对。",
+          "openness": "官方托管服务；此来源未提供开放权重",
+          "context": "以具体 API 型号为准",
+          "sourceUrls": [
+            "https://seed.bytedance.com/en/seed2_1"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Seedream 5.0 Pro",
+          "kind": "图像生成／编辑",
+          "features": [
+            "密集信息图",
+            "空间标注编辑",
+            "原生多语言出图"
+          ],
+          "useCase": "海报、信息图与参考图编辑",
+          "limits": "生成文字与事实细节仍需人工核对；非通用对话模型。",
+          "openness": "官方托管服务；此来源未提供开放权重",
+          "context": "图像模型，不使用文本上下文作横向排名",
+          "sourceUrls": [
+            "https://seed.bytedance.com/en/seedream5_0_pro"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Seedance 2.5",
+          "kind": "视频生成／编辑",
+          "features": [
+            "音视频联合生成",
+            "最长单次30秒",
+            "参考与视频编辑"
+          ],
+          "useCase": "短片、多镜头叙事、参考素材驱动创作",
+          "limits": "官网称单次最长30秒并可延长；实际规格以开通端点为准。",
+          "openness": "官方托管服务；此来源未提供开放权重",
+          "context": "单次最长30秒",
+          "sourceUrls": [
+            "https://seed.bytedance.com/en/seedance2_5"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Seed2.1 官方产品页",
+          "url": "https://seed.bytedance.com/en/seed2_1"
+        },
+        {
+          "title": "Seedream 5.0 Pro 官方产品页",
+          "url": "https://seed.bytedance.com/en/seedream5_0_pro"
+        },
+        {
+          "title": "Seedance 2.5 官方产品页",
+          "url": "https://seed.bytedance.com/en/seedance2_5"
+        }
+      ],
+      "notes": [
+        "将原 Seed 2.0 首推更新为官网列出的 Seed2.1 Pro/Turbo。",
+        "以 Seedream 5.0 Pro、Seedance 2.5 替换原 Seedream 3.0 和含混的 VideoGen 2.0；未核实 MarsCode 当前品牌与免费政策，移出模型列表。",
+        "豆包应用、Seed 基座、即梦应用与火山 API 不等同；不能互相代用价格或能力。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#FB923C",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🎵"
+    },
+    {
+      "id": "qwen",
+      "name": "通义 Qwen / 万相",
+      "maker": "阿里巴巴",
+      "tagline": "云端多模态、开放权重和媒体生成需按具体型号区分。",
+      "scenes": [
+        "通用多模态",
+        "代码与推理",
+        "开放权重部署",
+        "图像与视频创作"
+      ],
+      "models": [
+        {
+          "name": "Qwen3.8-Max（qwen3.8-max）",
+          "kind": "云端通用多模态",
+          "features": [
+            "1M上下文",
+            "图像／视频理解",
+            "工具调用与结构化输出"
+          ],
+          "useCase": "复杂推理、代码与多模态业务流程",
+          "limits": "云端版和开放权重版能力不同；地区、内置工具与配额需分别确认。",
+          "openness": "云端托管型号；不等同开放权重版",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://help.aliyun.com/en/model-studio/text-generation-model"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Qwen3.8-2.4T-A95B",
+          "kind": "开放权重文本推理",
+          "features": [
+            "2.4T总参数／95B激活",
+            "仅文本输入",
+            "始终启用思考"
+          ],
+          "useCase": "自部署研究、文本代码与长任务",
+          "limits": "不支持视觉或关闭思考；大模型部署仍需算力与运维。",
+          "openness": "开放权重；Qwen3.8-Max 自定义许可",
+          "context": "支持1M长上下文；取决于推理配置",
+          "sourceUrls": [
+            "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+            "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Qwen Image 3.0 Pro（qwen-image-3.0-pro）",
+          "kind": "图像生成／编辑",
+          "features": [
+            "中英文文字渲染",
+            "复杂版式",
+            "文生图与图像编辑"
+          ],
+          "useCase": "含文字海报、信息密集图像与编辑",
+          "limits": "官方表列最高2048×2048、最多6张；云 API 不是同名开源权重承诺。",
+          "openness": "云端托管型号；按具体版本核实许可",
+          "context": "图像输出最高2048×2048",
+          "sourceUrls": [
+            "https://help.aliyun.com/en/model-studio/image-model"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Wan3.0-Video（wan3.0-video）",
+          "kind": "视频生成",
+          "features": [
+            "文／图／视频／音频参考",
+            "单次最长30秒",
+            "最高1080P"
+          ],
+          "useCase": "统一文生视频、首尾帧与参考视频生成",
+          "limits": "地区提供的型号不同；需核对配额与音视频具体参数。",
+          "openness": "云端托管型号；不把 Wan 家族开放性泛化到此端点",
+          "context": "单次最长30秒",
+          "sourceUrls": [
+            "https://help.aliyun.com/en/model-studio/wan3-0-video"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Qwen 文字与视觉模型表",
+          "url": "https://help.aliyun.com/en/model-studio/text-generation-model"
+        },
+        {
+          "title": "Qwen3.8 开放权重模型卡",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+        },
+        {
+          "title": "Qwen3.8 许可证",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE"
+        },
+        {
+          "title": "图像模型表",
+          "url": "https://help.aliyun.com/en/model-studio/image-model"
+        },
+        {
+          "title": "Wan3.0 官方模型说明",
+          "url": "https://help.aliyun.com/en/model-studio/wan3-0-video"
+        }
+      ],
+      "notes": [
+        "原文件 Qwen3-72B／Qwen3-7B 不应作为已核实具体型号保留；以官方可验证型号替换。",
+        "Qwen3.8-Max 云服务支持视觉、非思考、内置工具；Qwen3.8-2.4T-A95B 开放权重版仅文本、始终思考。",
+        "Qwen3.8 开放权重使用自定义许可，包含特定规模商业使用条件；不能一概标完全开源免费。",
+        "API 模型表将 qwen3.7-plus 定位为均衡、qwen3.8-flash 定位速度／成本取向，若页面需要更多型号可据官方文字模型表增加。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#F5A623",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "☁️"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "maker": "深度求索",
+      "tagline": "Flash 与 Pro 均支持思考和工具；视觉能力按型号区分。",
+      "scenes": [
+        "通用助手",
+        "代码与 Agent",
+        "文本推理",
+        "开放权重部署"
+      ],
+      "models": [
+        {
+          "name": "DeepSeek-V4.1-Flash-1017（deepseek-flash）",
+          "kind": "多模态推理",
+          "features": [
+            "文本＋图像输入",
+            "思考／非思考",
+            "JSON与工具调用"
+          ],
+          "useCase": "多模态问答、RAG、代码与 Agent",
+          "limits": "API 别名会跟随更新；模型输出是文本，不是图像生成。",
+          "openness": "开放权重；MIT",
+          "context": "1M tokens；最大输出384K",
+          "sourceUrls": [
+            "https://api-docs.deepseek.com/quick_start/pricing/",
+            "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+          ],
+          "price": "每百万tokens：缓存未命中输入$0.15非高峰/$0.30高峰；输出$0.60/$1.20，缓存命中另计。"
+        },
+        {
+          "name": "DeepSeek-V4-Pro-0813（deepseek-v4-pro）",
+          "kind": "文本推理",
+          "features": [
+            "思考／非思考",
+            "JSON与工具调用",
+            "长上下文"
+          ],
+          "useCase": "复杂文本推理与代码工作流",
+          "limits": "当前官方 API 定价表明确不支持视觉；不要按品牌统一标多模态。",
+          "openness": "开放权重；MIT",
+          "context": "1M tokens；最大输出384K",
+          "sourceUrls": [
+            "https://api-docs.deepseek.com/quick_start/pricing/",
+            "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+          ],
+          "price": "每百万tokens：缓存未命中输入$0.66非高峰/$1.32高峰；输出$1.98/$3.96，缓存命中另计。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DeepSeek 官方模型与定价",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+        },
+        {
+          "title": "Flash-1017 官方模型卡",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        },
+        {
+          "title": "V4-Pro 官方模型卡",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+        }
+      ],
+      "notes": [
+        "未在当前官方型号表核实原文件 DeepSeek R2，移除，不当作已发布旗舰。",
+        "V3.2 是历史型号；当前API入口为 deepseek-flash 和 deepseek-v4-pro。",
+        "旧 deepseek-v4-flash / deepseek-v4-flash-vision-exp 别名暂转向 Flash-1017，旧底层型号已退役。",
+        "高峰时段为周一至周五UTC01:00–04:00及06:00–10:00，排除中国法定节假日；价格需连同缓存、时段比较。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#A78BFA",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🔍"
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "maker": "月之暗面 Moonshot AI",
+      "tagline": "长上下文、多模态与代码 Agent；新一代为 K3.1 Pro。",
+      "scenes": [
+        "长文档",
+        "代码与 Agent",
+        "视觉理解",
+        "知识工作"
+      ],
+      "models": [
+        {
+          "name": "Kimi K3.1 Pro（kimi-k3.1-pro）",
+          "kind": "多模态推理",
+          "features": [
+            "1M上下文",
+            "原生视觉",
+            "代码／3D／金融研究取向"
+          ],
+          "useCase": "长任务、代码、文档与视觉分析",
+          "limits": "始终启用思考；官方提示 Web Search 更新中，近期不建议生产依赖。",
+          "openness": "开放权重；Kimi K3.1-Pro 自定义许可",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.kimi.ai/docs/models",
+            "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+            "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+            "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Kimi K3.1 Pro Highspeed",
+          "kind": "高速托管变体",
+          "features": [
+            "同等智能定位",
+            "官方称约2–3倍速度",
+            "1M上下文"
+          ],
+          "useCase": "需要更快响应的 K3.1 Pro 工作流",
+          "limits": "速度为官方描述；实际吞吐取决于负载与调用，需单独核对定价。",
+          "openness": "托管服务变体；不视为独立公开权重",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.kimi.ai/docs/models"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Kimi K3（kimi-k3）",
+          "kind": "开放权重多模态",
+          "features": [
+            "原生视觉",
+            "长任务 Agent",
+            "2.8T参数／104B激活"
+          ],
+          "useCase": "长代码任务、知识工作与自部署研究",
+          "limits": "属于上一代旗舰；部署资源与许可需单独评估。",
+          "openness": "开放权重；Kimi K3 自定义许可",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.kimi.ai/docs/models",
+            "https://huggingface.co/moonshotai/Kimi-K3"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kimi 官方当前型号与退役清单",
+          "url": "https://platform.kimi.ai/docs/models"
+        },
+        {
+          "title": "K3.1 Pro 官方使用说明",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        },
+        {
+          "title": "K3.1 Pro 官方权重",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+        },
+        {
+          "title": "K3.1 Pro 许可",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE"
+        },
+        {
+          "title": "K3 官方权重",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3"
+        }
+      ],
+      "notes": [
+        "官方模型清单已将 kimi-k2.5 及 moonshot-v1 系列标为 Deprecated，不能继续做推荐API入口。",
+        "K2.6/K2.7 Code 不向11月1日之后新用户开放，预计2026年12月末退役。",
+        "原表 Kimi 一律不开源为错误；K3/K3.1 Pro 已开放权重但带自定义许可。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#C084FC",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ernie",
+      "name": "文心 ERNIE",
+      "maker": "百度",
+      "tagline": "云端对话与开放权重基座并存；Base 不等于聊天模型。",
+      "scenes": [
+        "中文助手",
+        "云端文本生成",
+        "视觉文档",
+        "模型训练与部署"
+      ],
+      "models": [
+        {
+          "name": "ERNIE 5.1（ernie-5.1）",
+          "kind": "云端文本生成",
+          "features": [
+            "128K上下文",
+            "千帆API",
+            "官方当前文本清单"
+          ],
+          "useCase": "中文问答、文档与企业文本工作流",
+          "limits": "当前引用的官方型号表只在文本区列此型号，视觉能力不据此推断。",
+          "openness": "云端托管型号",
+          "context": "128K tokens；官方表最大输入119K",
+          "sourceUrls": [
+            "https://intl.cloud.baidu.com/en/doc/qianfan/s/7m95lyy43-intl-en"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "ERNIE 5.0（ernie-5.0）",
+          "kind": "云端文本／视觉",
+          "features": [
+            "文本与视觉理解",
+            "深度思考",
+            "128K上下文"
+          ],
+          "useCase": "图文问答、文档分析与推理",
+          "limits": "官方表输入与输出预算分别有限制；不要把产品家族全模态研究能力等同此API。",
+          "openness": "云端托管型号",
+          "context": "128K tokens；官方表最大输入119K",
+          "sourceUrls": [
+            "https://intl.cloud.baidu.com/en/doc/qianfan/s/7m95lyy43-intl-en"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "ERNIE-5.5-Flash-Base",
+          "kind": "开放权重预训练基座",
+          "features": [
+            "280B总参数／14B激活",
+            "长上下文",
+            "待后训练的Base"
+          ],
+          "useCase": "领域继续训练、指令微调、研究",
+          "limits": "预训练基座，不是可直接替换聊天助手的指令模型；许可含地域与商业条件。",
+          "openness": "开放权重；ERNIE 5.5 Flash Base 自定义许可",
+          "context": "128K训练；最高1M微调／推理",
+          "sourceUrls": [
+            "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+            "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "ERNIE-4.5-21B-A3B-Thinking",
+          "kind": "开放权重文本推理",
+          "features": [
+            "21B总参数／3B激活",
+            "工具调用",
+            "128K上下文"
+          ],
+          "useCase": "较小激活规模的文本推理与本地研究",
+          "limits": "官方注明思考长度增加，复杂推理更适合；部署显存需实测。",
+          "openness": "开放权重；Apache-2.0",
+          "context": "128K tokens",
+          "sourceUrls": [
+            "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Thinking"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "千帆官方模型表（2026-09-07）",
+          "url": "https://intl.cloud.baidu.com/en/doc/qianfan/s/7m95lyy43-intl-en"
+        },
+        {
+          "title": "ERNIE5.5 Flash Base 官方模型卡",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base"
+        },
+        {
+          "title": "ERNIE5.5 Flash Base 许可（2026-11-05）",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE"
+        },
+        {
+          "title": "ERNIE4.5 Thinking 官方模型卡",
+          "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Thinking"
+        }
+      ],
+      "notes": [
+        "原文 ERNIE 4.5 作为唯一旗舰及品牌不开源均不完整，补云端5.1/5.0与开放权重。",
+        "11月5日新发布 ERNIE5.5 Flash Base 是预训练基座，不应以5.5版本号直接取代对话首选。",
+        "5.5 Base 自定义许可的地域不包括欧盟、英国和韩国，商用另有条件；页面宜显示“查看许可证”链接，不标无条件商用。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#38BDF8",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🌊"
+    },
+    {
+      "id": "glm",
+      "name": "智谱 GLM / Z.ai",
+      "maker": "智谱 AI",
+      "tagline": "复杂软件工程与 Agent；5.3旗舰和多模态Flash能力有别。",
+      "scenes": [
+        "代码与 Agent",
+        "复杂文本推理",
+        "视觉工作流",
+        "开放权重部署"
+      ],
+      "models": [
+        {
+          "name": "GLM-5.3",
+          "kind": "文本推理",
+          "features": [
+            "代码与长任务",
+            "1M上下文",
+            "工具调用"
+          ],
+          "useCase": "软件工程、复杂文本分析与长任务 Agent",
+          "limits": "仅文本输入；思考不能关闭；不要按5.3-Flash能力反推旗舰支持视觉。",
+          "openness": "开放权重；GLM-5.3 自定义许可",
+          "context": "1M tokens；最大输出128K",
+          "sourceUrls": [
+            "https://docs.z.ai/guides/llm/glm-5.3",
+            "https://huggingface.co/zai-org/GLM-5.3",
+            "https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "GLM-5.3-Flash",
+          "kind": "多模态推理",
+          "features": [
+            "图像／视频／文件输入",
+            "320B总参数／18B激活",
+            "视觉编码与办公"
+          ],
+          "useCase": "视觉代码反馈、文档与多模态 Agent",
+          "limits": "Flash 名称不代表小到普通显卡可跑；思考不能关闭。",
+          "openness": "开放权重；MIT",
+          "context": "1M tokens；最大输出128K",
+          "sourceUrls": [
+            "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+            "https://huggingface.co/zai-org/GLM-5.3-Flash"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "GLM-5.3-FlashX",
+          "kind": "高速多模态托管变体",
+          "features": [
+            "多模态输入",
+            "工具调用",
+            "速度取向"
+          ],
+          "useCase": "追求响应速度的多模态工作流",
+          "limits": "官方称200 tokens/s；需实测服务吞吐，并核对Coding Plan与API不同的可用性。",
+          "openness": "托管服务变体；独立权重未据此确认",
+          "context": "1M tokens；最大输出128K",
+          "sourceUrls": [
+            "https://docs.z.ai/guides/vlm/glm-5.3-flash"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "GLM5.3 官方说明",
+          "url": "https://docs.z.ai/guides/llm/glm-5.3"
+        },
+        {
+          "title": "GLM5.3 官方权重",
+          "url": "https://huggingface.co/zai-org/GLM-5.3"
+        },
+        {
+          "title": "GLM5.3 许可",
+          "url": "https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE"
+        },
+        {
+          "title": "GLM5.3 Flash/FlashX 官方说明",
+          "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash"
+        },
+        {
+          "title": "GLM5.3 Flash 官方权重",
+          "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+        }
+      ],
+      "notes": [
+        "原 GLM-4-Plus/Long/Flash 为旧一代；当前代表改为5.3与5.3-Flash。",
+        "GLM-5.3与GLM-5.3-Flash许可不同：前者自定义，后者MIT。",
+        "删除清华背景即有学术能力优势、完全免费等缺少证据的品牌泛化；官方bench均不转写为全球排名。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#4ADE80",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🔮"
+    },
+    {
+      "id": "kling",
+      "name": "可灵 Kling",
+      "maker": "快手 / Kling AI",
+      "tagline": "围绕多参考素材、镜头控制和音画生成的视频创作模型",
+      "scenes": [
+        "广告视频",
+        "多镜头叙事",
+        "角色一致性",
+        "图像编辑"
+      ],
+      "models": [
+        {
+          "name": "Kling 4.0",
+          "kind": "视频生成 / 编辑",
+          "features": [
+            "原生音画生成",
+            "多模态参考",
+            "多关键帧控制"
+          ],
+          "useCase": "广告、短片和复杂运动镜头；组合参考图、视频、元素和声音。",
+          "limits": "参考素材合计最多15个；视频参考共计不超过30秒。10-bit HDR在指南中标为coming soon，不应列为已上线。",
+          "openness": "闭源；网页产品与API服务，具体权限及计费见官方界面。",
+          "context": "生成3–30秒；720p / 1080p / 4K；文本≤8,000 tokens。",
+          "sourceUrls": [
+            "https://kling.ai/quickstart/kling-4-model-user-guide"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Kling VIDEO 3.0 Omni",
+          "kind": "视频生成 / 编辑",
+          "features": [
+            "原生音频",
+            "多镜头分镜",
+            "角色与元素参考"
+          ],
+          "useCase": "人物、商品与场景需要跨镜头保持一致的视频；可为元素绑定声音。",
+          "limits": "单次最长15秒；不同模式与账号的可用参数以产品界面为准。",
+          "openness": "闭源；托管创作服务。",
+          "context": "最长15秒；支持文本、图像、视频和元素参考。",
+          "sourceUrls": [
+            "https://kling.ai/quickstart/klingai-video-3-omni-model-user-guide"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Kling IMAGE 3.0",
+          "kind": "图像生成 / 编辑",
+          "features": [
+            "最多10张参考图",
+            "自然语言修图",
+            "系列图一致性"
+          ],
+          "useCase": "IP形象、商品视觉、分镜图和品牌素材的多图参考与局部修改。",
+          "limits": "需检查主体细节、品牌文字和多图一致性；参考数量与素材要求以界面为准。",
+          "openness": "闭源；托管创作服务。",
+          "context": "文本及图像输入；最多10张参考图。",
+          "sourceUrls": [
+            "https://kling.ai/quickstart/klingai-image-3-model-user-guide"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kling 4.0 User Guide（2026-11-04）",
+          "url": "https://kling.ai/quickstart/kling-4-model-user-guide"
+        },
+        {
+          "title": "Kling VIDEO 3.0 Omni 官方指南",
+          "url": "https://kling.ai/quickstart/klingai-video-3-omni-model-user-guide"
+        },
+        {
+          "title": "Kling IMAGE 3.0 官方指南",
+          "url": "https://kling.ai/quickstart/klingai-image-3-model-user-guide"
+        }
+      ],
+      "notes": [
+        "原稿Kling 2.0不再作为当前主推版本；官方首页与2026-11-04指南已列Kling 4.0。",
+        "删除‘国内最强’‘物理感真实’等无评测范围的绝对排名。",
+        "Kling 4.0指南与第三方接入平台支持参数可能不同；本条采用Kling官方产品指南。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#e78831",
+      "region": "cn",
+      "origin": "🇨🇳 中国",
+      "emoji": "🎬"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "maker": "Anthropic",
+      "tagline": "按任务深度与延迟划分系列，支持图文理解、工具使用与长任务。",
+      "scenes": [
+        "代码开发",
+        "Agent 工作流",
+        "文档分析",
+        "信息抽取"
+      ],
+      "models": [
+        {
+          "name": "Claude Opus 5.5",
+          "kind": "通用 / Agent",
+          "features": [
+            "长任务编程",
+            "自适应思考",
+            "图文理解"
+          ],
+          "useCase": "多小时编程、重构与复杂知识工作。",
+          "limits": "输入为文字和图片，输出为文字；思考始终开启。",
+          "openness": "专有模型 / API",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+          ],
+          "price": "标准输入 $4 / 输出 $20，每百万 tokens；缓存与批处理另计"
+        },
+        {
+          "name": "Claude Sonnet 5.5",
+          "kind": "通用 / Agent",
+          "features": [
+            "日常编程",
+            "工具调用",
+            "速度与能力均衡"
+          ],
+          "useCase": "日常开发、数据分析、内容与企业工作流。",
+          "limits": "能力与延迟需按实际任务评测；并非音视频生成模型。",
+          "openness": "专有模型 / API",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+          ],
+          "price": "标准输入 $2 / 输出 $10，每百万 tokens；缓存与批处理另计"
+        },
+        {
+          "name": "Claude Haiku 5.5",
+          "kind": "轻量 / 批量任务",
+          "features": [
+            "低延迟定位",
+            "分类与路由",
+            "批量抽取"
+          ],
+          "useCase": "分类、抽取、路由和子 Agent。",
+          "limits": "超过 100K 输入 tokens 后适用另一价格档；迁移时注意 tokenizer 差异。",
+          "openness": "专有模型 / API",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+          ],
+          "price": "≤100K 输入：$0.10 / $0.50；>100K：$0.50 / $2.50（输入/输出，每百万 tokens）"
+        },
+        {
+          "name": "Claude Fable 5.1",
+          "kind": "深度推理 / Agent",
+          "features": [
+            "复杂推理",
+            "多步研究",
+            "长周期任务"
+          ],
+          "useCase": "高难度推理、多步研究和文档表格幻灯片工作。",
+          "limits": "官方相对延迟较高；思考始终开启；部分工具强制调用方式不支持。",
+          "openness": "专有模型 / API",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+          ],
+          "price": "标准输入 $10 / 输出 $50，每百万 tokens；缓存与批处理另计"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Anthropic 官方资料 1",
+          "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+        },
+        {
+          "title": "Anthropic 官方资料 2",
+          "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+        },
+        {
+          "title": "Anthropic 官方资料 3",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+        },
+        {
+          "title": "Anthropic 官方资料 4",
+          "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+        }
+      ],
+      "notes": [
+        "原文的“全球第一”“安全稳定不乱说”缺乏适用于全部任务的证据，已改成官方定位与能力边界。",
+        "原文统一写 200K 已不适用于这些当前型号。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#E8673A",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🧡"
+    },
+    {
+      "id": "gpt",
+      "name": "GPT / OpenAI",
+      "maker": "OpenAI",
+      "tagline": "通用推理、编程与工具调用分档选择；图像生成和实时语音使用专用模型。",
+      "scenes": [
+        "复杂推理",
+        "代码与 Agent",
+        "图像编辑",
+        "实时语音"
+      ],
+      "models": [
+        {
+          "name": "GPT-6 Astra",
+          "kind": "文本 / 视觉理解",
+          "features": [
+            "复杂推理",
+            "代码与工具调用",
+            "图文输入"
+          ],
+          "useCase": "复杂分析、研究与文档任务。",
+          "limits": "输出为文本，不直接生成音频或视频；长输入有额外计费规则。",
+          "openness": "托管 API",
+          "context": "1,050,000 tokens",
+          "price": "标准短上下文：输入 $10 / 输出 $50，每百万 tokens；工具另计。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-6-astra"
+          ]
+        },
+        {
+          "name": "GPT-6.1 Sol",
+          "kind": "文本 / 视觉理解",
+          "features": [
+            "代码与 Agent",
+            "推理档位可调",
+            "图文输入"
+          ],
+          "useCase": "编程、工具驱动的专业工作流。",
+          "limits": "具体工具支持以 API 型号页为准；产品默认上下文与 API 窗口不同。",
+          "openness": "托管 API",
+          "context": "1,050,000 tokens（API）",
+          "price": "标准短上下文：输入 $2 / 输出 $10，每百万 tokens；工具另计。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+          ]
+        },
+        {
+          "name": "GPT-6.1 Terra",
+          "kind": "文本 / 视觉理解",
+          "features": [
+            "视觉推理",
+            "电脑操作",
+            "自然写作"
+          ],
+          "useCase": "商品图匹配、技术图纸分析、应用界面操作与文案。",
+          "limits": "不直接输出音频或视频；具体工具支持需按 API 端点确认。",
+          "openness": "托管 API",
+          "context": "1,050,000 tokens",
+          "price": "标准短上下文：输入 $1 / 输出 $5，每百万 tokens；工具另计。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+          ]
+        },
+        {
+          "name": "GPT-6 Luna",
+          "kind": "文本 / 视觉理解",
+          "features": [
+            "高吞吐任务",
+            "推理可关闭",
+            "图文输入"
+          ],
+          "useCase": "批量分类、抽取、摘要等边界清楚的任务。",
+          "limits": "复杂任务应测成功率；长输入、缓存与工具另有计费规则。",
+          "openness": "托管 API",
+          "context": "1,050,000 tokens",
+          "price": "标准短上下文：输入 $0.10 / 输出 $0.50，每百万 tokens。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-6-luna"
+          ]
+        },
+        {
+          "name": "GPT-Image-2.6 Sunburst",
+          "kind": "图像生成 / 编辑",
+          "features": [
+            "文图输入",
+            "图像生成",
+            "细节编辑"
+          ],
+          "useCase": "复杂画面构图与图像编辑工作流。",
+          "limits": "不承担通用对话或视频生成；按文本/图像 tokens 分类计费。",
+          "openness": "托管 API",
+          "context": "不适用",
+          "price": "查看官方模型页的图像 token 计费。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
+          ]
+        },
+        {
+          "name": "GPT-Live 1",
+          "kind": "实时语音",
+          "features": [
+            "全双工对话",
+            "支持打断",
+            "委派后端 Agent"
+          ],
+          "useCase": "实时语音助手与可自然打断的对话体验。",
+          "limits": "后端推理和工具需另行配置与计费；不支持图像/视频输入。",
+          "openness": "托管 API",
+          "context": "按语音会话计费",
+          "price": "$0.05 / 分钟，按秒计费；后端模型和工具另计。",
+          "sourceUrls": [
+            "https://developers.openai.com/api/docs/models/gpt-live-1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenAI 官方模型目录",
+          "url": "https://developers.openai.com/api/docs/models"
+        },
+        {
+          "title": "OpenAI API 定价（区分处理档位）",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        },
+        {
+          "title": "OpenAI API 下线公告",
+          "url": "https://developers.openai.com/api/docs/deprecations"
+        },
+        {
+          "title": "GPT-4.1 历史型号规格",
+          "url": "https://developers.openai.com/api/docs/models/gpt-4.1"
+        }
+      ],
+      "notes": [
+        "原页 GPT-4.1 的 128K 上下文有误：官方历史规格为 1,047,576 tokens；当前模型页已标弃用，本页改列当前目录代表型号。",
+        "原页 DALL·E 3 不再作为现行推荐：API 官方公告列 2026-05-12 下线。",
+        "原页 Sora 不再列现行 API 候选：Videos API 与 Sora 2 系列官方下线日期为 2026-09-24；此结论限定 API。",
+        "价格为核验日公开标准档短上下文参考，不能与 ChatGPT 订阅费用混用。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#56A6F0",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🤖"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini / Google 创作模型",
+      "maker": "Google DeepMind",
+      "tagline": "覆盖多模态理解、推理与独立的图像、视频生成模型。",
+      "scenes": [
+        "多模态理解",
+        "长文档",
+        "Agent 工作流",
+        "图像与视频创作"
+      ],
+      "models": [
+        {
+          "name": "Gemini 4 Argon",
+          "kind": "多模态推理",
+          "features": [
+            "复杂软件工程",
+            "企业知识工作",
+            "长周期推理"
+          ],
+          "useCase": "复杂代码、专业研究与多步骤知识工作。",
+          "limits": "文字/图片/音频/视频输入，文字输出；可用渠道与权限需以平台实际开放为准。",
+          "openness": "专有模型",
+          "context": "合计最高 1M tokens",
+          "sourceUrls": [
+            "https://deepmind.google/models/model-cards/gemini-4-argon/",
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+          ],
+          "price": "查看官方定价"
+        },
+        {
+          "name": "Gemini 3.8 Flash",
+          "kind": "多模态 / Agent",
+          "features": [
+            "可调思考强度",
+            "软件工程",
+            "多模态输入"
+          ],
+          "useCase": "兼顾延迟与任务质量的 Agent、知识处理。",
+          "limits": "接收文字、图片、音频和视频，输出文字；不等同于图像或视频生成接口。",
+          "openness": "专有模型",
+          "context": "输入最高 1M / 输出最高 64K tokens",
+          "sourceUrls": [
+            "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+          ],
+          "price": "查看官方定价"
+        },
+        {
+          "name": "Nano Banana 2.1",
+          "kind": "图像生成 / 编辑",
+          "features": [
+            "图文输入",
+            "图像编辑",
+            "图文输出"
+          ],
+          "useCase": "对话式生成和修改图片。",
+          "limits": "属于 Gemini 图像模型；生成文字、身份与细节仍需人工核对。",
+          "openness": "专有模型",
+          "context": "输入最高 1M tokens",
+          "sourceUrls": [
+            "https://deepmind.google/models/model-cards/nano-banana-2-1/"
+          ],
+          "price": "查看官方定价"
+        },
+        {
+          "name": "Veo 3.1",
+          "kind": "视频生成",
+          "features": [
+            "文生视频",
+            "图生视频",
+            "原生音视频"
+          ],
+          "useCase": "分镜、广告短片、创意预演。",
+          "limits": "时长、分辨率、延长与参考图能力依具体接口和套餐；不能据此承诺任意长片。",
+          "openness": "专有模型",
+          "context": "视频参数依接口",
+          "sourceUrls": [
+            "https://deepmind.google/models/veo/"
+          ],
+          "price": "查看官方定价"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google DeepMind 官方资料 1",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/"
+        },
+        {
+          "title": "Google DeepMind 官方资料 2",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "title": "Google DeepMind 官方资料 3",
+          "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+        },
+        {
+          "title": "Google DeepMind 官方资料 4",
+          "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/"
+        },
+        {
+          "title": "Google DeepMind 官方资料 5",
+          "url": "https://deepmind.google/models/veo/"
+        }
+      ],
+      "notes": [
+        "按已核对的 DeepMind 官方模型卡和产品页收录；未把未核实的 API ID 写入页面。",
+        "没有将搜索工具描述成模型原生知识实时更新；联网检索需具体产品或接口支持。",
+        "原图像代表 Imagen 3 更新为有当前官方模型卡的 Nano Banana 2.1；这不是说 Imagen 系列已停用。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#34C98A",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "💎"
+    },
+    {
+      "id": "llama",
+      "name": "Meta · Llama / Muse",
+      "maker": "Meta",
+      "tagline": "保留 Llama 开放权重系列，并补充新的 Muse Spark Open。",
+      "scenes": [
+        "自托管",
+        "多模态理解",
+        "模型定制",
+        "Agent 开发"
+      ],
+      "models": [
+        {
+          "name": "Muse Spark Open",
+          "kind": "多模态 / 开放权重",
+          "features": [
+            "816B 总参数",
+            "42B 激活参数",
+            "图文音视频输入"
+          ],
+          "useCase": "自托管多模态 Agent 和编码任务。",
+          "limits": "BF16 权重约 1.65 TB，推理另需缓存与运行内存；属于大型部署。",
+          "openness": "开放权重 / Muse Model License",
+          "context": "1,048,576 tokens",
+          "sourceUrls": [
+            "https://dev.meta.ai/docs/muse-spark-open"
+          ],
+          "price": "下载权重不等于部署免费；另计硬件、运维或托管 API"
+        },
+        {
+          "name": "Llama 4 Maverick",
+          "kind": "多模态 / 开放权重",
+          "features": [
+            "原生图文理解",
+            "MoE 架构",
+            "17B 激活 / 400B 总参数"
+          ],
+          "useCase": "自托管图文问答、文本与代码应用。",
+          "limits": "输出为文本和代码；总参数与显存需求不能仅按激活参数估计。",
+          "openness": "开放权重 / Llama 4 Community License",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+          ],
+          "price": "硬件、推理服务与运维另计"
+        },
+        {
+          "name": "Llama 4 Scout",
+          "kind": "多模态 / 开放权重",
+          "features": [
+            "长上下文",
+            "17B 激活 / 109B 总参数",
+            "图文输入"
+          ],
+          "useCase": "长文档与图文理解的自托管应用。",
+          "limits": "10M 为模型卡窗口，不保证全窗口任务效果；实际支持取决于部署引擎与资源。",
+          "openness": "开放权重 / Llama 4 Community License",
+          "context": "10M tokens",
+          "sourceUrls": [
+            "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "https://dev.meta.ai/llama/models/llama-4"
+          ],
+          "price": "硬件、推理服务与运维另计"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Meta 官方资料 1",
+          "url": "https://dev.meta.ai/docs/muse-spark-open"
+        },
+        {
+          "title": "Meta 官方资料 2",
+          "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+        },
+        {
+          "title": "Meta 官方资料 3",
+          "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+        },
+        {
+          "title": "Meta 官方资料 4",
+          "url": "https://dev.meta.ai/llama/models/llama-4"
+        }
+      ],
+      "notes": [
+        "Llama 4 是自定义社区许可证开放权重，不能笼统标成完全开源且无限制商用。",
+        "Meta 当前不只有 Llama；Muse Spark Open 已有官方文档。",
+        "Llama 4 官方列出的 12 种受支持语言不含中文，中文业务需专门实测。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#60A5FA",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🦙"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "maker": "Mistral AI",
+      "tagline": "通用多模态、可部署混合模型与文档、代码专用服务并存。",
+      "scenes": [
+        "自托管",
+        "企业文档",
+        "代码补全",
+        "多模态理解"
+      ],
+      "models": [
+        {
+          "name": "Mistral Large 4",
+          "kind": "多模态 / 开放权重",
+          "features": [
+            "MoE 架构",
+            "结构化输出",
+            "工具调用"
+          ],
+          "useCase": "多模态问答、文档分析和 Agent。",
+          "limits": "52B 激活、1.05T 总参数；大模型部署资源需单独估算。 提供 Model-as-a-Service 业务的商用需另获许可。",
+          "openness": "开放权重 / Mistral Ecosystem Open Weight License",
+          "context": "1M tokens",
+          "sourceUrls": [
+            "https://docs.mistral.ai/models/mistral-large-4-0"
+          ],
+          "price": "标准输入 $0.70 / 输出 $2.10，每百万 tokens；缓存另计"
+        },
+        {
+          "name": "Mistral Small 4",
+          "kind": "通用 / 开放权重",
+          "features": [
+            "指令与推理统一",
+            "代码能力",
+            "6.5B 激活参数"
+          ],
+          "useCase": "自托管通用、推理与编码工作流。",
+          "limits": "119B 总参数，部署内存并不等于 6.5B 激活参数的存储量。",
+          "openness": "开放权重 / Apache 2.0",
+          "context": "256K tokens",
+          "sourceUrls": [
+            "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+          ],
+          "price": "输入 $0.15 / 输出 $0.60，每百万 tokens"
+        },
+        {
+          "name": "Codestral 25.08",
+          "kind": "代码补全",
+          "features": [
+            "FIM 中间补全",
+            "低延迟定位",
+            "高频代码生成"
+          ],
+          "useCase": "IDE 实时代码补全和生成。",
+          "limits": "代码补全专用定位；不能将旧 Mamba 型号的开源属性套用于本型号。",
+          "openness": "商业 API / Premier",
+          "context": "128K tokens",
+          "sourceUrls": [
+            "https://docs.mistral.ai/models/codestral-25-08"
+          ],
+          "price": "输入 $0.30 / 输出 $0.90，每百万 tokens"
+        },
+        {
+          "name": "OCR 4.1",
+          "kind": "文档识别服务",
+          "features": [
+            "段落边界框",
+            "结构块标签",
+            "块级置信度"
+          ],
+          "useCase": "PDF、票据和扫描文档结构化。",
+          "limits": "文档识别服务，与通用对话模型按 token 计费口径不同。",
+          "openness": "商业 API / Premier",
+          "context": "按页处理",
+          "sourceUrls": [
+            "https://docs.mistral.ai/models/ocr-4-1"
+          ],
+          "price": "标准 $4 / 1000 页；标注页 $5 / 1000 页"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mistral AI 官方资料 1",
+          "url": "https://docs.mistral.ai/models/mistral-large-4-0"
+        },
+        {
+          "title": "Mistral AI 官方资料 2",
+          "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+        },
+        {
+          "title": "Mistral AI 官方资料 3",
+          "url": "https://docs.mistral.ai/models/codestral-25-08"
+        },
+        {
+          "title": "Mistral AI 官方资料 4",
+          "url": "https://docs.mistral.ai/models/ocr-4-1"
+        },
+        {
+          "title": "Large 4 开放权重与许可说明",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+        }
+      ],
+      "notes": [
+        "法国公司身份不代表产品天然满足所有 GDPR 或数据驻留要求；需看具体部署和合同。",
+        "原 Large 2、Medium 3 等历史主力不再作为当前代表；官方目录已有 Large 4 与 Small 4。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#F472B6",
+      "region": "us",
+      "origin": "🇫🇷 法国",
+      "emoji": "🌪️"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "maker": "Midjourney",
+      "tagline": "以图像创作、个性化审美与风格控制为主要产品方向。",
+      "scenes": [
+        "概念设计",
+        "风格探索",
+        "插画",
+        "图像编辑"
+      ],
+      "models": [
+        {
+          "name": "Midjourney V8.2",
+          "kind": "图像生成",
+          "features": [
+            "当前默认版本",
+            "个性化审美",
+            "Edit Model"
+          ],
+          "useCase": "创意设计、风格探索和概念图。",
+          "limits": "专有产品；版本间参数兼容性不同，生成结果需核对。",
+          "openness": "专有模型 / 网页与 Discord",
+          "context": "图像任务",
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+          ],
+          "price": "订阅与 GPU 时间计费，查看官方套餐",
+          "availability": "官方网页 / Discord；未提供面向公众的通用 API"
+        },
+        {
+          "name": "Midjourney V8.1",
+          "kind": "图像生成",
+          "features": [
+            "较快生成定位",
+            "2K HD",
+            "Raw 模式"
+          ],
+          "useCase": "较重视响应速度和提示词遵循的图像探索。",
+          "limits": "HD 与部分编辑操作有兼容性限制，费用按 GPU 时间计算。",
+          "openness": "专有模型 / 网页与 Discord",
+          "context": "图像任务",
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+          ],
+          "price": "订阅与 GPU 时间计费，查看官方套餐",
+          "availability": "官方网页 / Discord；未提供面向公众的通用 API"
+        },
+        {
+          "name": "Niji 7",
+          "kind": "动漫 / 插画",
+          "features": [
+            "动漫审美",
+            "线条细节",
+            "提示词遵循"
+          ],
+          "useCase": "动漫人物、插画和东方风格创作。",
+          "limits": "偏明确字面描述，宽泛风格词的行为可能与旧版不同。",
+          "openness": "专有模型 / Midjourney 与 Niji 产品",
+          "context": "图像任务",
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+          ],
+          "price": "订阅与 GPU 时间计费，查看官方套餐",
+          "availability": "官方网页 / Discord；未提供面向公众的通用 API"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Midjourney 官方资料 1",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+        },
+        {
+          "title": "Midjourney 官方 API 使用规则",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines"
+        }
+      ],
+      "notes": [
+        "原文“只能通过 Discord”已不适用，官方同时提供网页入口。",
+        "V7 已不是默认版本；官方版本页列 V8.2 与 Niji 7。",
+        "官方网页和 Discord 不等于公开通用 API；官方规则仅保留少量明确授权例外。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#2d3748",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🎭"
+    },
+    {
+      "id": "flux",
+      "name": "FLUX",
+      "maker": "Black Forest Labs",
+      "tagline": "图像布局与编辑控制、开放权重变体，以及独立视频生成模型。",
+      "scenes": [
+        "图像编辑",
+        "可控布局",
+        "自托管图像",
+        "音视频创作"
+      ],
+      "models": [
+        {
+          "name": "FLUX 3 Image",
+          "kind": "图像生成 / 编辑",
+          "features": [
+            "边界框布局",
+            "原生 2K / 4K",
+            "局部编辑"
+          ],
+          "useCase": "需要明确布局与细节控制的图像生产。",
+          "limits": "模型输出仍需核对；该型号自托管权重需商业授权。",
+          "openness": "API / 可申请商业权重许可",
+          "context": "图像任务",
+          "sourceUrls": [
+            "https://bfl.ai/models/flux-3-image"
+          ],
+          "price": "查看官方定价与商业权重许可"
+        },
+        {
+          "name": "FLUX 3 Image Klein",
+          "kind": "图像 / 开放权重",
+          "features": [
+            "最多 10 张参考图",
+            "边界框布局",
+            "5.6B 图像变换器"
+          ],
+          "useCase": "自托管编辑、生成与多参考图组合。",
+          "limits": "需配提示扩写器；边界框不是硬蒙版，可能改动框外内容。",
+          "openness": "开放权重 / FLUX Kommunity License v1.0（商用有条件）",
+          "context": "最多 10 张参考图",
+          "sourceUrls": [
+            "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+            "https://bfl.ai/models/flux-3-image-klein"
+          ],
+          "price": "自托管资源另计；商业许可条件见模型卡"
+        },
+        {
+          "name": "FLUX 3 Video",
+          "kind": "视频生成",
+          "features": [
+            "原生同步音频",
+            "关键帧控制",
+            "续接与视频编辑"
+          ],
+          "useCase": "短片、广告、分镜和连续镜头探索。",
+          "limits": "单次最高 20 秒；分辨率、草稿与视频编辑计费不同。",
+          "openness": "官方 API；并非全系列开放权重",
+          "context": "单次最高 20 秒 / 最高 UHD",
+          "sourceUrls": [
+            "https://bfl.ai/models/flux-3-video"
+          ],
+          "price": "文/图生视频：Draft HD $0.06/秒；标准 HD $0.15/秒、FHD $0.24/秒，其他档另计。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Black Forest Labs 官方资料 1",
+          "url": "https://bfl.ai/models/flux-3-image"
+        },
+        {
+          "title": "Black Forest Labs 官方资料 2",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein"
+        },
+        {
+          "title": "Black Forest Labs 官方资料 3",
+          "url": "https://bfl.ai/models/flux-3-image-klein"
+        },
+        {
+          "title": "Black Forest Labs 官方资料 4",
+          "url": "https://bfl.ai/models/flux-3-video"
+        }
+      ],
+      "notes": [
+        "原文将 FLUX 全品牌统一标开源不准确，需逐型号看许可。",
+        "Klein 模型卡允许非商业及特定合资格用户的商业输出例外；不代表无限制商用或免费训练/分发。",
+        "FLUX 3 Image Klein 官方模型卡与较早产品页的许可说明有差异，页面应优先链接当前模型卡。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#a44b6f",
+      "region": "us",
+      "origin": "🇩🇪 德国",
+      "emoji": "◈"
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "maker": "Ideogram",
+      "tagline": "聚焦图中文字、版式、精确修图与可编辑矢量输出",
+      "scenes": [
+        "海报与品牌图",
+        "文字排版",
+        "商品修图",
+        "SVG设计"
+      ],
+      "models": [
+        {
+          "name": "Ideogram 4.5",
+          "kind": "图像生成 / 精确编辑",
+          "features": [
+            "多轮图像编辑",
+            "最多5张参考图",
+            "原生2K"
+          ],
+          "useCase": "商品图、海报、文字修改和需要反复精修的视觉素材；Precise Edit提供遮罩编辑。",
+          "limits": "文本上限10,000字符；参考图最多5张；部分3.0样式预设不在4.5提供。",
+          "openness": "托管App / MCP / API；未在已核对的4.5页面确认公开权重。",
+          "context": "1K / 2K输出；透明背景选项；四档质量，价格见官方页。",
+          "sourceUrls": [
+            "https://ideogram.ai/models/4.5/",
+            "https://docs.ideogram.ai/create/models.md"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Ideogram 4.0",
+          "kind": "图像生成",
+          "features": [
+            "多语言文字",
+            "版式控制",
+            "开放量化权重"
+          ],
+          "useCase": "横幅、海报、缩略图和企业视觉生产；可按许可自部署。",
+          "limits": "公开量化权重默认仅限非商用研究；商用自部署需相应授权，面向客户或API式服务需企业许可。App的4.0参考图设置与API接入可能不同。",
+          "openness": "开放权重，非商用协议；商业自部署需另购许可。",
+          "context": "App支持1K / 2K及23:9、3:1等宽画幅；独立Transparent型号可生成透明底。",
+          "sourceUrls": [
+            "https://ideogram.ai/models/4.0/",
+            "https://ideogram.ai/licensing/",
+            "https://docs.ideogram.ai/create/models.md"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Ideogram Vector",
+          "kind": "矢量图生成 / 转换",
+          "features": [
+            "文字生成SVG",
+            "图像转矢量",
+            "可编辑图形"
+          ],
+          "useCase": "可缩放插画、标识和后续要在矢量软件中编辑的设计素材。",
+          "limits": "需检查字形、路径和设计权利；按SVG与质量计费，不等同普通位图模型。",
+          "openness": "托管App / API；本次未确认公开权重。",
+          "context": "API端点 /v2/svg/generate/ideogram-vector-1 与 /v2/svg/vectorize/ideogram-vector-1。",
+          "sourceUrls": [
+            "https://ideogram.ai/models/vector/"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ideogram 4.5 官方型号与API",
+          "url": "https://ideogram.ai/models/4.5/"
+        },
+        {
+          "title": "Ideogram 4.0 官方型号",
+          "url": "https://ideogram.ai/models/4.0/"
+        },
+        {
+          "title": "Ideogram 商业与开放权重许可",
+          "url": "https://ideogram.ai/licensing/"
+        },
+        {
+          "title": "Ideogram 当前产品模型对比",
+          "url": "https://docs.ideogram.ai/create/models.md"
+        },
+        {
+          "title": "Ideogram Vector 官方型号",
+          "url": "https://ideogram.ai/models/vector/"
+        }
+      ],
+      "notes": [
+        "原稿Ideogram 2.0更新至4.5 / 4.0；4.0存在开放权重，不能再将整个品牌一概标为闭源。",
+        "旧文档首页搜索索引仍可能返回3.0；已实际打开当前主页、模型页面及新models.md，按新页面更新。",
+        "开放权重不等于无限制开源商用，需保留具体许可区别。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#6660cc",
+      "region": "us",
+      "origin": "🇨🇦 加拿大",
+      "emoji": "Aa"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "maker": "Runway",
+      "tagline": "生成与后期编辑分工清楚的视频创作平台",
+      "scenes": [
+        "文生视频",
+        "图生视频",
+        "视频重绘",
+        "影视后期"
+      ],
+      "models": [
+        {
+          "name": "Gen-4.5",
+          "kind": "视频生成",
+          "features": [
+            "文生视频",
+            "图生视频",
+            "镜头与动作控制"
+          ],
+          "useCase": "从文字或静帧生成短视频，用于广告概念、分镜验证与视频素材制作。",
+          "limits": "API单次2–10秒；文生视频与图生视频支持的画幅不同。按API参数核对，不把平台聚合的其他厂商模型当成Runway自研。",
+          "openness": "闭源；Runway网页与API服务。",
+          "context": "API生成2–10秒；文生视频支持横版1280×720和竖版720×1280。",
+          "sourceUrls": [
+            "https://docs.dev.runwayml.com/api-details/api_changelog/",
+            "https://docs.dev.runwayml.com/assets/inputs/"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Aleph 2.0",
+          "kind": "视频编辑",
+          "features": [
+            "自然语言视频编辑",
+            "关键帧引导",
+            "背景 / 服装 / 光照修改"
+          ],
+          "useCase": "已有视频的重打光、背景替换、风格调整与物体修改。",
+          "limits": "API输入2–30秒、≤30 FPS；最多5张关键帧图；输出匹配输入分辨率、最高1080p。",
+          "openness": "闭源；Runway网页与API服务。",
+          "context": "视频转视频；API模型ID为aleph2。",
+          "sourceUrls": [
+            "https://docs.dev.runwayml.com/api-details/api_changelog/",
+            "https://docs.dev.runwayml.com/assets/inputs/",
+            "https://help.runwayml.com/hc/en-us/articles/52150503729171-Aleph-2-0-Prompting-Guide"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Runway API 模型目录",
+          "url": "https://docs.dev.runwayml.com/guides/models/"
+        },
+        {
+          "title": "Runway API 更新记录",
+          "url": "https://docs.dev.runwayml.com/api-details/api_changelog/"
+        },
+        {
+          "title": "Runway API 输入要求",
+          "url": "https://docs.dev.runwayml.com/assets/inputs/"
+        },
+        {
+          "title": "Aleph 2.0 提示指南",
+          "url": "https://help.runwayml.com/hc/en-us/articles/52150503729171-Aleph-2-0-Prompting-Guide"
+        }
+      ],
+      "notes": [
+        "原稿Gen-3系列与Act-One不宜继续标为当前旗舰。",
+        "Runway Dev官方记录：Gen-3 Alpha Turbo与Gen-4 Aleph于2026-07-30下线；其旧模型ID请求会失败。",
+        "当前官网/API平台还聚合其他厂商模型，必须区分平台能力和Runway自研模型能力。",
+        "定价按模型、时长和输出格式分别计费，见官方定价页：https://dev.runwayml.com/pricing"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#111827",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🛫"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "maker": "ElevenLabs",
+      "tagline": "将表现力、实时延迟与长文本处理拆分为不同语音模型",
+      "scenes": [
+        "角色配音",
+        "有声书",
+        "实时语音助手",
+        "多语言语音"
+      ],
+      "models": [
+        {
+          "name": "Eleven v4",
+          "kind": "语音合成 / 对话",
+          "features": [
+            "情绪与表演控制",
+            "90+语言",
+            "多角色对话"
+          ],
+          "useCase": "角色配音、情绪对白、有声书和跨语言内容制作。",
+          "limits": "单次10,000字符；语音克隆需具备相应权利；效果与声音、语言和脚本有关。",
+          "openness": "闭源；托管API与产品。",
+          "context": "模型ID eleven_v4；通过Text to Dialogue API使用。",
+          "sourceUrls": [
+            "https://elevenlabs.io/docs/overview/models/"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Eleven v4 Turbo",
+          "kind": "实时语音合成",
+          "features": [
+            "实时对话",
+            "音频标签控制",
+            "90+语言"
+          ],
+          "useCase": "客服语音Agent、交互式角色和实时AI助手。",
+          "limits": "官方约100ms为模型中位延迟，排除应用与网络延迟，不代表端到端响应。",
+          "openness": "闭源；Text to Dialogue WebSocket服务。",
+          "context": "模型ID eleven_v4_turbo；通过对话WebSocket使用。",
+          "sourceUrls": [
+            "https://elevenlabs.io/docs/overview/models/"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Eleven Flash v2.5",
+          "kind": "低延迟语音合成",
+          "features": [
+            "32种语言",
+            "40,000字符上限",
+            "速度与成本取向"
+          ],
+          "useCase": "批量播报、低延迟交互和对成本敏感的语音应用。",
+          "limits": "语言覆盖少于v4；官方延迟指标不含应用与网络，需做真实链路测试。",
+          "openness": "闭源；托管API。",
+          "context": "模型ID eleven_flash_v2_5；单次40,000字符。",
+          "sourceUrls": [
+            "https://elevenlabs.io/docs/overview/models/"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ElevenLabs 官方模型目录",
+          "url": "https://elevenlabs.io/docs/overview/models/"
+        }
+      ],
+      "notes": [
+        "原稿Turbo v2.5已被官方列入deprecated，推荐使用Flash v2.5替代。",
+        "Eleven v3仍存在，但官方文档已称其为上一代，当前代表模型更新为v4与v4 Turbo。",
+        "删除‘全球最佳’‘克隆任何人’等表述，声音克隆能力与权利授权分开说明。",
+        "价格、字符额度和并发随套餐变化，见官方API定价。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#f59e0b",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🎙️"
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "maker": "Suno",
+      "tagline": "同一代音乐模型按可控创作、探索和快速草稿分工",
+      "scenes": [
+        "完整歌曲",
+        "创意配乐",
+        "音乐风格探索",
+        "歌曲编辑"
+      ],
+      "models": [
+        {
+          "name": "Suno v6",
+          "kind": "音乐生成 / 编辑",
+          "features": [
+            "风格与结构控制",
+            "自然语言局部编辑",
+            "多素材参考"
+          ],
+          "useCase": "明确风格、人声、乐器和结构的歌曲创作与精修。",
+          "limits": "Pro / Premier订阅可用；单次最长8分钟；商用及下载权益应另核对当前套餐条款。",
+          "openness": "闭源；Suno产品内模型，勿把非官方代理接口当作官方API。",
+          "context": "可在Simple模式组合歌曲、播放列表、音频、图像和视频参考。",
+          "sourceUrls": [
+            "https://help.suno.com/en/articles/13924737",
+            "https://help.suno.com/en/articles/13924801",
+            "https://help.suno.com/en/articles/13924481"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Suno v6-wild",
+          "kind": "音乐生成",
+          "features": [
+            "实验性风格",
+            "跨类型融合",
+            "探索意外结果"
+          ],
+          "useCase": "旋律、编曲和风格方向尚未确定时探索创意。",
+          "limits": "Pro / Premier订阅可用；结果的不可预测性是官方定位的一部分；最长8分钟。",
+          "openness": "闭源；Suno产品内模型。",
+          "context": "与v6同代的探索变体。",
+          "sourceUrls": [
+            "https://help.suno.com/en/articles/13924737",
+            "https://help.suno.com/en/articles/13924801"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        },
+        {
+          "name": "Suno v6-mini",
+          "kind": "音乐生成",
+          "features": [
+            "快速草稿",
+            "轻量迭代",
+            "免费方案可用"
+          ],
+          "useCase": "快速尝试创作概念、制作音乐草稿。",
+          "limits": "所有方案可用；生成额度受套餐与积分限制，不能标为不限量；最长8分钟。",
+          "openness": "闭源；Suno产品内模型。",
+          "context": "v6轻量变体；全体用户可用。",
+          "sourceUrls": [
+            "https://help.suno.com/en/articles/13924737",
+            "https://help.suno.com/en/articles/13924801"
+          ],
+          "price": "按具体渠道、套餐与用量查看官方定价；自部署另计算力和运维。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Suno Current Models: v6（2026-09-09）",
+          "url": "https://help.suno.com/en/articles/13924737"
+        },
+        {
+          "title": "Suno v6 新功能与时长",
+          "url": "https://help.suno.com/en/articles/13924801"
+        },
+        {
+          "title": "Suno v6 FAQ与旧型号退役说明",
+          "url": "https://help.suno.com/en/articles/13924481"
+        }
+      ],
+      "notes": [
+        "原稿v4 / v3.5已不应作为当前可选型号。官方v6 FAQ称v6以前的所有型号已退役，旧作品仍保留。",
+        "原稿‘付费后无限生成’需删除，实际按套餐与积分处理。",
+        "模型迭代不自动意味着输出获得所有第三方版权；商业权益以套餐及条款为准。"
+      ],
+      "checkedAt": "2026-11-06",
+      "color": "#10b981",
+      "region": "us",
+      "origin": "🇺🇸 美国",
+      "emoji": "🎵"
+    }
+  ]
+}
