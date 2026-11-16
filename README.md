@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./docs/github-cover-2026-11-16.jpg" width="100%" alt="模型全景 · AI Model Atlas项目封面" />
+</p>
+
 # 模型全景 · AI Model Atlas
 
 一个可搜索、筛选和横向对比的中文 AI 模型指南，包含模型特点、适用场景、Arena 分类榜和套餐额度。页面与数据全部静态生成，无后端、无 API 密钥、无第三方 npm 运行依赖。
