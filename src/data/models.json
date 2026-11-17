@@ -15,6 +15,27 @@
       ],
       "models": [
         {
+          "name": "Seedream 5.5",
+          "kind": "图像生成／编辑",
+          "features": [
+            "原生 RGBA 透明素材",
+            "多轮局部编辑",
+            "密集小字与写实纹理"
+          ],
+          "useCase": "海报与透明素材、多轮精修、电商与视觉生产",
+          "limits": "100轮编辑为官方演示，不代表所有任务无误；5.5 Pro 仅预告，未当成已发布型号。API 输出规格与价格按具体渠道确认。",
+          "openness": "官方托管服务；本次官方来源未提供开放权重",
+          "context": "图像生成／编辑；官方产品页未统一列 API 输入与输出上限",
+          "price": "查看官方渠道定价；本轮未核到统一 API 单价。",
+          "sourceUrls": [
+            "https://seed.bytedance.com/en/seedream5_5",
+            "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+          ],
+          "checkedAt": "2026-11-17",
+          "releaseDate": "2026-11-09",
+          "addedAt": "2026-11-17"
+        },
+        {
           "name": "Seed2.1 Pro",
           "kind": "通用多模态",
           "features": [
@@ -49,27 +70,6 @@
           ],
           "price": "按具体渠道、套餐与用量查看官方定价。",
           "checkedAt": "2026-11-17"
-        },
-        {
-          "name": "Seedream 5.5",
-          "kind": "图像生成／编辑",
-          "features": [
-            "原生 RGBA 透明素材",
-            "多轮局部编辑",
-            "密集小字与写实纹理"
-          ],
-          "useCase": "海报与透明素材、多轮精修、电商与视觉生产",
-          "limits": "100轮编辑为官方演示，不代表所有任务无误；5.5 Pro 仅预告，未当成已发布型号。API 输出规格与价格按具体渠道确认。",
-          "openness": "官方托管服务；本次官方来源未提供开放权重",
-          "context": "图像生成／编辑；官方产品页未统一列 API 输入与输出上限",
-          "price": "查看官方渠道定价；本轮未核到统一 API 单价。",
-          "sourceUrls": [
-            "https://seed.bytedance.com/en/seedream5_5",
-            "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
-          ],
-          "checkedAt": "2026-11-17",
-          "releaseDate": "2026-11-09",
-          "addedAt": "2026-11-17"
         },
         {
           "name": "Seedream 5.0 Pro",
@@ -894,6 +894,48 @@
       ],
       "models": [
         {
+          "name": "Claude Fable 5.2",
+          "kind": "深度推理 / Agent",
+          "features": [
+            "长周期 Agent",
+            "复杂推理与研究",
+            "可选 Fast mode"
+          ],
+          "useCase": "多小时代理、复杂代码与研究，以及完成文档、表格和演示等交付。",
+          "limits": "文字/图片输入、文字输出；思考始终开启；需30天数据保留，零保留须专项授权。",
+          "openness": "专有模型 / API",
+          "context": "1M 上下文 / 最高 128K 输出 tokens",
+          "price": "标准输入 $8 / 输出 $40，每百万 tokens；Fast mode $16 / $80；缓存、批处理与工具另计。",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+            "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          ],
+          "checkedAt": "2026-11-17",
+          "releaseDate": "2026-11-09",
+          "addedAt": "2026-11-17"
+        },
+        {
+          "name": "Claude Mythos 5.2",
+          "kind": "专业研究 / 受限准入",
+          "features": [
+            "与 Fable 5.2 同底层",
+            "网络安全防御研究",
+            "生命科学研究"
+          ],
+          "useCase": "通过 Anthropic 验证项目的网络安全防御和生物医学研究机构。",
+          "limits": "仅面向通过验证项目的机构，不是所有开发者可直接启用；能力与价格和 Fable 5.2相同，安全策略/访问条件不同。",
+          "openness": "专有模型 / 经审核的受限 API",
+          "context": "1M 上下文 / 最高 128K 输出 tokens",
+          "price": "标准输入 $8 / 输出 $40，每百万 tokens；Fast mode $16 / $80；需满足准入。",
+          "sourceUrls": [
+            "https://platform.claude.com/docs/en/models/mythos-5-2/overview",
+            "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          ],
+          "checkedAt": "2026-11-17",
+          "releaseDate": "2026-11-09",
+          "addedAt": "2026-11-17"
+        },
+        {
           "name": "Claude Opus 5.5",
           "kind": "通用 / Agent",
           "features": [
@@ -947,48 +989,6 @@
           ],
           "price": "≤100K 输入：$0.10 / $0.50；>100K：$0.50 / $2.50（输入/输出，每百万 tokens）",
           "checkedAt": "2026-11-17"
-        },
-        {
-          "name": "Claude Fable 5.2",
-          "kind": "深度推理 / Agent",
-          "features": [
-            "长周期 Agent",
-            "复杂推理与研究",
-            "可选 Fast mode"
-          ],
-          "useCase": "多小时代理、复杂代码与研究，以及完成文档、表格和演示等交付。",
-          "limits": "文字/图片输入、文字输出；思考始终开启；需30天数据保留，零保留须专项授权。",
-          "openness": "专有模型 / API",
-          "context": "1M 上下文 / 最高 128K 输出 tokens",
-          "price": "标准输入 $8 / 输出 $40，每百万 tokens；Fast mode $16 / $80；缓存、批处理与工具另计。",
-          "sourceUrls": [
-            "https://platform.claude.com/docs/en/models/fable-5-2/overview",
-            "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-          ],
-          "checkedAt": "2026-11-17",
-          "releaseDate": "2026-11-09",
-          "addedAt": "2026-11-17"
-        },
-        {
-          "name": "Claude Mythos 5.2",
-          "kind": "专业研究 / 受限准入",
-          "features": [
-            "与 Fable 5.2 同底层",
-            "网络安全防御研究",
-            "生命科学研究"
-          ],
-          "useCase": "通过 Anthropic 验证项目的网络安全防御和生物医学研究机构。",
-          "limits": "仅面向通过验证项目的机构，不是所有开发者可直接启用；能力与价格和 Fable 5.2相同，安全策略/访问条件不同。",
-          "openness": "专有模型 / 经审核的受限 API",
-          "context": "1M 上下文 / 最高 128K 输出 tokens",
-          "price": "标准输入 $8 / 输出 $40，每百万 tokens；Fast mode $16 / $80；需满足准入。",
-          "sourceUrls": [
-            "https://platform.claude.com/docs/en/models/mythos-5-2/overview",
-            "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-          ],
-          "checkedAt": "2026-11-17",
-          "releaseDate": "2026-11-09",
-          "addedAt": "2026-11-17"
         },
         {
           "name": "Claude Fable 5.1",
@@ -1239,28 +1239,6 @@
       ],
       "models": [
         {
-          "name": "Gemini 4 Carbon",
-          "kind": "多模态推理 / Agent",
-          "features": [
-            "长周期软件工程",
-            "科学推理与知识工作",
-            "电脑操作与工具调用"
-          ],
-          "useCase": "复杂软件工程、多代理协作、专业知识工作与研究。",
-          "limits": "文字/图像/音视频/PDF输入、文字输出；后台长输出共用1M窗口；网络安全专项能力仍受Fairwind验证渠道限制。",
-          "openness": "专有模型 / 托管 API",
-          "context": "合计 1,048,576；同步输出 65,536，后台长输出最高 1,048,576 tokens",
-          "price": "Gemini API标准：至2026-11-30输入 $2 / 输出 $10；12-01起 $4 / $20，每百万tokens；工具另计。",
-          "sourceUrls": [
-            "https://aistudio.google.com/docs/models/gemini-4-carbon",
-            "https://deepmind.google/models/model-cards/gemini-4-carbon/",
-            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-            "https://aistudio.google.com/docs/pricing#gemini-4-carbon"
-          ],
-          "checkedAt": "2026-11-17",
-          "addedAt": "2026-11-17"
-        },
-        {
           "name": "Gemini 4 Hydrogen",
           "kind": "多模态 / Agent",
           "features": [
@@ -1281,6 +1259,28 @@
           ],
           "checkedAt": "2026-11-17",
           "releaseDate": "2026-11-12",
+          "addedAt": "2026-11-17"
+        },
+        {
+          "name": "Gemini 4 Carbon",
+          "kind": "多模态推理 / Agent",
+          "features": [
+            "长周期软件工程",
+            "科学推理与知识工作",
+            "电脑操作与工具调用"
+          ],
+          "useCase": "复杂软件工程、多代理协作、专业知识工作与研究。",
+          "limits": "文字/图像/音视频/PDF输入、文字输出；后台长输出共用1M窗口；网络安全专项能力仍受Fairwind验证渠道限制。",
+          "openness": "专有模型 / 托管 API",
+          "context": "合计 1,048,576；同步输出 65,536，后台长输出最高 1,048,576 tokens",
+          "price": "Gemini API标准：至2026-11-30输入 $2 / 输出 $10；12-01起 $4 / $20，每百万tokens；工具另计。",
+          "sourceUrls": [
+            "https://aistudio.google.com/docs/models/gemini-4-carbon",
+            "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+            "https://aistudio.google.com/docs/pricing#gemini-4-carbon"
+          ],
+          "checkedAt": "2026-11-17",
           "addedAt": "2026-11-17"
         },
         {
@@ -2070,6 +2070,52 @@
       ],
       "models": [
         {
+          "name": "Scribe v3",
+          "kind": "语音转文字 / 录音转写",
+          "features": [
+            "90+语言",
+            "最多32位说话人",
+            "数字格式与混合语言提示"
+          ],
+          "useCase": "会议录音、播客、访谈和教学视频的转写、说话人标注与字幕。",
+          "limits": "输出仍需复核；不提供逐字verbatim模式。关键术语、实体检测等功能可能增加费用，并发随计划变化。",
+          "openness": "闭源；托管Speech to Text API，企业私有部署另询。",
+          "context": "模型ID scribe_v3；POST /v1/speech-to-text；支持词级时间戳和最多1,000个关键术语。",
+          "price": "按音频时长、计划及所启用的附加功能计费，查看官方API定价。",
+          "sourceUrls": [
+            "https://elevenlabs.io/docs/overview/models/",
+            "https://elevenlabs.io/docs/changelog/2026/11/9",
+            "https://elevenlabs.io/blog/scribe-v3",
+            "https://elevenlabs.io/pricing/api"
+          ],
+          "checkedAt": "2026-11-17",
+          "addedAt": "2026-11-17",
+          "releaseDate": "2026-11-09"
+        },
+        {
+          "name": "Scribe v3 Live",
+          "kind": "实时语音转文字",
+          "features": [
+            "上下文轮次预测",
+            "句中语言切换",
+            "最多10,000词术语库"
+          ],
+          "useCase": "实时字幕、语音助手的听写和电话场景的语音识别。",
+          "limits": "这是语音识别模型，输出文字；轮次预测需显式设置commit_strategy=turn_prediction，默认仍为manual。并发与附加功能费用随计划变化。",
+          "openness": "闭源；实时Speech to Text WebSocket，企业私有部署另询。",
+          "context": "模型ID scribe_v3_live；支持90+语言、流式转写、词级时间戳及实时说话人标注。",
+          "price": "按实时转写用量、计划及附加功能计费，查看官方API定价。",
+          "sourceUrls": [
+            "https://elevenlabs.io/docs/overview/models/",
+            "https://elevenlabs.io/docs/changelog/2026/11/9",
+            "https://elevenlabs.io/blog/scribe-v3",
+            "https://elevenlabs.io/pricing/api"
+          ],
+          "checkedAt": "2026-11-17",
+          "addedAt": "2026-11-17",
+          "releaseDate": "2026-11-09"
+        },
+        {
           "name": "Eleven v4",
           "kind": "语音合成 / 对话",
           "features": [
@@ -2122,52 +2168,6 @@
           ],
           "price": "按字符用量、模型及API套餐计费，查看官方定价；企业部署需另询。",
           "checkedAt": "2026-11-17"
-        },
-        {
-          "name": "Scribe v3",
-          "kind": "语音转文字 / 录音转写",
-          "features": [
-            "90+语言",
-            "最多32位说话人",
-            "数字格式与混合语言提示"
-          ],
-          "useCase": "会议录音、播客、访谈和教学视频的转写、说话人标注与字幕。",
-          "limits": "输出仍需复核；不提供逐字verbatim模式。关键术语、实体检测等功能可能增加费用，并发随计划变化。",
-          "openness": "闭源；托管Speech to Text API，企业私有部署另询。",
-          "context": "模型ID scribe_v3；POST /v1/speech-to-text；支持词级时间戳和最多1,000个关键术语。",
-          "price": "按音频时长、计划及所启用的附加功能计费，查看官方API定价。",
-          "sourceUrls": [
-            "https://elevenlabs.io/docs/overview/models/",
-            "https://elevenlabs.io/docs/changelog/2026/11/9",
-            "https://elevenlabs.io/blog/scribe-v3",
-            "https://elevenlabs.io/pricing/api"
-          ],
-          "checkedAt": "2026-11-17",
-          "addedAt": "2026-11-17",
-          "releaseDate": "2026-11-09"
-        },
-        {
-          "name": "Scribe v3 Live",
-          "kind": "实时语音转文字",
-          "features": [
-            "上下文轮次预测",
-            "句中语言切换",
-            "最多10,000词术语库"
-          ],
-          "useCase": "实时字幕、语音助手的听写和电话场景的语音识别。",
-          "limits": "这是语音识别模型，输出文字；轮次预测需显式设置commit_strategy=turn_prediction，默认仍为manual。并发与附加功能费用随计划变化。",
-          "openness": "闭源；实时Speech to Text WebSocket，企业私有部署另询。",
-          "context": "模型ID scribe_v3_live；支持90+语言、流式转写、词级时间戳及实时说话人标注。",
-          "price": "按实时转写用量、计划及附加功能计费，查看官方API定价。",
-          "sourceUrls": [
-            "https://elevenlabs.io/docs/overview/models/",
-            "https://elevenlabs.io/docs/changelog/2026/11/9",
-            "https://elevenlabs.io/blog/scribe-v3",
-            "https://elevenlabs.io/pricing/api"
-          ],
-          "checkedAt": "2026-11-17",
-          "addedAt": "2026-11-17",
-          "releaseDate": "2026-11-09"
         }
       ],
       "sources": [
@@ -2451,6 +2451,53 @@
       ],
       "models": [
         {
+          "name": "MiniMax H3-Image",
+          "kind": "图像生成 / 编辑",
+          "features": [
+            "4K图像输出",
+            "最多16张参考图",
+            "多素材组合与图像编辑"
+          ],
+          "useCase": "商品视觉、海报、设计素材和多参考图组合。",
+          "limits": "API不支持遮罩编辑或透明底。权重许可含美/欧盟/英/韩地域排除；年化收入超US$1M或向第三方提供托管服务需事前书面授权。",
+          "openness": "开放权重 / H3-Image Community License；官方API、MiniMax Code与Hailuo AI。",
+          "context": "API最多20MP、每请求1–10图；提示词最多32,000字符，关闭提示扩写时仅约前4,096 tokens生效。",
+          "price": "Standard API按tokens计费：每百万输入文本$2.30、输入图像$1.50、输出图像$3.80；自部署算力与许可条件另核对。",
+          "sourceUrls": [
+            "https://platform.minimax.io/docs/guides/image-generation",
+            "https://platform.minimax.io/docs/pricing/overview",
+            "https://www.minimax.io/blog/minimax-h3-image",
+            "https://platform.minimax.io/docs/release-notes/models",
+            "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+            "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE"
+          ],
+          "checkedAt": "2026-11-17",
+          "addedAt": "2026-11-17",
+          "releaseDate": "2026-11-10"
+        },
+        {
+          "name": "MiniMax H3-Image-Highspeed",
+          "kind": "快速图像生成 / 编辑",
+          "features": [
+            "高速服务变体",
+            "最多16张参考图",
+            "与Standard相同API参数"
+          ],
+          "useCase": "需要更快迭代的图像草稿、多素材组合和编辑任务。",
+          "limits": "API不支持遮罩或透明背景；需按实际输入、输出图像tokens计费，速度不是固定SLA。本次未确认该服务变体有独立公开权重。",
+          "openness": "官方托管API变体；独立权重状态未确认。",
+          "context": "与H3-Image相同API参数与限制：最多20MP，单请求1–10图。",
+          "price": "API每百万tokens：输入文本$2.30、输入图像$3.00、输出图像$7.60；实际请求费用取决于素材与输出。",
+          "sourceUrls": [
+            "https://platform.minimax.io/docs/api-reference/api-overview",
+            "https://platform.minimax.io/docs/guides/image-generation",
+            "https://platform.minimax.io/docs/pricing/overview",
+            "https://www.minimax.io/blog/minimax-h3-image"
+          ],
+          "checkedAt": "2026-11-17",
+          "addedAt": "2026-11-17"
+        },
+        {
           "name": "MiniMax M3.1 Flash",
           "kind": "多模态 / 代码 / Agent",
           "features": [
@@ -2524,53 +2571,6 @@
           "checkedAt": "2026-11-17",
           "addedAt": "2026-11-17",
           "releaseDate": "2026-07-31"
-        },
-        {
-          "name": "MiniMax H3-Image",
-          "kind": "图像生成 / 编辑",
-          "features": [
-            "4K图像输出",
-            "最多16张参考图",
-            "多素材组合与图像编辑"
-          ],
-          "useCase": "商品视觉、海报、设计素材和多参考图组合。",
-          "limits": "API不支持遮罩编辑或透明底。权重许可含美/欧盟/英/韩地域排除；年化收入超US$1M或向第三方提供托管服务需事前书面授权。",
-          "openness": "开放权重 / H3-Image Community License；官方API、MiniMax Code与Hailuo AI。",
-          "context": "API最多20MP、每请求1–10图；提示词最多32,000字符，关闭提示扩写时仅约前4,096 tokens生效。",
-          "price": "Standard API按tokens计费：每百万输入文本$2.30、输入图像$1.50、输出图像$3.80；自部署算力与许可条件另核对。",
-          "sourceUrls": [
-            "https://platform.minimax.io/docs/guides/image-generation",
-            "https://platform.minimax.io/docs/pricing/overview",
-            "https://www.minimax.io/blog/minimax-h3-image",
-            "https://platform.minimax.io/docs/release-notes/models",
-            "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-            "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE"
-          ],
-          "checkedAt": "2026-11-17",
-          "addedAt": "2026-11-17",
-          "releaseDate": "2026-11-10"
-        },
-        {
-          "name": "MiniMax H3-Image-Highspeed",
-          "kind": "快速图像生成 / 编辑",
-          "features": [
-            "高速服务变体",
-            "最多16张参考图",
-            "与Standard相同API参数"
-          ],
-          "useCase": "需要更快迭代的图像草稿、多素材组合和编辑任务。",
-          "limits": "API不支持遮罩或透明背景；需按实际输入、输出图像tokens计费，速度不是固定SLA。本次未确认该服务变体有独立公开权重。",
-          "openness": "官方托管API变体；独立权重状态未确认。",
-          "context": "与H3-Image相同API参数与限制：最多20MP，单请求1–10图。",
-          "price": "API每百万tokens：输入文本$2.30、输入图像$3.00、输出图像$7.60；实际请求费用取决于素材与输出。",
-          "sourceUrls": [
-            "https://platform.minimax.io/docs/api-reference/api-overview",
-            "https://platform.minimax.io/docs/guides/image-generation",
-            "https://platform.minimax.io/docs/pricing/overview",
-            "https://www.minimax.io/blog/minimax-h3-image"
-          ],
-          "checkedAt": "2026-11-17",
-          "addedAt": "2026-11-17"
         }
       ],
       "sources": [

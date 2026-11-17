@@ -14,7 +14,7 @@
 
 ![页面预览](docs/screenshot.jpg)
 
-[11 月 17 日更新清单](docs/UPDATE-2026-11-17.md) · [独立评测界面](docs/benchmarks-2026-11-17.jpg) · [深色外观预览](docs/dark.jpg) · [手机版预览](docs/mobile.jpg)
+[最新型号总览](docs/latest-models-2026-11-17.jpg) · [11 月 17 日更新清单](docs/UPDATE-2026-11-17.md) · [独立评测界面](docs/benchmarks-2026-11-17.jpg) · [深色外观预览](docs/dark.jpg) · [手机版预览](docs/mobile.jpg)
 
 ## 本地运行
 
@@ -55,6 +55,8 @@ npm run build # 单独生成 dist/
 | `pricing.json` | 应用会员、代码订阅、API 按量及自部署方案 |
 | `icons.json` | 已嵌入图标的 data URL 映射 |
 | `icons-sources.json` | 固定版本图标包、各图标来源、校验信息与商标说明 |
+
+`models` 数组同时决定总览卡片、筛选预览、型号对比和品牌档案的展示顺序。将近期已核实的新型号放在前面，旧版放在后面；同代的不同用途型号仍由人工安排。日期未公开的型号不视为更旧，不用收录日、核验日或权重开放日替代首发日。
 
 每次更新都要实际打开官方来源，更新对应条目的 `checkedAt`，保留可直接访问的 `sourceUrls` 或 `sources`。只改已核实字段，未公开报价或额度保留 `null` 并明确说明。年付折算、每人计费、首月促销、地区和税费分别描述；应用会员价格不能写成 API 赠额。Arena 原始型号别名、分榜、排名和指标应按官方页保留，不合并为跨榜总排名。
 
