@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-11-17",
+  "source": "Artificial Analysis",
+  "title": "Intelligence Index v5.0.1",
+  "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
+  "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+  "updatedAt": null,
+  "scope": "原页 Current / 全权重 / 全规模 / 全价格 / 全推理设置，按智力指数展示的前25项；保留模型推理配置与缺失值。",
+  "methodology": "v5.0.1 合成9项评测，知识工作、代码、科学、通用四类各占25%；主要面向英语与文本任务，部分测试含图像，不能当成中文、视觉、语音的统一评分。",
+  "notes": [
+    "数字为本次读取的静态摘录；原页未提供整榜统一更新日，读取日期不能代替发布日或官方更新日。",
+    "原页顺序仅用于定位。指数同分不意味着效果完全相同；不同推理强度、回退配置分别保留。",
+    "Cost per Task 是平台评测任务的美元成本，不是一次普通API请求费用，也不是应用会员价格；耗时与首个回答token时间只适用于该平台任务及配置。",
+    "不将 Intelligence Index 与 Arena Score、Agent净提升百分数相加或直接比较；未摘录不等于未测。"
+  ],
+  "rows": [
+    {
+      "position": 1,
+      "model": "Claude Fable 5.2 Max, Default Fallback",
+      "organization": "Anthropic",
+      "score": 65,
+      "costPerTaskUSD": 26.54,
+      "timePerTaskMinutes": 40.8,
+      "firstAnswerTokenSeconds": 208.11,
+      "context": "1M"
+    },
+    {
+      "position": 2,
+      "model": "Gemini 4 Carbon High",
+      "organization": "Google",
+      "score": 60,
+      "costPerTaskUSD": 5.48,
+      "timePerTaskMinutes": 31.1,
+      "firstAnswerTokenSeconds": 73.05,
+      "context": "1M"
+    },
+    {
+      "position": 3,
+      "model": "Claude Opus 5.5 Max, Default Fallback",
+      "organization": "Anthropic",
+      "score": 59,
+      "costPerTaskUSD": 10.04,
+      "timePerTaskMinutes": 24.6,
+      "firstAnswerTokenSeconds": 352.34,
+      "context": "1M"
+    },
+    {
+      "position": 4,
+      "model": "GPT-6 Astra Max",
+      "organization": "OpenAI",
+      "score": 57,
+      "costPerTaskUSD": 6.24,
+      "timePerTaskMinutes": 20.4,
+      "firstAnswerTokenSeconds": 195.31,
+      "context": "1M"
+    },
+    {
+      "position": 5,
+      "model": "GPT-6.1 Sol Max",
+      "organization": "OpenAI",
+      "score": 55,
+      "costPerTaskUSD": 1.27,
+      "timePerTaskMinutes": 23.0,
+      "firstAnswerTokenSeconds": 154.71,
+      "context": "1M"
+    },
+    {
+      "position": 6,
+      "model": "Claude Sonnet 5.5 Max, Default Fallback",
+      "organization": "Anthropic",
+      "score": 55,
+      "costPerTaskUSD": 10.02,
+      "timePerTaskMinutes": 32.4,
+      "firstAnswerTokenSeconds": 278.92,
+      "context": "1M"
+    },
+    {
+      "position": 7,
+      "model": "Gemini 4 Hydrogen Xhigh",
+      "organization": "Google",
+      "score": 54,
+      "costPerTaskUSD": 3.16,
+      "timePerTaskMinutes": 14.7,
+      "firstAnswerTokenSeconds": 44.1,
+      "context": "1M"
+    },
+    {
+      "position": 8,
+      "model": "GPT-6.1 Terra Max",
+      "organization": "OpenAI",
+      "score": 51,
+      "costPerTaskUSD": 0.96,
+      "timePerTaskMinutes": 14.0,
+      "firstAnswerTokenSeconds": 146.11,
+      "context": "1M"
+    },
+    {
+      "position": 9,
+      "model": "Gemini 4 Argon High",
+      "organization": "Google",
+      "score": 50,
+      "costPerTaskUSD": 4.97,
+      "timePerTaskMinutes": 29.3,
+      "firstAnswerTokenSeconds": 43.88,
+      "context": "1M"
+    },
+    {
+      "position": 10,
+      "model": "Muse Wonder Full Max",
+      "organization": "Meta",
+      "score": 50,
+      "costPerTaskUSD": null,
+      "timePerTaskMinutes": null,
+      "firstAnswerTokenSeconds": null,
+      "context": "1M"
+    },
+    {
+      "position": 11,
+      "model": "Kimi K3.1 Pro",
+      "organization": "Kimi",
+      "score": 46,
+      "costPerTaskUSD": 3.68,
+      "timePerTaskMinutes": 38.8,
+      "firstAnswerTokenSeconds": 151.03,
+      "context": "1M"
+    },
+    {
+      "position": 12,
+      "model": "Muse Wonder Max",
+      "organization": "Meta",
+      "score": 44,
+      "costPerTaskUSD": 6.95,
+      "timePerTaskMinutes": 13.2,
+      "firstAnswerTokenSeconds": 19.15,
+      "context": "1M"
+    },
+    {
+      "position": 13,
+      "model": "Qwen4 Max",
+      "organization": "Alibaba",
+      "score": 43,
+      "costPerTaskUSD": 3.27,
+      "timePerTaskMinutes": 32.1,
+      "firstAnswerTokenSeconds": 147.63,
+      "context": "984k"
+    },
+    {
+      "position": 14,
+      "model": "Claude Haiku 5.5 Max",
+      "organization": "Anthropic",
+      "score": 36,
+      "costPerTaskUSD": 0.41,
+      "timePerTaskMinutes": 14.7,
+      "firstAnswerTokenSeconds": 182.34,
+      "context": "1M"
+    },
+    {
+      "position": 15,
+      "model": "Muse Ember Max",
+      "organization": "Meta",
+      "score": 36,
+      "costPerTaskUSD": 0.14,
+      "timePerTaskMinutes": 3.2,
+      "firstAnswerTokenSeconds": 4.94,
+      "context": "1M"
+    },
+    {
+      "position": 16,
+      "model": "Grok 4.7 Xhigh",
+      "organization": "SpaceXAI",
+      "score": 35,
+      "costPerTaskUSD": 7.77,
+      "timePerTaskMinutes": 24.6,
+      "firstAnswerTokenSeconds": 49.17,
+      "context": "500k"
+    },
+    {
+      "position": 17,
+      "model": "Tencent Hy4",
+      "organization": "Tencent",
+      "score": 35,
+      "costPerTaskUSD": 1.03,
+      "timePerTaskMinutes": 13.6,
+      "firstAnswerTokenSeconds": 112.81,
+      "context": "1M"
+    },
+    {
+      "position": 18,
+      "model": "DeepSeek V4.1 Flash 1017 Max",
+      "organization": "DeepSeek",
+      "score": 33,
+      "costPerTaskUSD": 0.6,
+      "timePerTaskMinutes": 13.1,
+      "firstAnswerTokenSeconds": 40.0,
+      "context": "1M"
+    },
+    {
+      "position": 19,
+      "model": "GLM-5.3 Max",
+      "organization": "Z AI",
+      "score": 32,
+      "costPerTaskUSD": 5.01,
+      "timePerTaskMinutes": 22.2,
+      "firstAnswerTokenSeconds": 59.53,
+      "context": "1M"
+    },
+    {
+      "position": 20,
+      "model": "Inkling 2 Small",
+      "organization": "Thinking Machines",
+      "score": 31,
+      "costPerTaskUSD": 1.18,
+      "timePerTaskMinutes": 21.6,
+      "firstAnswerTokenSeconds": 37.85,
+      "context": "1M"
+    },
+    {
+      "position": 21,
+      "model": "MiMo-V2.6-Pro",
+      "organization": "Xiaomi",
+      "score": 30,
+      "costPerTaskUSD": 0.26,
+      "timePerTaskMinutes": 37.1,
+      "firstAnswerTokenSeconds": 25.82,
+      "context": "1M"
+    },
+    {
+      "position": 22,
+      "model": "Ling 3.1 Flash 1019",
+      "organization": "InclusionAI",
+      "score": 30,
+      "costPerTaskUSD": 3.19,
+      "timePerTaskMinutes": null,
+      "firstAnswerTokenSeconds": null,
+      "context": "1M"
+    },
+    {
+      "position": 23,
+      "model": "MiniMax-M3.1-Flash",
+      "organization": "MiniMax",
+      "score": 29,
+      "costPerTaskUSD": 0.49,
+      "timePerTaskMinutes": 16.3,
+      "firstAnswerTokenSeconds": 46.34,
+      "context": "1M"
+    },
+    {
+      "position": 24,
+      "model": "Qwen3.8-Flash-Next",
+      "organization": "Alibaba",
+      "score": 29,
+      "costPerTaskUSD": 0.57,
+      "timePerTaskMinutes": 29.3,
+      "firstAnswerTokenSeconds": 59.85,
+      "context": "256k"
+    },
+    {
+      "position": 25,
+      "model": "Step 5 Preview",
+      "organization": "StepFun",
+      "score": 29,
+      "costPerTaskUSD": 2.35,
+      "timePerTaskMinutes": 14.2,
+      "firstAnswerTokenSeconds": 22.12,
+      "context": "1M"
+    }
+  ]
+}

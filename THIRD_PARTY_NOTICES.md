@@ -20,6 +20,10 @@
 
 `src/data/arena-rankings.json` 是 [Arena 官方公开排行榜](https://arena.ai/leaderboard) 的有限静态事实摘录，具体页面、更新日和指标见各榜的 `sourceUrl`、`updatedAt`、`metric` 与 `metricDescription`。Arena 品牌及原始数据权利归原权利人；本项目代码 MIT 许可证不改变来源站点的条款。再次分发或扩大使用范围前，应复核 [Arena 官方条款](https://arena.ai/terms-of-use) 与数据页面的当前说明。
 
+## Artificial Analysis
+
+`src/data/independent-benchmarks.json` 是 [Artificial Analysis 官方模型榜](https://artificialanalysis.ai/leaderboards/models) 前25项的有限静态事实摘录；保留其 Intelligence Index v5.0.1、原始推理配置、任务成本、耗时和缺失值。评测方法见[官方说明](https://artificialanalysis.ai/methodology/intelligence-benchmarking)。原始资料、品牌和数据权利归原权利人；本项目 MIT 代码许可不重新授权这些内容。
+
 ## 系统字体与本机偏好
 
 页面使用操作系统提供的系统字体，未打包字体二进制，也不请求 Google Fonts 或其他在线字体服务。深色／浅色外观偏好仅写入当前浏览器的 `localStorage`；未设置偏好时跟随系统外观。页面不配置分析统计服务。URL 哈希保存页面与筛选状态，供刷新和分享链接时恢复界面。

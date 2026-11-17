@@ -25,7 +25,31 @@ for (const brand of result.pricing.brands) {
     }
   }
 }
-const localFiles = new Set(['index.html', 'assets/style.css', 'assets/data.js', 'assets/app.js', 'models.json', 'arena-rankings.json', 'pricing.json', 'icons-sources.json', 'LICENSE-LobeHub.txt', 'THIRD_PARTY_NOTICES.md', '.nojekyll']);
+const modelKeys = new Set();
+for (const brand of result.modelData.brands) {
+  for (const model of brand.models) {
+    const key = brand.id + '/' + model.name;
+    assert(!modelKeys.has(key), '型号重复：' + key);
+    modelKeys.add(key);
+    assert(model.sourceUrls.length && model.sourceUrls.every(u => /^https:\/\//.test(u)), '型号缺少官方来源：' + key);
+  }
+}
+for (const board of result.rankings.boards) {
+  assert(board.updatedAt <= board.checkedAt, '榜单更新日晚于读取日：' + board.id);
+  assert.equal(new Set(board.rows.map(r => r.rank)).size, board.rows.length, '官方名次重复：' + board.id);
+  for (const row of board.rows) {
+    if (row.guideModelName) assert(modelKeys.has(row.guideBrandId + '/' + row.guideModelName), '榜单链接指向不存在的型号：' + row.model);
+    assert(Number.isFinite(row.score), '无效榜单分数：' + row.model);
+  }
+}
+const benchmarkPositions = result.benchmarks.rows.map(r => r.position);
+assert.deepEqual(benchmarkPositions, benchmarkPositions.map((_, i) => i + 1), '独立评测原页顺序缺失或重复');
+for (const row of result.benchmarks.rows) {
+  for (const field of ['score', 'costPerTaskUSD', 'timePerTaskMinutes', 'firstAnswerTokenSeconds']) {
+    assert(row[field] === null || (Number.isFinite(row[field]) && row[field] >= 0), '无效独立评测字段：' + row.model + '/' + field);
+  }
+}
+const localFiles = new Set(['index.html', 'assets/style.css', 'assets/data.js', 'assets/app.js', 'models.json', 'arena-rankings.json', 'independent-benchmarks.json', 'pricing.json', 'icons-sources.json', 'LICENSE-LobeHub.txt', 'THIRD_PARTY_NOTICES.md', '.nojekyll']);
 for (const file of localFiles) await access(resolve(out, file));
 const html = await read('src/index.html');
 const builtHTML = await readFile(resolve(out, 'index.html'), 'utf8');

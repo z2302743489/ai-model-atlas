@@ -19,7 +19,8 @@
     "microsoft.svg 为 Microsoft 厂商标志，用于 Microsoft AI 排名行。",
     "xai.svg 为 xAI 厂商标志，用于 Grok／SpaceXAI 排名行；不是 X 社交平台标志。",
     "Alibaba-ATH 可由页面映射到现有 qwen.svg；不添加伪造的独立标志。",
-    "hidream.png 为 www.hidream.ai 跳转的官方站 hidreamai.com/home 内嵌 favicon；原样解码保存，不属于 LobeHub MIT 图标包。"
+    "hidream.png 为 www.hidream.ai 跳转的官方站 hidreamai.com/home 内嵌 favicon；原样解码保存，不属于 LobeHub MIT 图标包。",
+    "thinkingmachines.png 为 Thinking Machines 官网原始 apple-touch-icon，保留原始字节；不属于 LobeHub MIT 图标包，品牌权利归原权利人。"
   ],
   "icons": [
     {
@@ -383,6 +384,69 @@
       "verifiedPng": true,
       "variant": "Official favicon, original unmodified PNG",
       "license": "Official company brand asset; no open-source license inferred. HiDream.ai retains copyright and trademark rights. Used only to identify the manufacturer in the guide."
+    },
+    {
+      "id": "tencent",
+      "label": "腾讯",
+      "file": "tencent.svg",
+      "sourceIcon": "tencent-brand-color.svg",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.102.0/icons/tencent-brand-color.svg",
+      "upstreamRepositoryFile": "https://github.com/lobehub/lobe-icons/blob/989535d6c13da2dec5a2937fe2789d4af4fdd8e0/packages/static-svg/icons/tencent-brand-color.svg",
+      "packageMember": "package/icons/tencent-brand-color.svg",
+      "bytes": 3748,
+      "sha256": "ea21e022f7f17d160595f55499854ee527c803edc69a9542973fef95477c7796",
+      "viewBox": "0 0 153 24",
+      "verifiedSvg": true,
+      "variant": "color",
+      "license": "MIT (LobeHub icon artwork); brand trademarks remain with their respective owners",
+      "addedAt": "2026-11-17"
+    },
+    {
+      "id": "xiaomi",
+      "label": "Xiaomi MiMo",
+      "file": "xiaomi.svg",
+      "sourceIcon": "xiaomimimo.svg",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.102.0/icons/xiaomimimo.svg",
+      "upstreamRepositoryFile": "https://github.com/lobehub/lobe-icons/blob/989535d6c13da2dec5a2937fe2789d4af4fdd8e0/packages/static-svg/icons/xiaomimimo.svg",
+      "packageMember": "package/icons/xiaomimimo.svg",
+      "bytes": 2544,
+      "sha256": "b04ad7dad52af2212c4567daf0ee6856f2c4625c92c680a27f9880295d558b71",
+      "viewBox": "0 0 24 24",
+      "verifiedSvg": true,
+      "variant": "standard monochrome",
+      "license": "MIT (LobeHub icon artwork); brand trademarks remain with their respective owners",
+      "addedAt": "2026-11-17"
+    },
+    {
+      "id": "stepfun",
+      "label": "阶跃星辰",
+      "file": "stepfun.svg",
+      "sourceIcon": "stepfun-color.svg",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.102.0/icons/stepfun-color.svg",
+      "upstreamRepositoryFile": "https://github.com/lobehub/lobe-icons/blob/989535d6c13da2dec5a2937fe2789d4af4fdd8e0/packages/static-svg/icons/stepfun-color.svg",
+      "packageMember": "package/icons/stepfun-color.svg",
+      "bytes": 676,
+      "sha256": "f55afc0e6004c8854f76bd5bbcc0fce9fc0ed9316691d54fb02d088c24fab40d",
+      "viewBox": "0 0 24 24",
+      "verifiedSvg": true,
+      "variant": "color",
+      "license": "MIT (LobeHub icon artwork); brand trademarks remain with their respective owners",
+      "addedAt": "2026-11-17"
+    },
+    {
+      "id": "thinkingmachines",
+      "label": "Thinking Machines Lab",
+      "file": "thinkingmachines.png",
+      "sourceIcon": "apple-touch-icon.png",
+      "sourceUrl": "https://thinkingmachines.ai/images/apple-touch-icon.png",
+      "sourcePage": "https://thinkingmachines.ai/",
+      "bytes": 3098,
+      "sha256": "ef907e01669290064ce1db3d7902203fb2786dc110d2c496a8a02ad912d32e7e",
+      "verifiedPng": true,
+      "width": 180,
+      "height": 180,
+      "checkedAt": "2026-11-17",
+      "license": "Official brand asset; rights remain with Thinking Machines Lab. No separate redistribution license verified; not relicensed under project MIT license."
     }
   ],
   "missing": []

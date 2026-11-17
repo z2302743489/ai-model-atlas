@@ -7,7 +7,7 @@ const ext=(u,label)=>`<a href="${safeURL(u)}" target="_blank" rel="noopener nore
 const brandLogo=b=>`<img class="vendor-logo" src="${esc(ICONS[b.id]||b.logo)}" alt="${esc(b.name)} 图标" width="32" height="32">`;
 const allModels=DATA.flatMap(b=>b.models.map(m=>({...m,brand:b})));
 const state={filter:'all',region:'all',search:'',view:'overview',brandId:'',modelName:''};
-const VIEW_TITLES={overview:'模型总览',ranking:'Arena 排名',pricing:'套餐与额度',table:'型号对比',guide:'场景选型',region:'接入与部署',risks:'风险与边界',sources:'来源与更新',brand:'品牌与型号'};
+const VIEW_TITLES={overview:'模型总览',ranking:'Arena 排名',benchmarks:'独立能力评测',pricing:'套餐与额度',table:'型号对比',guide:'场景选型',region:'接入与部署',risks:'风险与边界',sources:'来源与更新',brand:'品牌与型号'};
 let applyingRoute=false,lastRouteHash='';
 const mobileNavigation=()=>window.innerWidth<=860;
 function setMobileNavigation(open,{restoreFocus=true}={}){
@@ -39,6 +39,7 @@ function routeHash(){
   if(priceState.query)p.set('q',priceState.query);if(priceState.kind!=='all')p.set('kind',priceState.kind);
   if(priceState.currency!=='all')p.set('currency',priceState.currency);if(priceState.billing!=='monthly')p.set('billing',priceState.billing);
  }
+ if(state.view==='benchmarks'&&benchmarkState.query)p.set('q',benchmarkState.query);
  if(state.view==='table'){if($('table-type').value!=='text')p.set('type',$('table-type').value);if($('table-region').value!=='all')p.set('region',$('table-region').value);}
  return '#'+path+(p.size?'?'+p.toString():'');
 }
@@ -66,10 +67,11 @@ function mediaType(m){
   if(/语音|音乐/.test(k))return 'audio';
   return 'text';
 }
-function isOpen(m){return /开放权重/.test(m.openness)&&!/(未|不|此来源未提供|不等同|并非全系列).{0,5}开放权重/.test(m.openness);}
+function isOpen(m){return /^开放权重/.test(m.openness);}
 function matchesFilter(m,f){
   const t=mediaType(m),s=[m.name,m.kind,...m.features,m.useCase].join(' ');
   if(f==='all')return true;
+  if(f==='new')return m.addedAt===CHECKED;
   if(['image','video','audio'].includes(f))return t===f;
   if(f==='text')return t==='text';
   if(f==='document')return t==='document'||/文档|OCR/.test(s);
@@ -96,10 +98,11 @@ function activate(view,id,{resetScroll=true,focus=true}={}){
   if(focus)focusView(view,state.modelName);
 }
 function showView(view,{history:historyMode='push',focus=true,resetScroll=true}={}){
-  if(!['overview','ranking','pricing','table','guide','region','risks','sources'].includes(view))view='overview';
+  if(!['overview','ranking','benchmarks','pricing','table','guide','region','risks','sources'].includes(view))view='overview';
   if(historyMode==='push')rememberRouteScroll();
   if(view==='overview'){syncOverviewControls();buildOverview();}
   if(view==='ranking')renderRanking(true);
+  if(view==='benchmarks')renderBenchmarks(true);
   if(view==='pricing')renderPricing(true);
   if(view==='table')buildTable();
   state.modelName='';activate(view,undefined,{resetScroll,focus});syncRoute(historyMode);
@@ -129,14 +132,14 @@ function buildOverview(){
 function resetFilters(){state.filter='all';state.region='all';state.search='';syncOverviewControls();buildOverview();syncRoute();$('search-input').focus({preventScroll:true});}
 function sourceLinks(m){return m.sourceUrls.map((u,i)=>ext(u, m.sourceUrls.length===1?'官方型号资料':`官方来源 ${i+1}`)).join('');}
 function renderModel(m,i){
- return `<div class="mrow" id="model-${i}"><div class="mrow-dot" style="background:var(--accent)"></div><div class="mrow-info"><div class="model-name-line"><h3 class="mrow-name">${esc(m.name)}</h3><span class="model-kind">${esc(m.kind)}</span></div><div class="model-features">${m.features.map(f=>`<span class="feature-chip">${esc(f)}</span>`).join('')}</div><div class="mrow-desc"><strong>适合：</strong>${esc(m.useCase)}<br><strong>边界：</strong>${esc(m.limits)}</div><div class="model-facts"><div><span>开放方式 / 许可</span>${esc(m.openness)}</div><div><span>上下文 / 输入输出规格</span>${esc(m.context||'官方页面未统一公布')}</div></div><div class="model-price"><strong>费用：</strong>${esc(m.price||m.pricing||'按具体接入渠道与套餐查看官方定价；自部署另计硬件与运维。')}</div>${renderModelRanks(m)}<div class="source-links">${sourceLinks(m)}</div></div></div>`;
+ return `<div class="mrow" id="model-${i}"><div class="mrow-dot" style="background:var(--accent)"></div><div class="mrow-info"><div class="model-name-line"><h3 class="mrow-name">${esc(m.name)}</h3><span class="model-kind">${esc(m.kind)}</span>${m.addedAt===CHECKED?'<span class="new-model-tag">本次新收录</span>':''}${m.releaseDate?`<span class="model-kind">发布 ${esc(m.releaseDate)}</span>`:''}${m.weightsReleasedAt?`<span class="model-kind">权重开放 ${esc(m.weightsReleasedAt)}</span>`:''}</div><div class="model-features">${m.features.map(f=>`<span class="feature-chip">${esc(f)}</span>`).join('')}</div><div class="mrow-desc"><strong>适合：</strong>${esc(m.useCase)}<br><strong>边界：</strong>${esc(m.limits)}</div><div class="model-facts"><div><span>开放方式 / 许可</span>${esc(m.openness)}</div><div><span>上下文 / 输入输出规格</span>${esc(m.context||'官方页面未统一公布')}</div></div><div class="model-price"><strong>费用：</strong>${esc(m.price||m.pricing||'按具体接入渠道与套餐查看官方定价；自部署另计硬件与运维。')}</div>${renderModelRanks(m)}<div class="source-links">${sourceLinks(m)}<small class="model-checked">资料核验 ${esc(m.checkedAt||CHECKED)}</small></div></div></div>`;
 }
 function showBrand(id,modelName='',{history:historyMode='push',focus=true,resetScroll=true}={}){
  const b=DATA.find(x=>x.id===id);if(!b)return;
  if(historyMode==='push')rememberRouteScroll();
  state.brandId=id;state.modelName=b.models.some(m=>m.name===modelName)?modelName:'';
  const groups=[...new Set(b.models.map(m=>m.kind))];
- $('brand-content').innerHTML=`<button class="back-link" id="back-overview">← 返回品牌总览</button><div class="brand-hero"><div class="brand-hero-icon" style="background:${b.color}12">${brandLogo(b)}</div><div><h1 class="brand-hero-name" style="color:${b.color}">${esc(b.name)}</h1><div class="brand-hero-maker">${esc(b.maker)} · ${esc(b.origin)}</div><p class="brand-hero-tagline">${esc(b.tagline)}</p></div><div class="brand-hero-right"><span class="brand-status">✓ 官方资料核对 · ${CHECKED}</span><div class="scene-chips">${b.scenes.map(s=>`<span class="chip">${esc(s)}</span>`).join('')}</div></div></div>${renderBrandPricingSummary(b)}<div class="abilities-section"><div class="abilities-title">特点标签 · 逐型号查看具体能力与边界</div><div class="abilities">${[...new Set(b.models.flatMap(m=>m.features))].slice(0,8).map(f=>`<span class="feature-chip">${esc(f)}</span>`).join('')}</div></div><div class="series-section"><div class="series-title">代表型号与特点 · 点击分类可收起</div><div class="series-groups">${groups.map(k=>`<details class="sgroup" open><summary class="sgroup-header"><span class="sgroup-dot" style="background:${b.color}"></span><span class="sgroup-name">${esc(k)}</span><span class="sgroup-count">${b.models.filter(m=>m.kind===k).length} 款</span></summary><div class="sgroup-body">${b.models.map((m,i)=>m.kind===k?renderModel(m,i):'').join('')}</div></details>`).join('')}</div></div><details class="brand-notes" open><summary>本次更新与纠错 · ${b.notes.length} 项</summary><ul>${b.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul><div class="source-links">${b.sources.map((s,i)=>ext(s.url,sourceTitle(s,i))).join('')}</div></details>`;
+ $('brand-content').innerHTML=`<button class="back-link" id="back-overview">← 返回品牌总览</button><div class="brand-hero"><div class="brand-hero-icon" style="background:${b.color}12">${brandLogo(b)}</div><div><h1 class="brand-hero-name" style="color:${b.color}">${esc(b.name)}</h1><div class="brand-hero-maker">${esc(b.maker)} · ${esc(b.origin)}</div><p class="brand-hero-tagline">${esc(b.tagline)}</p></div><div class="brand-hero-right"><span class="brand-status">✓ 官方资料核对 · ${b.checkedAt||CHECKED}</span><div class="scene-chips">${b.scenes.map(s=>`<span class="chip">${esc(s)}</span>`).join('')}</div></div></div>${renderBrandPricingSummary(b)}<div class="abilities-section"><div class="abilities-title">特点标签 · 逐型号查看具体能力与边界</div><div class="abilities">${[...new Set(b.models.flatMap(m=>m.features))].slice(0,8).map(f=>`<span class="feature-chip">${esc(f)}</span>`).join('')}</div></div><div class="series-section"><div class="series-title">代表型号与特点 · 点击分类可收起</div><div class="series-groups">${groups.map(k=>`<details class="sgroup" open><summary class="sgroup-header"><span class="sgroup-dot" style="background:${b.color}"></span><span class="sgroup-name">${esc(k)}</span><span class="sgroup-count">${b.models.filter(m=>m.kind===k).length} 款</span></summary><div class="sgroup-body">${b.models.map((m,i)=>m.kind===k?renderModel(m,i):'').join('')}</div></details>`).join('')}</div></div><details class="brand-notes" open><summary>本次更新与纠错 · ${b.notes.length} 项</summary><ul>${b.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul><div class="source-links">${b.sources.map((s,i)=>ext(s.url,sourceTitle(s,i))).join('')}</div></details>`;
  $('back-overview').addEventListener('click',()=>showView('overview'));
  bindRankLinks($('brand-content'));
  bindPricingLinks($('brand-content'));
@@ -147,7 +150,7 @@ function showBrand(id,modelName='',{history:historyMode='push',focus=true,resetS
 function enhanceScrollableTables(root=document){
  root.querySelectorAll('.table-wrap, .rank-table-wrap, .pricing-table-wrap').forEach(n=>{
   n.tabIndex=0;n.setAttribute('role','region');
-  const label=n.classList.contains('rank-table-wrap')?'Arena 排名表':n.classList.contains('pricing-table-wrap')?'厂商套餐比较表':'模型规格比较表';
+  const label=n.classList.contains('benchmark-table-wrap')?'Artificial Analysis 评测数据':n.classList.contains('rank-table-wrap')?'Arena 排名表':n.classList.contains('pricing-table-wrap')?'厂商套餐比较表':'模型规格比较表';
   n.setAttribute('aria-label',label+'，可左右滚动');
  });
 }
@@ -199,13 +202,13 @@ function buildSources(){
  $('source-stats').textContent=`${DATA.length} 个品牌 · ${allModels.length} 款代表型号 · ${urls.length} 个官方来源 · 核验 ${CHECKED}`;
  $('source-cards').innerHTML=DATA.map(b=>{
   const sources=new Map(b.sources.map(s=>[s.url,s.title]));b.models.forEach(m=>m.sourceUrls.forEach(u=>{if(!sources.has(u))sources.set(u,m.name+' 官方规格');}));
-  return `<article class="source-card" style="--card-accent:${b.color}"><h3>${brandLogo(b)} ${esc(b.name)}</h3><small>核验：${CHECKED} · ${b.models.length} 款代表型号</small><div class="source-links">${[...sources].map(([u,t],i)=>ext(u,sourceTitle({title:t,url:u},i))).join('')}</div><ul>${b.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></article>`;
+  return `<article class="source-card" style="--card-accent:${b.color}"><h3>${brandLogo(b)} ${esc(b.name)}</h3><small>核验：${b.checkedAt||CHECKED} · ${b.models.length} 款代表型号</small><div class="source-links">${[...sources].map(([u,t],i)=>ext(u,sourceTitle({title:t,url:u},i))).join('')}</div><ul>${b.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></article>`;
  }).join('');
 }
 const rankState={board:'text',query:'',organization:'all',onlyGuide:false,sort:'rank'};
 const numberFormat=n=>Number.isFinite(n)?n.toLocaleString('en-US'):'未公布';
 function scoreLabel(board,row){return board.id==='agent'?Number(row.score).toFixed(2)+'%':numberFormat(row.score);}
-function organizationId(name){return {'OpenAI':'gpt','Anthropic':'claude','Google':'gemini','Meta':'llama','Alibaba':'qwen','Alibaba-ATH':'qwen','Bytedance':'doubao','ByteDance':'doubao','Baidu':'ernie','Moonshot':'kimi','KlingAI':'kling','Runway':'runway','Black Forest Labs':'flux','Microsoft AI':'microsoft','SpaceXAI':'xai','Reve':'reve','MiniMax':'minimax','Skywork':'skywork','HiDream':'hidream'}[name];}
+function organizationId(name){return {'OpenAI':'gpt','Anthropic':'claude','Google':'gemini','Meta':'llama','Alibaba':'qwen','Alibaba-ATH':'qwen','Bytedance':'doubao','ByteDance':'doubao','Baidu':'ernie','Moonshot':'kimi','KlingAI':'kling','Runway':'runway','Black Forest Labs':'flux','Microsoft AI':'microsoft','SpaceXAI':'xai','Reve':'reve','MiniMax':'minimax','Skywork':'skywork','HiDream':'hidream','Kimi':'kimi','DeepSeek':'deepseek','Z AI':'glm','Tencent':'tencent','Xiaomi':'xiaomi','StepFun':'stepfun','Thinking Machines':'thinkingmachines'}[name];}
 function organizationLogo(name){const id=organizationId(name);return ICONS[id]?`<img class="vendor-logo" src="${esc(ICONS[id])}" alt="${esc(name)} 图标" width="28" height="28">`:`<span class="vendor-wordmark">${esc(name)}</span>`;}
 function rankingsForModel(m){return RANKINGS.boards.flatMap(board=>board.rows.filter(r=>r.guideModelName===m.name).map(row=>({board,row})));}
 function renderModelRanks(m,compact=false){
@@ -254,7 +257,7 @@ function renderRanking(syncControls=false){
 }
 function clearRankFilters({updateRoute=true,focus=true}={}){rankState.query='';rankState.organization='all';rankState.onlyGuide=false;rankState.sort='rank';renderRanking(true);if(updateRoute)syncRoute();if(focus)$('rank-query').focus({preventScroll:true});}
 function downloadArena(){
- const file=new Blob([JSON.stringify(RANKINGS,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download='Arena分类榜快照-2026-11-06.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ const file=new Blob([JSON.stringify(RANKINGS,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download='Arena分类榜快照-'+RANKINGS.checkedAt+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 function initRankings(){
  $('rank-categories').innerHTML=RANKINGS.boards.map(board=>`<button class="pill" data-board="${board.id}" aria-pressed="false">${esc(board.shortTitle)}</button>`).join('');
@@ -265,7 +268,7 @@ function initRankings(){
  $('rank-sort').addEventListener('change',e=>{rankState.sort=e.target.value;renderRanking();syncRoute();});
  $('rank-download').addEventListener('click',downloadArena);
  $('arena-provenance').innerHTML=RANKINGS.boards.map(b=>`<div class="arena-source-row"><strong>${esc(b.shortTitle)}</strong><span>原榜更新 ${esc(b.updatedAt)} · 摘录 ${b.rows.length} 条</span>${ext(b.sourceUrl,'查看原榜')}</div>`).join('');
- $('icon-provenance').innerHTML=`图标来自 <a href="https://github.com/lobehub/lobe-icons" target="_blank" rel="noopener noreferrer">LobeHub Icons</a> 固定版本 1.102.0，已内嵌到页面；HiDream 使用官方站点图标。<a href="${ICON_LICENSE_DOWNLOAD}" download="LobeHub-MIT-License.txt">MIT 许可 ↓</a> · <a href="${ICON_SOURCES_DOWNLOAD}" download="图标来源清单.json">图标来源清单 ↓</a>。品牌商标归各自权利人所有。`;
+ $('icon-provenance').innerHTML=`图标来自 <a href="https://github.com/lobehub/lobe-icons" target="_blank" rel="noopener noreferrer">LobeHub Icons</a> 固定版本 1.102.0，已内嵌到页面；HiDream、Thinking Machines 使用各自官方站点图标。<a href="${ICON_LICENSE_DOWNLOAD}" download="LobeHub-MIT-License.txt">MIT 许可 ↓</a> · <a href="${ICON_SOURCES_DOWNLOAD}" download="图标来源清单.json">图标来源清单 ↓</a>。品牌商标归各自权利人所有。`;
  renderRanking(true);
 }
 
@@ -315,6 +318,7 @@ function renderPricing(syncControls=false){
  const count=matched.reduce((n,b)=>n+matchedPlans(b).length,0);
  $('price-count').textContent=`${matched.length} 家厂商 · ${count} 项方案 / 计费说明`;
  $('price-current-date').textContent=`核验 ${PRICING.checkedAt} · 静态公开资料快照`;
+ if(priceState.brand!=='all'&&!PRICING.brands.some(b=>b.id===priceState.brand)){$('pricing-results').innerHTML='<div class="empty-state"><strong>该厂商的套餐尚未收录</strong><p>已核实的型号费用见模型档案；应用会员与订阅额度仍需查看官方价格页。</p><button class="text-btn" id="price-clear">查看已收录套餐</button></div>';$('price-clear').addEventListener('click',resetPricing);return;}
  if(!matched.length){$('pricing-results').innerHTML='<div class="empty-state"><strong>当前条件下没有匹配的方案</strong><p>可清空搜索或切换厂商、方案类型与币种。</p><button class="text-btn" id="price-clear">清空套餐筛选</button></div>';$('price-clear').addEventListener('click',resetPricing);return;}
  if(priceState.brand==='all'){
   $('pricing-results').innerHTML=`<div class="pricing-overview-intro">选择厂商查看逐档价格、额度及限制。当前列表仅用于快速定位，原币价格不做汇率换算。</div><div class="pricing-table-wrap"><table class="pricing-table"><thead><tr><th>厂商</th><th>价格参考</th><th>额度口径示例</th><th>已整理方案</th><th>查看详情</th></tr></thead><tbody>${matched.map(b=>{const base=DATA.find(x=>x.id===b.id),plans=matchedPlans(b),preview=brandPricePreview(b);const quota=preview.plan||plans.find(p=>p.status==='verified')||plans[0];return `<tr><td><div class="pricing-company">${brandLogo(base)}<div><strong>${esc(base.name)}</strong><small>${esc(base.maker)}</small></div></div></td><td><strong class="pricing-preview-price">${esc(preview.label)}</strong><small>${esc(preview.note)}</small></td><td class="pricing-overview-quota">${esc(quota.name)}：${esc(quota.quotaText)}</td><td>${plans.length} 项<br><small>${[...new Set(plans.flatMap(p=>[PRICE_KINDS[p.kind],...(p.includedKinds||[]).map(k=>PRICE_KINDS[k])]))].map(esc).join(' / ')}</small></td><td><button class="text-btn" data-pricing-brand="${b.id}">查看套餐 →</button></td></tr>`;}).join('')}</tbody></table></div>`;
@@ -340,13 +344,28 @@ function initPricing(){
  $('price-brand').addEventListener('change',e=>{priceState.brand=e.target.value;showView('pricing',{resetScroll:false,focus:false});});
  $('price-currency').addEventListener('change',e=>{priceState.currency=e.target.value;renderPricing();syncRoute();});
  $('price-query').addEventListener('input',e=>{priceState.query=e.target.value;renderPricing();syncRoute();});
- $('price-download').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(PRICING,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='AI套餐价格额度-2026-11-06.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+ $('price-download').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(PRICING,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='AI套餐价格额度-'+PRICING.checkedAt+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
  $('pricing-provenance').innerHTML=PRICING.brands.map(record=>{const base=DATA.find(b=>b.id===record.id);return `<div class="pricing-source"><strong>${esc(base.name)}</strong><small>核验 ${record.checkedAt} · ${record.plans.length} 项</small><div class="source-links">${record.sources.map(s=>ext(s.url,s.title)).join('')}</div></div>`;}).join('');
  const priceSources=new Set(PRICING.brands.flatMap(b=>[...b.sources.map(s=>s.url),...b.plans.flatMap(p=>p.sourceUrls)]));
  $('source-stats').textContent+=` · ${priceSources.size} 个套餐报价来源`;
  renderPricing(true);
 }
 
+const benchmarkState={query:''};
+function renderBenchmarks(syncControls=false){
+ if(syncControls)$('benchmark-query').value=benchmarkState.query;
+ const q=benchmarkState.query.trim().toLowerCase(),rows=BENCHMARKS.rows.filter(r=>!q||[r.model,r.organization].join(' ').toLowerCase().includes(q));
+ const val=n=>Number.isFinite(n)?numberFormat(n):'未提供';
+ $('benchmark-count').textContent=`${rows.length} / ${BENCHMARKS.rows.length} 项 · 保留原页顺序`;
+ $('benchmark-body').innerHTML=rows.map(r=>`<tr><td>${r.position}</td><td><div class="rank-model-cell"><span class="rank-logo">${organizationLogo(r.organization)}</span><div><div class="rank-model-name">${esc(r.model)}</div><div class="rank-model-org">${esc(r.organization)}</div></div></div></td><td class="rank-score">${val(r.score)}</td><td class="rank-votes">${val(r.costPerTaskUSD)}</td><td class="rank-votes">${val(r.timePerTaskMinutes)}</td><td class="rank-votes">${val(r.firstAnswerTokenSeconds)}</td><td>${esc(r.context)}</td></tr>`).join('')||'<tr><td colspan="7">当前摘录中没有匹配项，请尝试其他型号或清空搜索。</td></tr>';
+}
+function initBenchmarks(){
+ $('benchmark-title').textContent=BENCHMARKS.title;
+ $('benchmark-method').textContent=BENCHMARKS.methodology;
+ $('benchmark-snapshot').textContent=`读取 ${BENCHMARKS.checkedAt} · 原榜统一更新日未提供 · ${BENCHMARKS.scope}`;
+ $('benchmark-notes').innerHTML=BENCHMARKS.notes.map(n=>`<li>${esc(n)}</li>`).join('');
+ $('benchmark-query').addEventListener('input',e=>{benchmarkState.query=e.target.value;renderBenchmarks();syncRoute();});renderBenchmarks(true);
+}
 function applyLocationRoute({initial=false}={}){
  if(location.hash==='#main'){lastRouteHash=location.hash;$('main').focus({preventScroll:true});return;}
  const raw=location.hash.slice(1)||'overview',[path,query='']=raw.split('?'),params=new URLSearchParams(query);
@@ -355,13 +374,14 @@ function applyLocationRoute({initial=false}={}){
  const previousScroll=history.state?.guideRoute?history.state.scrollTop:null;
  applyingRoute=true;
  try{
-  if(view==='overview')Object.assign(state,{filter:valid(params.get('f'),['all','coding','chinese','image','video','audio','reasoning','cheap','opensource'],'all'),region:valid(params.get('region'),['all','cn','us'],'all'),search:params.get('q')||''});
+  if(view==='overview')Object.assign(state,{filter:valid(params.get('f'),['all','new','coding','chinese','image','video','audio','reasoning','cheap','opensource'],'all'),region:valid(params.get('region'),['all','cn','us'],'all'),search:params.get('q')||''});
   if(view==='ranking'){
    rankState.board=valid(parts[1],RANKINGS.boards.map(b=>b.id),'text');
    const board=RANKINGS.boards.find(b=>b.id===rankState.board)||RANKINGS.boards[0];
    Object.assign(rankState,{board:board.id,query:params.get('q')||'',organization:valid(params.get('org'),board.rows.map(r=>r.organization),'all'),onlyGuide:params.get('guide')==='1',sort:valid(params.get('sort'),['rank','score','votes'],'rank')});
   }
-  if(view==='pricing')Object.assign(priceState,{brand:valid(parts[1],['all',...PRICING.brands.map(b=>b.id)],'all'),kind:valid(params.get('kind'),Object.keys(PRICE_KINDS),'all'),billing:valid(params.get('billing'),['monthly','annual'],'monthly'),currency:valid(params.get('currency'),['all','USD','CNY'],'all'),query:params.get('q')||''});
+  if(view==='benchmarks')benchmarkState.query=params.get('q')||'';
+  if(view==='pricing')Object.assign(priceState,{brand:valid(parts[1],['all',...DATA.map(b=>b.id)],'all'),kind:valid(params.get('kind'),Object.keys(PRICE_KINDS),'all'),billing:valid(params.get('billing'),['monthly','annual'],'monthly'),currency:valid(params.get('currency'),['all','USD','CNY'],'all'),query:params.get('q')||''});
   if(view==='table'){$('table-type').value=valid(params.get('type'),['text','image','video','audio','document','base','all'],'text');$('table-region').value=valid(params.get('region'),['all','cn','us'],'all');}
   const options={history:'none',focus:!initial,resetScroll:initial};
   if(view==='brand'&&DATA.some(b=>b.id===parts[1]))showBrand(parts[1],params.get('model')||'',options);
@@ -397,14 +417,14 @@ window.addEventListener('resize',()=>{if(!mobileNavigation())setMobileNavigation
 window.addEventListener('popstate',()=>applyLocationRoute());
 window.addEventListener('hashchange',()=>{if(location.hash!==lastRouteHash)applyLocationRoute();});
 document.querySelectorAll('[data-show-sources]').forEach(n=>n.addEventListener('click',e=>{e.preventDefault();showView('sources');}));
-document.querySelector('[download]').addEventListener('click',e=>{
+document.querySelector('#panel-sources a[download]').addEventListener('click',e=>{
  e.preventDefault();
- const file=new Blob([JSON.stringify({checkedAt:CHECKED,scope:'官方公开资料、Arena分类榜与套餐报价；静态快照',brands:DATA,arena:RANKINGS,pricing:PRICING},null,2)],{type:'application/json;charset=utf-8'});
+ const file=new Blob([JSON.stringify({checkedAt:CHECKED,scope:'官方公开资料、Arena分类榜与套餐报价；静态快照',brands:DATA,arena:RANKINGS,pricing:PRICING,benchmarks:BENCHMARKS},null,2)],{type:'application/json;charset=utf-8'});
  const url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download='AI模型核验数据-'+CHECKED+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 if(!$('main').hasAttribute('tabindex'))$('main').tabIndex=-1;
 $('search-input').placeholder='搜索品牌、型号、特点…';$('search-input').setAttribute('aria-label','搜索全部品牌、型号和特点');
-buildNav();buildOverview();buildTable();buildGuides();buildSources();initRankings();initPricing();
+buildNav();buildOverview();buildTable();buildGuides();buildSources();initRankings();initPricing();initBenchmarks();
 enhanceScrollableTables();setMobileNavigation(false,{restoreFocus:false});applyLocationRoute({initial:true});
 
 // Interface preferences stay on this device. No analytics are sent for these preferences.
